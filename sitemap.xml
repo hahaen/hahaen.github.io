@@ -2,15 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://idpeng.xyz/categories/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/tags/java/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/javaweb%E5%89%8D%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/posts/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/tags/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/categories/%E5%AD%A6%E4%B9%A0/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/</loc><lastmod>2021-09-11T00:54:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/maven%E4%B8%8E%E5%8C%85/</loc><lastmod>2021-09-09T22:57:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/hugo%E7%9B%B8%E5%85%B3%E6%90%AD%E5%BB%BA/</loc><lastmod>2021-09-09T22:57:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/git%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</loc><lastmod>2021-09-09T21:59:31&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://idpeng.xyz/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc><lastmod>2021-09-09T17:07:23&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
+            <loc>https://example.com/categories/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/java/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/javaweb%E5%89%8D%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/posts/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/%E5%AD%A6%E4%B9%A0/</loc><lastmod>2021-09-11T00:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/</loc><lastmod>2021-09-11T00:54:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/maven%E4%B8%8E%E5%8C%85/</loc><lastmod>2021-09-09T22:57:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/hugo%E7%9B%B8%E5%85%B3%E6%90%AD%E5%BB%BA/</loc><lastmod>2021-09-09T22:57:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/git%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</loc><lastmod>2021-09-09T21:59:31&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc><lastmod>2021-09-09T17:07:23&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
