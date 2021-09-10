@@ -10,7 +10,7 @@
     <pubDate>Thu, 09 Sep 2021 21:59:31 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://example.com/git%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
-    <description><![CDATA[#第二个]]></description>
+    <description><![CDATA[git系列操作 git六行配置 1 2 3 4 5 6 git config --global user.name 你的英文名 git config --global user.email 你的邮箱 git config --global push.default simple git config --global core.quotepath false git config --global core.editor &#34;code --wait&#34; git config --global core.autocrlf input 注意： 上面的英文名和邮箱]]></description>
 </item><item>
     <title>Linux常用命令行</title>
     <link>https://example.com/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
