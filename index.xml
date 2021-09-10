@@ -2,8 +2,9 @@
     <channel>
         <title>哈哈博客</title>
         <link>https://example.com/</link>
-        <description>关于 LoveIt 主题</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Sep 2021 21:59:31 &#43;0800</lastBuildDate>
+        <description>关于 哈哈博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (idpeng)</managingEditor>
+            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Sep 2021 21:59:31 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Git本地仓库与远程仓库</title>
