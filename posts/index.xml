@@ -4,7 +4,14 @@
         <link>https://example.com/posts/</link>
         <description>所有文章 | 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (idpeng)</managingEditor>
-            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 11 Sep 2021 00:56:15 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 11 Sep 2021 01:54:23 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>1</title>
+    <link>https://example.com/1/</link>
+    <pubDate>Sat, 11 Sep 2021 01:54:23 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/1/</guid>
+    <description><![CDATA[内容]]></description>
+</item><item>
     <title>JavaWeb前后端架构分析</title>
     <link>https://example.com/javaweb%E5%89%8D%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90/</link>
     <pubDate>Sat, 11 Sep 2021 00:56:15 &#43;0800</pubDate>
