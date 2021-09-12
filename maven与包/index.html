@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Maven与包 - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="Maven与包" />
-<meta property="og:description" content="内容" />
+<meta property="og:description" content="jar jar是将很多类文件打包后的一个压缩包,导入 jar 后,可以直接使用里面的类或调用其中的功能。 java包的原理 传递性依赖 我们依赖的包还依赖了别的" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://idpeng.xyz/maven%E4%B8%8E%E5%8C%85/" /><meta property="og:image" content="https://idpeng.xyz/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-09T22:57:35+08:00" />
@@ -16,11 +16,11 @@
 <meta name="twitter:image" content="https://idpeng.xyz/logo.png"/>
 
 <meta name="twitter:title" content="Maven与包"/>
-<meta name="twitter:description" content="内容"/>
+<meta name="twitter:description" content="jar jar是将很多类文件打包后的一个压缩包,导入 jar 后,可以直接使用里面的类或调用其中的功能。 java包的原理 传递性依赖 我们依赖的包还依赖了别的"/>
 <meta name="application-name" content="哈哈博客">
 <meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://idpeng.xyz/maven%E4%B8%8E%E5%8C%85/" /><link rel="prev" href="https://idpeng.xyz/hugo%E7%9B%B8%E5%85%B3%E6%90%AD%E5%BB%BA/" /><link rel="next" href="https://idpeng.xyz/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://idpeng.xyz/maven%E4%B8%8E%E5%8C%85/" /><link rel="prev" href="https://idpeng.xyz/git%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" /><link rel="next" href="https://idpeng.xyz/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/idpeng.xyz\/maven%E4%B8%8E%E5%8C%85\/"
-        },"image": ["https:\/\/idpeng.xyz\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  2 ,
+        },"image": ["https:\/\/idpeng.xyz\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  900 ,
         "url": "https:\/\/idpeng.xyz\/maven%E4%B8%8E%E5%8C%85\/","datePublished": "2021-09-09T22:57:35+08:00","dateModified": "2021-09-09T22:57:35+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/idpeng.xyz\/images\/avatar.png"},"author": {
@@ -46,7 +46,7 @@
             <a href="/" title="哈哈博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>哈哈博客</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://weibo.com/u/6136690889" title="微博" rel="noopener noreffer" target="_blank"><i class='fab fa-weibo fa-fw'></i>  </a><a class="menu-item" href="https://github.com/hahaen" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://github.com/hahaen" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="请输入关键词..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
                             <i class="fas fa-search fa-fw"></i>
@@ -89,7 +89,7 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         取消
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://weibo.com/u/6136690889" title="微博" rel="noopener noreffer" target="_blank"><i class='fab fa-weibo fa-fw'></i></a><a class="menu-item" href="https://github.com/hahaen" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://github.com/hahaen" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -106,8 +106,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Maven与包</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>idpeng</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0/"><i class="far fa-folder fa-fw"></i>学习</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-09">2021-09-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-09">2021-09-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 900 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -115,10 +115,334 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#内容">内容</a></li>
+    <li>
+      <ul>
+        <li><a href="#jar">jar</a></li>
+        <li><a href="#java包的原理">java包的原理</a>
+          <ul>
+            <li><a href="#传递性依赖">传递性依赖</a></li>
+          </ul>
+        </li>
+        <li><a href="#maven包的管理">maven包的管理</a>
+          <ul>
+            <li><a href="#maven怎么进行管理">maven怎么进行管理</a>
+              <ul>
+                <li><a href="#pomxml">pom.xml</a></li>
+                <li><a href="#引入第三方包">引入第三方包</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#包冲突及解决办法">包冲突及解决办法</a>
+          <ul>
+            <li><a href="#包冲突">包冲突</a></li>
+            <li><a href="#解决冲突的办法">解决冲突的办法</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="内容">内容</h1>
+            </div><div class="content" id="content"><h2 id="jar">jar</h2>
+<p>jar是将很多类文件打包后的一个压缩包,导入 jar 后,可以直接使用里面的类或调用其中的功能。</p>
+<h2 id="java包的原理">java包的原理</h2>
+<h3 id="传递性依赖">传递性依赖</h3>
+<p>我们依赖的包还依赖了别的类，这种依赖是具有传递性的。
+传递性依赖带来的最大的问题就是：</p>
+<ul>
+<li>我们在 -classpath 后会添加项目依赖的各种各样的 jar 包；</li>
+<li>如果两个仅仅不同版本的 jar 包被同时写进了 -classpath 参数里面；</li>
+<li>JVM 在 classpath 中寻找类文件的顺序是从前找到后的，也就是说如果有两个仅仅不同版本的 jar ：demo-1.0.jar 和 demo-2.0.jar ，哪个放在前面哪个就会被使用。</li>
+<li>如果 demo-1.0.jar 的顺序在 demo-2.0.jar 之前，就会使用demo-1.0.jar加载的类文件，这样的话高版本的jar就会不生效。</li>
+</ul>
+<h2 id="maven包的管理">maven包的管理</h2>
+<p>Maven 是一个项目管理工具它包含：</p>
+<ol>
+<li>一个项目对象模型</li>
+<li>一组标准集合</li>
+<li>一个项目生命周期</li>
+<li>一个依赖管理系统</li>
+<li>用来运行定义在生命周期阶段中插件目标的逻辑</li>
+</ol>
+<h3 id="maven怎么进行管理">maven怎么进行管理</h3>
+<ol>
+<li>Maven 包管理的做法是：Convention over configuration（约定优于配置原则），体现在 POM。</li>
+<li>POM是 Maven 工程的基本工作单元，是一个 XML 文件。</li>
+<li>该文件中包含了项目的基本信息，用于描述项目如何构建，声明项目依赖等等。</li>
+</ol>
+<h4 id="pomxml">pom.xml</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;project xmlns=&#34;http://maven.apache.org/POM/4.0.0&#34; xmlns:xsi=&#34;http://www.w3.org/2001/XMLSchema-instance&#34;
+         xsi:schemaLocation=&#34;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&#34;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;hcsp&lt;/groupId&gt;
+    &lt;artifactId&gt;fix-bug-in-integer-equals&lt;/artifactId&gt;
+    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+
+    &lt;properties&gt;
+        &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
+        &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+    &lt;/properties&gt;
+
+    &lt;profiles&gt;
+        &lt;profile&gt;
+            &lt;id&gt;aliyunMavenMirror&lt;/id&gt;
+            &lt;activation&gt;
+                &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+            &lt;/activation&gt;
+            &lt;pluginRepositories&gt;
+                &lt;pluginRepository&gt;
+                    &lt;id&gt;alimaven&lt;/id&gt;
+                    &lt;name&gt;aliyun maven&lt;/name&gt;
+                    &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
+                &lt;/pluginRepository&gt;
+            &lt;/pluginRepositories&gt;
+            &lt;repositories&gt;
+                &lt;repository&gt;
+                    &lt;id&gt;alimaven&lt;/id&gt;
+                    &lt;name&gt;aliyun maven&lt;/name&gt;
+                    &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
+                &lt;/repository&gt;
+            &lt;/repositories&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;mavenCentral&lt;/id&gt;
+            &lt;pluginRepositories&gt;
+                &lt;pluginRepository&gt;
+                    &lt;id&gt;mavenCentral&lt;/id&gt;
+                    &lt;name&gt;mavenCentral&lt;/name&gt;
+                    &lt;url&gt;https://repo.maven.apache.org/maven2&lt;/url&gt;
+                &lt;/pluginRepository&gt;
+            &lt;/pluginRepositories&gt;
+            &lt;repositories&gt;
+                &lt;repository&gt;
+                    &lt;id&gt;mavenCentral&lt;/id&gt;
+                    &lt;name&gt;mavenCentral&lt;/name&gt;
+                    &lt;url&gt;https://repo.maven.apache.org/maven2&lt;/url&gt;
+                &lt;/repository&gt;
+            &lt;/repositories&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+            &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;
+            &lt;version&gt;5.6.0&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+            &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;
+            &lt;version&gt;5.6.0&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.22.1&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;argLine&gt;-Dfile.encoding=UTF-8&lt;/argLine&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="引入第三方包">引入第三方包</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+            &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;
+            &lt;version&gt;5.6.0&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+            &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;
+            &lt;version&gt;5.6.0&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;dependency&gt;
+    &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+    &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;
+    &lt;version&gt;5.6.0&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>里面加入了junit-jupiter-engine的jar</p>
+<ol>
+<li>如果在本地仓库没有找到对应的 jar 包，Maven 就会从远程的中央仓库进行下载，然后放到本地仓库中。</li>
+<li>Maven <a href="https://repo1.maven.org/maven2/" target="_blank" rel="noopener noreffer">中央仓库位置</a></li>
+</ol>
+<h2 id="包冲突及解决办法">包冲突及解决办法</h2>
+<h3 id="包冲突">包冲突</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png"
+        data-srcset="/img/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png, /img/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png 1.5x, /img/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png 2x"
+        data-sizes="auto"
+        alt="/img/包冲突示意图.png"
+        title="包冲突示意图" /><br>
+相比于C1来说，C2这个第三方包离项目更接近，因此Maven会自动帮你把C1去除，而保留C2。</p>
+<h3 id="解决冲突的办法">解决冲突的办法</h3>
+<ol>
+<li>直接依赖C2</li>
+<li>排除C1</li>
+<li>通过Maven helper插件来解决包冲突问题</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">排除
+&lt;dependency&gt;
+  &lt;groupId&gt;xxx&lt;/groupId&gt;
+  &lt;artifactId&gt;xxx&lt;/artifactId&gt;
+  &lt;version&gt;1.0.0&lt;/version&gt;
+  &lt;exclusions&gt;
+    &lt;exclusion&gt;
+        &lt;groupId&gt;yyy&lt;/groupId&gt;
+      &lt;artifactId&gt;yyy&lt;/artifactId&gt;
+    &lt;/exclusion&gt;
+  &lt;/exclusions&gt;
+&lt;/dependency&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>排除了xxx依赖中的后代yyy依赖，也可以解决包冲突的问题</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -142,7 +466,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/hugo%E7%9B%B8%E5%85%B3%E6%90%AD%E5%BB%BA/" class="prev" rel="prev" title="Hugo相关搭建"><i class="fas fa-angle-left fa-fw"></i>Hugo相关搭建</a>
+    <div class="post-nav"><a href="/git%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" class="prev" rel="prev" title="Git本地仓库与远程仓库"><i class="fas fa-angle-left fa-fw"></i>Git本地仓库与远程仓库</a>
             <a href="/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/" class="next" rel="next" title="Collection体系原理">Collection体系原理<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>

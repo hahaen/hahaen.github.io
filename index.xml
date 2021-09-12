@@ -19,21 +19,14 @@
     <pubDate>Sat, 11 Sep 2021 00:54:11 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://idpeng.xyz/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/</guid>
-    <description><![CDATA[内容]]></description>
+    <description><![CDATA[Collection体系简介]]></description>
 </item><item>
     <title>Maven与包</title>
     <link>https://idpeng.xyz/maven%E4%B8%8E%E5%8C%85/</link>
     <pubDate>Thu, 09 Sep 2021 22:57:35 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://idpeng.xyz/maven%E4%B8%8E%E5%8C%85/</guid>
-    <description><![CDATA[内容]]></description>
-</item><item>
-    <title>Hugo相关搭建</title>
-    <link>https://idpeng.xyz/hugo%E7%9B%B8%E5%85%B3%E6%90%AD%E5%BB%BA/</link>
-    <pubDate>Thu, 09 Sep 2021 22:57:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://idpeng.xyz/hugo%E7%9B%B8%E5%85%B3%E6%90%AD%E5%BB%BA/</guid>
-    <description><![CDATA[内容]]></description>
+    <description><![CDATA[jar jar是将很多类文件打包后的一个压缩包,导入 jar 后,可以直接使用里面的类或调用其中的功能。 java包的原理 传递性依赖 我们依赖的包还依赖了别的]]></description>
 </item><item>
     <title>Git本地仓库与远程仓库</title>
     <link>https://idpeng.xyz/git%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
