@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Collection体系原理 - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="Collection体系原理" />
-<meta property="og:description" content="Collection体系简介" />
+<meta property="og:description" content="Collection体系简介 list 有序可重复，最常用的是 ArrayList，实际就是一个数组 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Collection&lt;Integer&gt; c = new LinkedHashSet&lt;&gt;(); // IntegerList List&lt;Integer&gt; list = new ArrayList&lt;&gt;(c);" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://idpeng.xyz/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/" /><meta property="og:image" content="https://idpeng.xyz/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-11T00:54:11+08:00" />
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://idpeng.xyz/logo.png"/>
 
 <meta name="twitter:title" content="Collection体系原理"/>
-<meta name="twitter:description" content="Collection体系简介"/>
+<meta name="twitter:description" content="Collection体系简介 list 有序可重复，最常用的是 ArrayList，实际就是一个数组 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Collection&lt;Integer&gt; c = new LinkedHashSet&lt;&gt;(); // IntegerList List&lt;Integer&gt; list = new ArrayList&lt;&gt;(c);"/>
 <meta name="application-name" content="哈哈博客">
 <meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/idpeng.xyz\/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86\/"
-        },"image": ["https:\/\/idpeng.xyz\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  14 ,
+        },"image": ["https:\/\/idpeng.xyz\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  874 ,
         "url": "https:\/\/idpeng.xyz\/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86\/","datePublished": "2021-09-11T00:54:11+08:00","dateModified": "2021-09-11T00:54:11+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/idpeng.xyz\/images\/avatar.png"},"author": {
@@ -105,9 +105,9 @@
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Collection体系原理</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>idpeng</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0/"><i class="far fa-folder fa-fw"></i>学习</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-11">2021-09-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 14 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>idpeng</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/java%E7%9F%A5%E8%AF%86/"><i class="far fa-folder fa-fw"></i>java知识</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-11">2021-09-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 874 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -117,12 +117,187 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#collection体系简介">Collection体系简介</a></li>
+        <li><a href="#collection体系简介">Collection体系简介</a>
+          <ul>
+            <li><a href="#list">list</a></li>
+            <li><a href="#set">Set</a></li>
+            <li><a href="#java世界第重要的约定">Java世界第⼆重要的约定</a></li>
+            <li><a href="#hashset">HashSet</a></li>
+            <li><a href="#collections-具法集合">Collections ⼯具⽅法集合</a></li>
+          </ul>
+        </li>
+        <li><a href="#map-体系">Map 体系</a>
+          <ul>
+            <li><a href="#hashmap">HashMap</a></li>
+            <li><a href="#有序集合treesettreemap">有序集合TreeSet/TreeMap</a></li>
+          </ul>
+        </li>
+        <li><a href="#guava">Guava</a></li>
+        <li><a href="#collection体系简介图">Collection体系简介图</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="collection体系简介">Collection体系简介</h2>
+<h3 id="list">list</h3>
+<p>有序可重复，最常用的是 ArrayList，实际就是一个数组</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Collection&lt;Integer&gt; c = new LinkedHashSet&lt;&gt;();
+        
+// IntegerList
+List&lt;Integer&gt; list = new ArrayList&lt;&gt;(c);
+        
+// 等价于
+List&lt;Integer&gt; list2 = new ArrayList&lt;&gt;();
+list2.addAll(c);
+        
+// 等价于
+List&lt;Integer&gt; list3 = new ArrayList&lt;&gt;();
+for (Integer i : c) {
+    list3.add(i);
+}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="set">Set</h3>
+<p>无序且不可重复的元素集合。</p>
+<p>只是简单通过object.contains()判断添加新元素时是否重复，从而实现去重的 Set 是很低效的，这就引出了对象的 hashcode。</p>
+<h3 id="java世界第重要的约定">Java世界第⼆重要的约定</h3>
+<p>hashCode:</p>
+<ol>
+<li>同⼀个对象必须始终返回相同的 hashCode</li>
+<li>两个对象的 equals 返回 true，必须返回相同的 hashCode</li>
+<li>两个对象不等，也可能返回相同的 hashCode</li>
+</ol>
+<h3 id="hashset">HashSet</h3>
+<p>HashSet 是无序的，是最常用的 Set 实现。
+可以利用 set 为 list 过滤去重：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">List&lt;Integer&gt; list = new ArrayList&lt;&gt;();
+
+list.add(2);
+list.add(3);
+list.add(4);
+list.add(3);
+        
+Set&lt;Integer&gt; set = new HashSet&lt;&gt;(list); 
+</code></pre></td></tr></table>
+</div>
+</div><p>LinkedHashSet 是有序的，顺序就是插入元素时的顺序。</p>
+<h3 id="collections-具法集合">Collections ⼯具⽅法集合</h3>
+<ul>
+<li>emptySet(): 等返回⼀一个⽅方便便的空集合</li>
+<li>synchronizedCollection: 将⼀一个集合变成线程安全的</li>
+<li>unmodifiableCollection: 将⼀一个集合变成不不可变的（也可以使⽤用Guava的Immutable）</li>
+</ul>
+<h2 id="map-体系">Map 体系</h2>
+<p>map 是 一个将 keys 映射到 values 的对象，键不能重复，每个键只能映射一个值，值可以重复。 <br></p>
+<ul>
+<li><code>keySet()</code>返回键的集合，因为键不可重复，所以可以返回一个 set； <br></li>
+<li><code>values()</code>返回值的集合，因为值可以重复，所以返回的是 collection。 <br>
+注意：<code>keySet()</code>和 <code>map</code>背后的 keys 是同一组数据，所以二者的修改会相互影响。 <br>
+<br></li>
+</ul>
+<h3 id="hashmap">HashMap</h3>
+<ul>
+<li>HashMap 是最常用、最高效的 Map 实现。</li>
+<li>HashMap 的扩容，思路同样是创建更大的空间，然后把之前的数据 copy 进来。</li>
+<li>HashMap 是多线程不安全的，可使用 ConcurrentHashMap。<br></li>
+</ul>
+<p>Java 7 开始会采用<a href="https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91" target="_blank" rel="noopener noreffer">红黑树</a>代替链表</p>
+<p>HashMap 和 HashSet 本质上是同一个东西：<br>
+HashMap 的 key 集合（set）就是 HashSet，而 HashSet 内部其实就是个 HashMap，毕竟 HashSet 拥有的功能 HashMap 都有。</p>
+<h3 id="有序集合treesettreemap">有序集合TreeSet/TreeMap</h3>
+<p>TreeSet 可以排序（默认是自然顺序）。<br>
+HashSet、LinkedHashSet 与 TreeSet 对比：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public class Main {
+
+    public static void main(String[] args) {
+        List&lt;Integer&gt; list = Arrays.asList(1000, -13, 0, -41656, 1250, 555);
+
+        Set set1 = new HashSet&lt;&gt;(list);
+        Set set2= new LinkedHashSet(list);
+        Set set3 = new TreeSet(list);
+
+        System.out.println(set1);
+        System.out.println(set2);
+        System.out.println(set3);
+    }
+}
+
+[0, 1250, -41656, 1000, 555, -13]
+[1000, -13, 0, -41656, 1250, 555]
+[-41656, -13, 0, 555, 1000, 1250]
+</code></pre></td></tr></table>
+</div>
+</div><p>TreeMap 同理</p>
+<h2 id="guava">Guava</h2>
+<ul>
+<li>不要重复发明轮⼦子！尽量量使⽤用经过实战检验的类库</li>
+<li>Lists/Sets/Maps</li>
+<li>ImmutableMap/ImmutableSet</li>
+<li>Multiset/Multimap</li>
+<li>BiMap!12</li>
+</ul>
+<hr>
+<h2 id="collection体系简介图">Collection体系简介图</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/Collection%e4%bd%93%e7%b3%bb.png"
+        data-srcset="/img/Collection%e4%bd%93%e7%b3%bb.png, /img/Collection%e4%bd%93%e7%b3%bb.png 1.5x, /img/Collection%e4%bd%93%e7%b3%bb.png 2x"
+        data-sizes="auto"
+        alt="/img/Collection体系.png"
+        title="Collection体系" /><br></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
