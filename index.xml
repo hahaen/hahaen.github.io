@@ -4,15 +4,29 @@
         <link>https://idpeng.xyz/</link>
         <description>关于 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (idpeng)</managingEditor>
-            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 11 Sep 2021 00:56:15 &#43;0800</lastBuildDate>
+            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 13 Sep 2021 17:09:13 &#43;0800</lastBuildDate>
             <atom:link href="https://idpeng.xyz/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Java的IO</title>
+    <link>https://idpeng.xyz/java%E7%9A%84io/</link>
+    <pubDate>Mon, 13 Sep 2021 17:09:13 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://idpeng.xyz/java%E7%9A%84io/</guid>
+    <description><![CDATA[内容]]></description>
+</item><item>
+    <title>HTTP的基础</title>
+    <link>https://idpeng.xyz/http%E7%9A%84%E5%9F%BA%E7%A1%80/</link>
+    <pubDate>Mon, 13 Sep 2021 15:33:51 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://idpeng.xyz/http%E7%9A%84%E5%9F%BA%E7%A1%80/</guid>
+    <description><![CDATA[Http方法与状态码 http方法 GET 拿 POST 发送 1 2 3 GET / HTTP/1.1 //GET请求根路径 使用HTTP1.1协议 Host: xiedaimala.com User-Agent: //用户代理（浏览器） 可根据查看相关信]]></description>
+</item><item>
     <title>JavaWeb前后端架构分析</title>
     <link>https://idpeng.xyz/javaweb%E5%89%8D%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90/</link>
     <pubDate>Sat, 11 Sep 2021 00:56:15 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://idpeng.xyz/javaweb%E5%89%8D%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90/</guid>
-    <description><![CDATA[内容]]></description>
+    <description><![CDATA[计算机网络是如何工作的 在打开网页的时候发生了什么 主机 域名与DNS 端⼝:HTTPS协议的默认端⼝口是443，HTTP协议的默认端⼝口是80 TC]]></description>
 </item><item>
     <title>Collection体系原理</title>
     <link>https://idpeng.xyz/collection%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/</link>
