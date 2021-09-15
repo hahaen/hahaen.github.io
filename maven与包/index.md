@@ -23,7 +23,8 @@ Maven 是一个项目管理工具它包含：
 3. 该文件中包含了项目的基本信息，用于描述项目如何构建，声明项目依赖等等。
 
 #### pom.xml
-```
+
+```java
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -106,7 +107,7 @@ Maven 是一个项目管理工具它包含：
 </project>
 ```
 #### 引入第三方包
-```
+```java
 <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -122,7 +123,8 @@ Maven 是一个项目管理工具它包含：
         </dependency>
     </dependencies>
 ```
-```angular2html
+
+```java
 <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-engine</artifactId>
@@ -135,13 +137,13 @@ Maven 是一个项目管理工具它包含：
 2. Maven [中央仓库位置](https://repo1.maven.org/maven2/)
 ## 包冲突及解决办法
 ### 包冲突
-![包冲突示意图](/img/包冲突示意图.png)<br>
+![包冲突示意图](/img/maven与包/包冲突示意图.png)<br>
 相比于C1来说，C2这个第三方包离项目更接近，因此Maven会自动帮你把C1去除，而保留C2。
 ### 解决冲突的办法
 1. 直接依赖C2
 2. 排除C1
 3. 通过Maven helper插件来解决包冲突问题
-```angular2html
+```java
 排除
 <dependency>
   <groupId>xxx</groupId>

@@ -8,7 +8,7 @@
 * GET 拿   
 * POST 发送  
 
-```angular2html
+```
 GET / HTTP/1.1     //GET请求根路径 使用HTTP1.1协议
 Host: xiedaimala.com
 User-Agent:  //用户代理（浏览器） 可根据查看相关信息
@@ -24,11 +24,11 @@ User-Agent:  //用户代理（浏览器） 可根据查看相关信息
 * Cookie
 * User-Agent  //浏览器标识
 * Referer   //上一个页面是什么
-```angular2html
+```
 Referer: http://idpeng.xyz/
 ```
 * Content-type //下载或者图片
-```angular2html
+```
 content-type: text/html; charset=utf-8
 ```
 * Set-Cookie  //登录后服务器自动设置的cookie

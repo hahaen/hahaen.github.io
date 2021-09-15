@@ -255,86 +255,86 @@
 </span><span class="lnt">80
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;project xmlns=&#34;http://maven.apache.org/POM/4.0.0&#34; xmlns:xsi=&#34;http://www.w3.org/2001/XMLSchema-instance&#34;
-         xsi:schemaLocation=&#34;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&#34;&gt;
-    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">project</span> <span class="n">xmlns</span><span class="o">=</span><span class="s">&#34;http://maven.apache.org/POM/4.0.0&#34;</span> <span class="n">xmlns</span><span class="o">:</span><span class="n">xsi</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+         <span class="n">xsi</span><span class="o">:</span><span class="n">schemaLocation</span><span class="o">=</span><span class="s">&#34;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&#34;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">modelVersion</span><span class="o">&gt;</span><span class="n">4</span><span class="o">.</span><span class="na">0</span><span class="o">.</span><span class="na">0</span><span class="o">&lt;/</span><span class="n">modelVersion</span><span class="o">&gt;</span>
 
-    &lt;groupId&gt;hcsp&lt;/groupId&gt;
-    &lt;artifactId&gt;fix-bug-in-integer-equals&lt;/artifactId&gt;
-    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+    <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">hcsp</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">fix</span><span class="o">-</span><span class="n">bug</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">integer</span><span class="o">-</span><span class="n">equals</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">1</span><span class="o">.</span><span class="na">0</span><span class="o">-</span><span class="n">SNAPSHOT</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
 
-    &lt;properties&gt;
-        &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
-        &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
-        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
-    &lt;/properties&gt;
+    <span class="o">&lt;</span><span class="n">properties</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">maven</span><span class="o">.</span><span class="na">compiler</span><span class="o">.</span><span class="na">source</span><span class="o">&gt;</span><span class="n">1</span><span class="o">.</span><span class="na">8</span><span class="o">&lt;/</span><span class="n">maven</span><span class="o">.</span><span class="na">compiler</span><span class="o">.</span><span class="na">source</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">maven</span><span class="o">.</span><span class="na">compiler</span><span class="o">.</span><span class="na">target</span><span class="o">&gt;</span><span class="n">1</span><span class="o">.</span><span class="na">8</span><span class="o">&lt;/</span><span class="n">maven</span><span class="o">.</span><span class="na">compiler</span><span class="o">.</span><span class="na">target</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">project</span><span class="o">.</span><span class="na">build</span><span class="o">.</span><span class="na">sourceEncoding</span><span class="o">&gt;</span><span class="n">UTF</span><span class="o">-</span><span class="n">8</span><span class="o">&lt;/</span><span class="n">project</span><span class="o">.</span><span class="na">build</span><span class="o">.</span><span class="na">sourceEncoding</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">properties</span><span class="o">&gt;</span>
 
-    &lt;profiles&gt;
-        &lt;profile&gt;
-            &lt;id&gt;aliyunMavenMirror&lt;/id&gt;
-            &lt;activation&gt;
-                &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
-            &lt;/activation&gt;
-            &lt;pluginRepositories&gt;
-                &lt;pluginRepository&gt;
-                    &lt;id&gt;alimaven&lt;/id&gt;
-                    &lt;name&gt;aliyun maven&lt;/name&gt;
-                    &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
-                &lt;/pluginRepository&gt;
-            &lt;/pluginRepositories&gt;
-            &lt;repositories&gt;
-                &lt;repository&gt;
-                    &lt;id&gt;alimaven&lt;/id&gt;
-                    &lt;name&gt;aliyun maven&lt;/name&gt;
-                    &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
-                &lt;/repository&gt;
-            &lt;/repositories&gt;
-        &lt;/profile&gt;
-        &lt;profile&gt;
-            &lt;id&gt;mavenCentral&lt;/id&gt;
-            &lt;pluginRepositories&gt;
-                &lt;pluginRepository&gt;
-                    &lt;id&gt;mavenCentral&lt;/id&gt;
-                    &lt;name&gt;mavenCentral&lt;/name&gt;
-                    &lt;url&gt;https://repo.maven.apache.org/maven2&lt;/url&gt;
-                &lt;/pluginRepository&gt;
-            &lt;/pluginRepositories&gt;
-            &lt;repositories&gt;
-                &lt;repository&gt;
-                    &lt;id&gt;mavenCentral&lt;/id&gt;
-                    &lt;name&gt;mavenCentral&lt;/name&gt;
-                    &lt;url&gt;https://repo.maven.apache.org/maven2&lt;/url&gt;
-                &lt;/repository&gt;
-            &lt;/repositories&gt;
-        &lt;/profile&gt;
-    &lt;/profiles&gt;
-    &lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
-            &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;
-            &lt;version&gt;5.6.0&lt;/version&gt;
-            &lt;scope&gt;test&lt;/scope&gt;
-        &lt;/dependency&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
-            &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;
-            &lt;version&gt;5.6.0&lt;/version&gt;
-            &lt;scope&gt;test&lt;/scope&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
+    <span class="o">&lt;</span><span class="n">profiles</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">profile</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">id</span><span class="o">&gt;</span><span class="n">aliyunMavenMirror</span><span class="o">&lt;/</span><span class="n">id</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">activation</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">activeByDefault</span><span class="o">&gt;</span><span class="kc">true</span><span class="o">&lt;/</span><span class="n">activeByDefault</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">activation</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">pluginRepositories</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">pluginRepository</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">id</span><span class="o">&gt;</span><span class="n">alimaven</span><span class="o">&lt;/</span><span class="n">id</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">aliyun</span> <span class="n">maven</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span><span class="n">http</span><span class="o">:</span><span class="c1">//maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
+</span><span class="c1"></span>                <span class="o">&lt;/</span><span class="n">pluginRepository</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">pluginRepositories</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">repositories</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">repository</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">id</span><span class="o">&gt;</span><span class="n">alimaven</span><span class="o">&lt;/</span><span class="n">id</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">aliyun</span> <span class="n">maven</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span><span class="n">http</span><span class="o">:</span><span class="c1">//maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
+</span><span class="c1"></span>                <span class="o">&lt;/</span><span class="n">repository</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">repositories</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">profile</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">profile</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">id</span><span class="o">&gt;</span><span class="n">mavenCentral</span><span class="o">&lt;/</span><span class="n">id</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">pluginRepositories</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">pluginRepository</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">id</span><span class="o">&gt;</span><span class="n">mavenCentral</span><span class="o">&lt;/</span><span class="n">id</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">mavenCentral</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span><span class="n">https</span><span class="o">:</span><span class="c1">//repo.maven.apache.org/maven2&lt;/url&gt;
+</span><span class="c1"></span>                <span class="o">&lt;/</span><span class="n">pluginRepository</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">pluginRepositories</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">repositories</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">repository</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">id</span><span class="o">&gt;</span><span class="n">mavenCentral</span><span class="o">&lt;/</span><span class="n">id</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">mavenCentral</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span><span class="n">https</span><span class="o">:</span><span class="c1">//repo.maven.apache.org/maven2&lt;/url&gt;
+</span><span class="c1"></span>                <span class="o">&lt;/</span><span class="n">repository</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">repositories</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">profile</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">profiles</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">dependencies</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">jupiter</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">junit</span><span class="o">-</span><span class="n">jupiter</span><span class="o">-</span><span class="n">api</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">5</span><span class="o">.</span><span class="na">6</span><span class="o">.</span><span class="na">0</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">scope</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">scope</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">jupiter</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">junit</span><span class="o">-</span><span class="n">jupiter</span><span class="o">-</span><span class="n">engine</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">5</span><span class="o">.</span><span class="na">6</span><span class="o">.</span><span class="na">0</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">scope</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">scope</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">dependencies</span><span class="o">&gt;</span>
 
-    &lt;build&gt;
-        &lt;plugins&gt;
-            &lt;plugin&gt;
-                &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
-                &lt;version&gt;2.22.1&lt;/version&gt;
-                &lt;configuration&gt;
-                    &lt;argLine&gt;-Dfile.encoding=UTF-8&lt;/argLine&gt;
-                &lt;/configuration&gt;
-            &lt;/plugin&gt;
-        &lt;/plugins&gt;
-    &lt;/build&gt;
-&lt;/project&gt;
+    <span class="o">&lt;</span><span class="n">build</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">plugins</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">plugin</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">maven</span><span class="o">-</span><span class="n">surefire</span><span class="o">-</span><span class="n">plugin</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">2</span><span class="o">.</span><span class="na">22</span><span class="o">.</span><span class="na">1</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">configuration</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">argLine</span><span class="o">&gt;-</span><span class="n">Dfile</span><span class="o">.</span><span class="na">encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="n">8</span><span class="o">&lt;/</span><span class="n">argLine</span><span class="o">&gt;</span>
+                <span class="o">&lt;/</span><span class="n">configuration</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">plugin</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">plugins</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">build</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">project</span><span class="o">&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="引入第三方包">引入第三方包</h4>
@@ -356,20 +356,20 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
-            &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;
-            &lt;version&gt;5.6.0&lt;/version&gt;
-            &lt;scope&gt;test&lt;/scope&gt;
-        &lt;/dependency&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
-            &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;
-            &lt;version&gt;5.6.0&lt;/version&gt;
-            &lt;scope&gt;test&lt;/scope&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">dependencies</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">jupiter</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">junit</span><span class="o">-</span><span class="n">jupiter</span><span class="o">-</span><span class="n">api</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">5</span><span class="o">.</span><span class="na">6</span><span class="o">.</span><span class="na">0</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">scope</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">scope</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">jupiter</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">junit</span><span class="o">-</span><span class="n">jupiter</span><span class="o">-</span><span class="n">engine</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">5</span><span class="o">.</span><span class="na">6</span><span class="o">.</span><span class="na">0</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">scope</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">scope</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">dependencies</span><span class="o">&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -382,12 +382,12 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;dependency&gt;
-    &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
-    &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;
-    &lt;version&gt;5.6.0&lt;/version&gt;
-    &lt;scope&gt;test&lt;/scope&gt;
-&lt;/dependency&gt;
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">jupiter</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">junit</span><span class="o">-</span><span class="n">jupiter</span><span class="o">-</span><span class="n">engine</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">5</span><span class="o">.</span><span class="na">6</span><span class="o">.</span><span class="na">0</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">scope</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">scope</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>里面加入了junit-jupiter-engine的jar</p>
@@ -400,10 +400,10 @@
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/img/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png"
-        data-srcset="/img/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png, /img/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png 1.5x, /img/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png 2x"
+        data-src="/img/maven%e4%b8%8e%e5%8c%85/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png"
+        data-srcset="/img/maven%e4%b8%8e%e5%8c%85/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png, /img/maven%e4%b8%8e%e5%8c%85/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png 1.5x, /img/maven%e4%b8%8e%e5%8c%85/%e5%8c%85%e5%86%b2%e7%aa%81%e7%a4%ba%e6%84%8f%e5%9b%be.png 2x"
         data-sizes="auto"
-        alt="/img/包冲突示意图.png"
+        alt="/img/maven与包/包冲突示意图.png"
         title="包冲突示意图" /><br>
 相比于C1来说，C2这个第三方包离项目更接近，因此Maven会自动帮你把C1去除，而保留C2。</p>
 <h3 id="解决冲突的办法">解决冲突的办法</h3>
@@ -428,18 +428,18 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">排除
-&lt;dependency&gt;
-  &lt;groupId&gt;xxx&lt;/groupId&gt;
-  &lt;artifactId&gt;xxx&lt;/artifactId&gt;
-  &lt;version&gt;1.0.0&lt;/version&gt;
-  &lt;exclusions&gt;
-    &lt;exclusion&gt;
-        &lt;groupId&gt;yyy&lt;/groupId&gt;
-      &lt;artifactId&gt;yyy&lt;/artifactId&gt;
-    &lt;/exclusion&gt;
-  &lt;/exclusions&gt;
-&lt;/dependency&gt;
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">排除</span>
+<span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">xxx</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">xxx</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">1</span><span class="o">.</span><span class="na">0</span><span class="o">.</span><span class="na">0</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">exclusions</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">exclusion</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">yyy</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">yyy</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">exclusion</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">exclusions</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>排除了xxx依赖中的后代yyy依赖，也可以解决包冲突的问题</p>
