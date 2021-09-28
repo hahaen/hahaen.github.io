@@ -4,7 +4,14 @@
         <link>https://idpeng.xyz/posts/</link>
         <description>所有文章 | 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (idpeng)</managingEditor>
-            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 13 Sep 2021 17:09:13 &#43;0800</lastBuildDate><atom:link href="https://idpeng.xyz/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 28 Sep 2021 16:22:01 &#43;0800</lastBuildDate><atom:link href="https://idpeng.xyz/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Java多线程原理</title>
+    <link>https://idpeng.xyz/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%8E%9F%E7%90%86/</link>
+    <pubDate>Tue, 28 Sep 2021 16:22:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://idpeng.xyz/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%8E%9F%E7%90%86/</guid>
+    <description><![CDATA[Java多线程原理 为什么需要多线程？ 可以提高程序的执行性能 例如：一个人洗菜做法，和多个人一起洗菜做饭效率不一样。 多线程带来了什么问题，如何避]]></description>
+</item><item>
     <title>Java的IO</title>
     <link>https://idpeng.xyz/java%E7%9A%84io/</link>
     <pubDate>Mon, 13 Sep 2021 17:09:13 &#43;0800</pubDate>
