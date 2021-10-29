@@ -4,7 +4,14 @@
         <link>https://idpeng.xyz/posts/</link>
         <description>所有文章 | 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (idpeng)</managingEditor>
-            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 28 Sep 2021 16:22:01 &#43;0800</lastBuildDate><atom:link href="https://idpeng.xyz/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>630606938@qq.com (idpeng)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 Oct 2021 23:02:29 &#43;0800</lastBuildDate><atom:link href="https://idpeng.xyz/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>HTML常用标签</title>
+    <link>https://idpeng.xyz/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+    <pubDate>Thu, 28 Oct 2021 23:02:29 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://idpeng.xyz/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+    <description><![CDATA[搜索技巧： 谷歌搜索 mdn + xx(标签) a 标签的用法 href 1 2 3 4 5 6 7 8 9 10 11 12 13 &lt;ul&gt; &lt;li&gt;&lt;a href=&#34;http://baidu.com&#34;]]></description>
+</item><item>
     <title>Java多线程原理</title>
     <link>https://idpeng.xyz/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%8E%9F%E7%90%86/</link>
     <pubDate>Tue, 28 Sep 2021 16:22:01 &#43;0800</pubDate>
