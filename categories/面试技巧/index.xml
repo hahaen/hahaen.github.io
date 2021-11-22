@@ -4,7 +4,14 @@
         <link>https://hahaen.github.io/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/</link>
         <description>面试技巧 - 分类 - 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (hahaen)</managingEditor>
-            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 Nov 2021 22:31:36 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 Nov 2021 21:19:06 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/" rel="self" type="application/rss+xml" /><item>
+    <title>Java面向对象</title>
+    <link>https://hahaen.github.io/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+    <pubDate>Mon, 22 Nov 2021 21:19:06 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
+    <description><![CDATA[==/equals区别？ 对象类型不同 equals()：是超类Object中的方法。 ==：是操作符。 比较的对象不同 equals()：用来检测两]]></description>
+</item><item>
     <title>Java基础</title>
     <link>https://hahaen.github.io/java%E5%9F%BA%E7%A1%80/</link>
     <pubDate>Sun, 21 Nov 2021 22:31:36 &#43;0800</pubDate>
