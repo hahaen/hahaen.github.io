@@ -10,6 +10,6 @@
     <pubDate>Sun, 21 Nov 2021 22:31:36 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://hahaen.github.io/java%E5%9F%BA%E7%A1%80/</guid>
-    <description><![CDATA[内容]]></description>
+    <description><![CDATA[Java程序的运行原理 .java &mdash; 编译(compler) &mdash; 字节码(.class) &mdash; JVM .class 打包成 .jar JVM解析字节码 使用文字编辑软件或集成开发环境编辑 Java 源]]></description>
 </item></channel>
 </rss>
