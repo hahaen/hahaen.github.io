@@ -5,32 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Final的作用？ - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="Final的作用？" />
-<meta property="og:description" content="在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。 修饰类 当用final修饰一个类时，表明这个类不能被继承。" />
+        <title>静态方法为什么不能调用非静态方法？ - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="静态方法为什么不能调用非静态方法？" />
+<meta property="og:description" content="静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hahaen.github.io/final%E7%9A%84%E4%BD%9C%E7%94%A8/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-10T16:52:18+08:00" />
-<meta property="article:modified_time" content="2022-03-10T16:52:18+08:00" />
+<meta property="og:url" content="https://hahaen.github.io/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E8%B0%83%E7%94%A8%E9%9D%9E%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-10T17:27:37+08:00" />
+<meta property="article:modified_time" content="2022-03-10T17:27:37+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Final的作用？"/>
-<meta name="twitter:description" content="在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。 修饰类 当用final修饰一个类时，表明这个类不能被继承。"/>
+<meta name="twitter:title" content="静态方法为什么不能调用非静态方法？"/>
+<meta name="twitter:description" content="静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例"/>
 <meta name="application-name" content="哈哈博客">
 <meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/final%E7%9A%84%E4%BD%9C%E7%94%A8/" /><link rel="prev" href="https://hahaen.github.io/%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%88%96%E6%8A%BD%E8%B1%A1%E7%B1%BB/" /><link rel="next" href="https://hahaen.github.io/%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E7%9A%84%E4%BD%9C%E7%94%A8/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E8%B0%83%E7%94%A8%E9%9D%9E%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95/" /><link rel="prev" href="https://hahaen.github.io/continuebreak%E5%92%8Creturn%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88/" /><link rel="next" href="https://hahaen.github.io/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E5%92%8C%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Final的作用？",
+        "headline": "静态方法为什么不能调用非静态方法？",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/hahaen.github.io\/final%E7%9A%84%E4%BD%9C%E7%94%A8\/"
-        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "面试","wordcount":  380 ,
-        "url": "https:\/\/hahaen.github.io\/final%E7%9A%84%E4%BD%9C%E7%94%A8\/","datePublished": "2022-03-10T16:52:18+08:00","dateModified": "2022-03-10T16:52:18+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/hahaen.github.io\/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E8%B0%83%E7%94%A8%E9%9D%9E%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95\/"
+        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "面试","wordcount":  127 ,
+        "url": "https:\/\/hahaen.github.io\/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E8%B0%83%E7%94%A8%E9%9D%9E%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95\/","datePublished": "2022-03-10T17:27:37+08:00","dateModified": "2022-03-10T17:27:37+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hahaen.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -104,9 +104,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Final的作用？</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">静态方法为什么不能调用非静态方法？</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/"><i class="far fa-folder fa-fw"></i>面试技巧</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-10">2022-03-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 380 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-10">2022-03-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 127 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -114,28 +114,10 @@
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。</p>
-<ol>
-<li>修饰类</li>
+            </div><div class="content" id="content"><ol>
+<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
+<li>在类的非静态成员不存在的时候静态成员就已经存在了，此时调用在内存中还不存在的非静态成员，属于非法操作。</li>
 </ol>
-<p>当用final修饰一个类时，表明这个类不能被继承。</p>
-<ol start="2">
-<li>修饰方法</li>
-</ol>
-<p>如果只有在想明确禁止,该方法在子类中被覆盖的情况下才将方法设置为final的。</p>
-<ul>
-<li>即父类的final方法是不能被子类所覆盖的，也就是说子类是不能够存在和父类一模一样的方法的。</li>
-</ul>
-<ol start="3">
-<li>修饰变量</li>
-</ol>
-<ul>
-<li>final成员变量表示常量，只能被赋值一次，赋值后值不再改变。</li>
-<li>当final修饰一个基本数据类型时，表示该基本数据类型的值一旦在初始化后便不能发生变化；</li>
-<li>如果final修饰一个引用类型时，则在对其初始化之后便不能再让其指向其他对象了，但该引用所指向的对象的内容是可以发生变化的。</li>
-<li>final修饰一个成员变量（属性），必须要显示初始化。</li>
-<li>当函数的参数类型声明为final时，说明该参数是只读型的。即你可以读取使用该参数，但是无法改变该参数的值。</li>
-</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -159,8 +141,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%88%96%E6%8A%BD%E8%B1%A1%E7%B1%BB/" class="prev" rel="prev" title="什么时候用接口或抽象类？"><i class="fas fa-angle-left fa-fw"></i>什么时候用接口或抽象类？</a>
-            <a href="/%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E7%9A%84%E4%BD%9C%E7%94%A8/" class="next" rel="next" title="@Override和@overload的作用？">@Override和@overload的作用？<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/continuebreak%E5%92%8Creturn%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88/" class="prev" rel="prev" title="Continue、break和return的区别是什么？"><i class="fas fa-angle-left fa-fw"></i>Continue、break和return的区别是什么？</a>
+            <a href="/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E5%92%8C%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/" class="next" rel="next" title="静态方法和实例方法有何不同？">静态方法和实例方法有何不同？<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
