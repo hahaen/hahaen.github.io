@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Java异常体系 - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="Java异常体系" />
-<meta property="og:description" content="内容" />
+<meta property="og:description" content="异常基本类型 异常类的基本类型是Throwable类 两大子类分别是Error和Exception Error 系统错误由Java虚拟机抛出，用Error类" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hahaen.github.io/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-11-22T22:51:59+08:00" />
@@ -16,11 +16,11 @@
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Java异常体系"/>
-<meta name="twitter:description" content="内容"/>
+<meta name="twitter:description" content="异常基本类型 异常类的基本类型是Throwable类 两大子类分别是Error和Exception Error 系统错误由Java虚拟机抛出，用Error类"/>
 <meta name="application-name" content="哈哈博客">
 <meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB/" /><link rel="prev" href="https://hahaen.github.io/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/" /><link rel="next" href="https://hahaen.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB/" /><link rel="prev" href="https://hahaen.github.io/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hahaen.github.io\/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB\/"
-        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  2 ,
+        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "面试","wordcount":  801 ,
         "url": "https:\/\/hahaen.github.io\/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB\/","datePublished": "2021-11-22T22:51:59+08:00","dateModified": "2021-11-22T22:51:59+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hahaen.github.io\/images\/avatar.png"},"author": {
@@ -106,8 +106,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Java异常体系</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/"><i class="far fa-folder fa-fw"></i>面试技巧</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-22">2021-11-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-22">2021-11-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 801 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -117,13 +117,83 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#内容">内容</a></li>
+        <li><a href="#异常基本类型">异常基本类型</a>
+          <ul>
+            <li><a href="#error">Error</a></li>
+            <li><a href="#exception">Exception</a>
+              <ul>
+                <li><a href="#runtimeexception运行时异常">RuntimeException(运行时异常)</a></li>
+                <li><a href="#checkedexception检查时异常">CheckedException(检查时异常)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#异常处理">异常处理</a>
+          <ul>
+            <li><a href="#throws声明异常">throws（声明异常）</a></li>
+            <li><a href="#try-catch捕获异常">try-catch（捕获异常）</a></li>
+          </ul>
+        </li>
+        <li><a href="#throwthrows关键字区别">throw,throws关键字区别</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="内容">内容</h2>
-</div><div class="post-footer" id="post-footer">
+            </div><div class="content" id="content"><h2 id="异常基本类型">异常基本类型</h2>
+<ul>
+<li>异常类的基本类型是<code>Throwable</code>类</li>
+<li>两大子类分别是<code>Error</code>和<code>Exception</code></li>
+</ul>
+<h3 id="error">Error</h3>
+<ul>
+<li>系统错误由Java虚拟机抛出，用<code>Error</code>类表示。<code>Error</code>类描述的是内部系统错误</li>
+<li>例如：Java虚拟机崩溃。在程序中不会对<code>Error</code>异常进行捕捉和抛出。</li>
+</ul>
+<h3 id="exception">Exception</h3>
+<p>异常<code>Exception</code>又分为<code>RuntimeException</code>(运行时异常)和<code>CheckedException</code>(检查时异常)</p>
+<h4 id="runtimeexception运行时异常">RuntimeException(运行时异常)</h4>
+<ul>
+<li>程序运行过程中才可能发生的异常,一般为代码的逻辑错误</li>
+<li>例如：类型错误转换，空指针异常、找不到指定类等</li>
+</ul>
+<h4 id="checkedexception检查时异常">CheckedException(检查时异常)</h4>
+<ul>
+<li>编译期间可以检查到的异常，必须显式的进行处理（捕获或者抛出到上一层）</li>
+<li>例如：<code>IOException</code>, <code>FileNotFoundException</code>,<code>SQLException</code>等</li>
+</ul>
+<h2 id="异常处理">异常处理</h2>
+<h3 id="throws声明异常">throws（声明异常）</h3>
+<ul>
+<li>在方法头中显式声明该异常，以便于告知方法调用者此方法有异常</li>
+<li>若父类的方法没有声明异常，则子类继承方法后，也不能声明异常</li>
+</ul>
+<h3 id="try-catch捕获异常">try-catch（捕获异常）</h3>
+<ul>
+<li>若执行<code>try</code>块的过程中没有发生异常，则跳过<code>catch</code>子句</li>
+<li>若是出现异常，<code>try</code>块中剩余语句不再执行。</li>
+<li>再判断<code>catch</code>块的异常类是否是捕获的异常类型，匹配后执行相应的<code>catch</code>块中的代码。</li>
+<li>如果有<code>finally</code>的话进入到<code>finally</code>里面继续执行。</li>
+<li><code>try ctach fianally</code>中有<code>return</code>时，会先执行<code>return</code>,但是不会返回。在执行完<code>finally</code>后进行返回</li>
+<li><code>catch</code>语句可以有一个或多个，<code>finally</code>语句最多一个</li>
+</ul>
+<h2 id="throwthrows关键字区别">throw,throws关键字区别</h2>
+<ul>
+<li><code>throw</code>关键字是用于方法体内部，用来抛出一个Throwable类型的异常</li>
+<li><code>throws</code>关键字用于方法体外部的方法声明部分，用来声明方法可能会抛出某些异常</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public static void test()throws Exception{
+    throw new Exception(&#34;方法test中的Exception&#34;);
+}  
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -140,14 +210,13 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/java/">java</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E9%9D%A2%E8%AF%95/">面试</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/" class="prev" rel="prev" title="集合框架"><i class="fas fa-angle-left fa-fw"></i>集合框架</a>
-            <a href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/" class="next" rel="next" title="计算机体系原理">计算机体系原理<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" class="prev" rel="prev" title="Java面向对象"><i class="fas fa-angle-left fa-fw"></i>Java面向对象</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

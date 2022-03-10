@@ -4,62 +4,13 @@
         <link>https://hahaen.github.io/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/</link>
         <description>面试技巧 - 分类 - 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (hahaen)</managingEditor>
-            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 Nov 2021 22:54:06 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/" rel="self" type="application/rss+xml" /><item>
-    <title>Spring</title>
-    <link>https://hahaen.github.io/spring/</link>
-    <pubDate>Mon, 22 Nov 2021 22:54:06 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/spring/</guid>
-    <description><![CDATA[内容]]></description>
-</item><item>
-    <title>类型与反射</title>
-    <link>https://hahaen.github.io/%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%8F%8D%E5%B0%84/</link>
-    <pubDate>Mon, 22 Nov 2021 22:53:57 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%8F%8D%E5%B0%84/</guid>
-    <description><![CDATA[内容]]></description>
-</item><item>
-    <title>Web</title>
-    <link>https://hahaen.github.io/web/</link>
-    <pubDate>Mon, 22 Nov 2021 22:53:42 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/web/</guid>
-    <description><![CDATA[内容]]></description>
-</item><item>
-    <title>算法与数据结构</title>
-    <link>https://hahaen.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
-    <pubDate>Mon, 22 Nov 2021 22:53:28 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
-    <description><![CDATA[内容]]></description>
-</item><item>
-    <title>计算机网络</title>
-    <link>https://hahaen.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
-    <pubDate>Mon, 22 Nov 2021 22:53:01 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
-    <description><![CDATA[内容]]></description>
-</item><item>
-    <title>计算机体系原理</title>
-    <link>https://hahaen.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/</link>
-    <pubDate>Mon, 22 Nov 2021 22:52:21 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E5%8E%9F%E7%90%86/</guid>
-    <description><![CDATA[内容]]></description>
-</item><item>
+            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 Nov 2021 22:51:59 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/" rel="self" type="application/rss+xml" /><item>
     <title>Java异常体系</title>
     <link>https://hahaen.github.io/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB/</link>
     <pubDate>Mon, 22 Nov 2021 22:51:59 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://hahaen.github.io/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB/</guid>
-    <description><![CDATA[内容]]></description>
-</item><item>
-    <title>集合框架</title>
-    <link>https://hahaen.github.io/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</link>
-    <pubDate>Mon, 22 Nov 2021 22:50:02 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</guid>
-    <description><![CDATA[HashMap原理 扩容并发问题]]></description>
+    <description><![CDATA[异常基本类型 异常类的基本类型是Throwable类 两大子类分别是Error和Exception Error 系统错误由Java虚拟机抛出，用Error类]]></description>
 </item><item>
     <title>Java面向对象</title>
     <link>https://hahaen.github.io/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
