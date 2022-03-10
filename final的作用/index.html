@@ -5,32 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Maven构建 - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="Maven构建" />
-<meta property="og:description" content="生命周期(lifecycle) default生命周期处理项目部署 clean生命周期处理项目清理 site生命周期处理项目站点文档的创建 阶段(p" />
+        <title>Final的作用？ - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="Final的作用？" />
+<meta property="og:description" content="在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。 修饰类 当用final修饰一个类时，表明这个类不能被继承。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hahaen.github.io/maven%E6%9E%84%E5%BB%BA/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-11-21T22:25:41+08:00" />
-<meta property="article:modified_time" content="2021-11-21T22:25:41+08:00" />
+<meta property="og:url" content="https://hahaen.github.io/final%E7%9A%84%E4%BD%9C%E7%94%A8/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-10T16:52:18+08:00" />
+<meta property="article:modified_time" content="2022-03-10T16:52:18+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Maven构建"/>
-<meta name="twitter:description" content="生命周期(lifecycle) default生命周期处理项目部署 clean生命周期处理项目清理 site生命周期处理项目站点文档的创建 阶段(p"/>
+<meta name="twitter:title" content="Final的作用？"/>
+<meta name="twitter:description" content="在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。 修饰类 当用final修饰一个类时，表明这个类不能被继承。"/>
 <meta name="application-name" content="哈哈博客">
 <meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/maven%E6%9E%84%E5%BB%BA/" /><link rel="prev" href="https://hahaen.github.io/docker%E6%8C%82%E8%BD%BD%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" /><link rel="next" href="https://hahaen.github.io/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/final%E7%9A%84%E4%BD%9C%E7%94%A8/" /><link rel="prev" href="https://hahaen.github.io/%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%88%96%E6%8A%BD%E8%B1%A1%E7%B1%BB/" /><link rel="next" href="https://hahaen.github.io/override%E5%92%8Coverload%E7%9A%84%E4%BD%9C%E7%94%A8/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Maven构建",
+        "headline": "Final的作用？",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/hahaen.github.io\/maven%E6%9E%84%E5%BB%BA\/"
-        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  1332 ,
-        "url": "https:\/\/hahaen.github.io\/maven%E6%9E%84%E5%BB%BA\/","datePublished": "2021-11-21T22:25:41+08:00","dateModified": "2021-11-21T22:25:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/hahaen.github.io\/final%E7%9A%84%E4%BD%9C%E7%94%A8\/"
+        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "面试","wordcount":  380 ,
+        "url": "https:\/\/hahaen.github.io\/final%E7%9A%84%E4%BD%9C%E7%94%A8\/","datePublished": "2022-03-10T16:52:18+08:00","dateModified": "2022-03-10T16:52:18+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hahaen.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -104,134 +104,43 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Maven构建</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/java%E7%9F%A5%E8%AF%86/"><i class="far fa-folder fa-fw"></i>java知识</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-21">2021-11-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1332 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Final的作用？</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/"><i class="far fa-folder fa-fw"></i>面试技巧</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-10">2022-03-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 380 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#生命周期lifecycle">生命周期(lifecycle)</a></li>
-        <li><a href="#阶段phase">阶段(phase)</a></li>
-        <li><a href="#插件plugin的目标goal">插件(plugin)的目标(goal)</a></li>
-        <li><a href="#绑定的整个工作原理">绑定的整个工作原理</a>
-          <ul>
-            <li><a href="#依赖传递">依赖传递</a></li>
-            <li><a href="#仓库管理">仓库管理</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><h2 id="生命周期lifecycle">生命周期(lifecycle)</h2>
-<ul>
-<li>default生命周期处理项目部署</li>
-<li>clean生命周期处理项目清理</li>
-<li>site生命周期处理项目站点文档的创建</li>
-</ul>
-<h2 id="阶段phase">阶段(phase)</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/Maven%e6%9e%84%e5%bb%ba/2.png"
-        data-srcset="/img/Maven%e6%9e%84%e5%bb%ba/2.png, /img/Maven%e6%9e%84%e5%bb%ba/2.png 1.5x, /img/Maven%e6%9e%84%e5%bb%ba/2.png 2x"
-        data-sizes="auto"
-        alt="/img/Maven构建/2.png"
-        title="阶段" /></p>
-<p>每个构建生命周期都由不同的构建阶段列表定义，其中构建阶段表示生命周期中的一个阶段。
-例如，<code>default</code>生命周期包括以下阶段：</p>
-<ul>
-<li>validate - 验证项目是否正确，并提供所有必要的信息</li>
-<li>compile - 编译项目源代码</li>
-<li>test - 使用合适的单元测试框架测试编译后的源代码。这些测试不需要打包或部署代码</li>
-<li>package - 将编译后的代码以其可分发的格式打包，例如JAR</li>
-<li>verify - 对集成测试的结果进行检查，以确保满足质量标准</li>
-<li>install -将包安装到本地存储库中，作为本地其他项目中的依赖项使用</li>
-<li>deploy - 在集成或发布环境中操作，将最终包复制到远程存储库，以便与其他开发人员和项目共享</li>
-</ul>
-<p>这些生命周期阶段(加上这里没有显示的其他生命周期阶段)按顺序执行，以完成<code>default</code>生命周期。
-鉴于上面的生命周期阶段，这意味着当使用default生命周期时。
-Maven将首先验证项目，然后将视图编译源代码，
-运行测试，打包二进制文件(如jar)，
-运行集成测试方案，验证集成测试，
-安装验证过的包到本地存储库，然后将安装包部署到远程存储库。</p>
-<h2 id="插件plugin的目标goal">插件(plugin)的目标(goal)</h2>
-<p>Maven的操作是基于不同的插件的不同目标来实现的</p>
-<p><strong>例</strong></p>
-<p><code>mvn clean</code>
-使用的参数是clean阶段，而实际执行的是maven-clean-plugin插件的clean目标。</p>
-<p><strong>常用的插件</strong></p>
-<p><a href="http://maven.apache.org/plugins/index.html" target="_blank" rel="noopener noreffer">插件</a></p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。</p>
 <ol>
-<li>maven-clean-plugin</li>
-<li>maven-resouces-plugin</li>
-<li>maven-compiler-plugin</li>
-<li>maven-deploy-plugin</li>
-<li>maven-surefire-plugin</li>
-<li>maven-install-plugin</li>
+<li>修饰类</li>
 </ol>
-<p><strong>直接运行插件</strong></p>
-<p>可使用<code>插件名:目标名</code>的参数形式直接运行某插件的某目标。</p>
-<p>例如：</p>
-<p><code>mvn dependency:copy-dependencies</code>
-以上命令执行了dependency插件的copy-dependencies目标。</p>
-<p><strong>阶段(phase)和插件目标(goal)可以同时使用</strong></p>
-<p>例如：</p>
-<p><code>mvn clean dependency:copy-dependencies package</code>
-执行了clean周期的pre-clean和clean阶段，
-dependency插件的copy-dependencies目标，
-default周期package阶段及package之前的所有阶段。</p>
-<h2 id="绑定的整个工作原理">绑定的整个工作原理</h2>
-<p><a href="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference" target="_blank" rel="noopener noreffer">官方文档</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/Maven%e6%9e%84%e5%bb%ba/3.png"
-        data-srcset="/img/Maven%e6%9e%84%e5%bb%ba/3.png, /img/Maven%e6%9e%84%e5%bb%ba/3.png 1.5x, /img/Maven%e6%9e%84%e5%bb%ba/3.png 2x"
-        data-sizes="auto"
-        alt="/img/Maven构建/3.png"
-        title="Maven坐标" /></p>
+<p>当用final修饰一个类时，表明这个类不能被继承。</p>
+<ol start="2">
+<li>修饰方法</li>
+</ol>
+<p>如果只有在想明确禁止,该方法在子类中被覆盖的情况下才将方法设置为final的。</p>
 <ul>
-<li>groupId：组织标识名（简单理解成 包名）</li>
-<li>artifactId：项目名称</li>
-<li>version：项目的当前版本</li>
-<li>packaging：项目的打包方式，最为常见的jar和war两种（项目中继承的话，为pom）</li>
-<li>classifier: 该元素用来帮助定义构建输出的一些附属构件（不能被直接定义）</li>
+<li>即父类的final方法是不能被子类所覆盖的，也就是说子类是不能够存在和父类一模一样的方法的。</li>
 </ul>
-<p>依赖性管理，在<code>pom.xml</code>文件中<code>&lt;dependency&gt;&lt;/dependency&gt;</code>中</p>
-<h3 id="依赖传递">依赖传递</h3>
-<p>若A依赖B，B依赖C，则A也依赖于C（A对于C为间接依赖）</p>
-<h3 id="仓库管理">仓库管理</h3>
-<p>仓库用来统一存储所有Maven共享构建的位置，</p>
-<p>根据maven坐标，目录方式：<code>groupId/artifactId/version/artifactId-version.packaging</code>
-就可以唯一确定一个构建。</p>
-<p>每个用户只有一个本地仓库，默认是在<code>${user.home}/.m2/repository/</code>，<code>${user.home}</code>代表的是用户目录</p>
-<ol>
-<li>Maven默认的远程仓库：URL：<a href="http://search.maven.org/" target="_blank" rel="noopener noreffer">http://search.maven.org/</a>，我们需要引用外部的包时，可以从上面查到相关的GroupId、版本号等信息</li>
-<li>私服：是一种特殊的远程仓库，架设在局域网内的仓库（一般公司内部都会有一个自己的私服）</li>
+<ol start="3">
+<li>修饰变量</li>
 </ol>
-<br>
-<br>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/Maven%e6%9e%84%e5%bb%ba/1.png"
-        data-srcset="/img/Maven%e6%9e%84%e5%bb%ba/1.png, /img/Maven%e6%9e%84%e5%bb%ba/1.png 1.5x, /img/Maven%e6%9e%84%e5%bb%ba/1.png 2x"
-        data-sizes="auto"
-        alt="/img/Maven构建/1.png"
-        title="Maven" /></p>
+<ul>
+<li>final成员变量表示常量，只能被赋值一次，赋值后值不再改变。</li>
+<li>当final修饰一个基本数据类型时，表示该基本数据类型的值一旦在初始化后便不能发生变化；</li>
+<li>如果final修饰一个引用类型时，则在对其初始化之后便不能再让其指向其他对象了，但该引用所指向的对象的内容是可以发生变化的。</li>
+<li>final修饰一个成员变量（属性），必须要显示初始化。</li>
+<li>当函数的参数类型声明为final时，说明该参数是只读型的。即你可以读取使用该参数，但是无法改变该参数的值。</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-11-21</span>
+                <span>更新于 2022-03-10</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -244,14 +153,14 @@ default周期package阶段及package之前的所有阶段。</p>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/java/">java</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E9%9D%A2%E8%AF%95/">面试</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/docker%E6%8C%82%E8%BD%BD%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="prev" rel="prev" title="Docker挂载问题解决"><i class="fas fa-angle-left fa-fw"></i>Docker挂载问题解决</a>
-            <a href="/java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB/" class="next" rel="next" title="Java异常体系">Java异常体系<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%88%96%E6%8A%BD%E8%B1%A1%E7%B1%BB/" class="prev" rel="prev" title="什么时候用接口或抽象类？"><i class="fas fa-angle-left fa-fw"></i>什么时候用接口或抽象类？</a>
+            <a href="/override%E5%92%8Coverload%E7%9A%84%E4%BD%9C%E7%94%A8/" class="next" rel="next" title="@Override和@overload的作用？">@Override和@overload的作用？<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
