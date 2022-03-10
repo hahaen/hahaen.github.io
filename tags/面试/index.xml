@@ -4,7 +4,35 @@
         <link>https://hahaen.github.io/tags/%E9%9D%A2%E8%AF%95/</link>
         <description>面试 - 标签 - 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (hahaen)</managingEditor>
-            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Mar 2022 20:11:57 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/tags/%E9%9D%A2%E8%AF%95/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Mar 2022 21:17:25 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/tags/%E9%9D%A2%E8%AF%95/" rel="self" type="application/rss+xml" /><item>
+    <title>数据库关键字</title>
+    <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+    <pubDate>Thu, 10 Mar 2022 21:17:25 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+    <description><![CDATA[where(条件) 1 2 select*frompersonwherename=&#39;yang&#39;&amp;&amp;age=22; like(搜索查询) 搜索查询，或者说模糊匹配，表达式主要涉及到两个符号： 百分号 %：匹配任意多个字符 下划线 _：匹配固定]]></description>
+</item><item>
+    <title>数据增删改查</title>
+    <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</link>
+    <pubDate>Thu, 10 Mar 2022 21:05:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</guid>
+    <description><![CDATA[增 1 2 3 4 5 INSERT[INTO]表名[(字段列表)]VALUES(值列表)[,(值列表),...]-- 如果要插入的值列表包含所有字段并且]]></description>
+</item><item>
+    <title>Drop、delete区别？</title>
+    <link>https://hahaen.github.io/dropdelete%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Thu, 10 Mar 2022 20:37:52 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/dropdelete%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[用法不同 drop(丢弃数据):drop table表名 ，直接将表都删除掉，在删除表的时候使用。 delete（删除数据）:delete from 表名 where 列]]></description>
+</item><item>
+    <title>数据库主键和外键的区别</title>
+    <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E9%94%AE%E5%92%8C%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Thu, 10 Mar 2022 20:34:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E9%94%AE%E5%92%8C%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[主键(主码) ：主键用于唯一标识一个元组，不能有重复，不允许为空。一个表只能有一个主键。 外键(外码) ：外键用来和其他表建立联系用，外键是另一表]]></description>
+</item><item>
     <title>重写和重载的作用？</title>
     <link>https://hahaen.github.io/%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E7%9A%84%E4%BD%9C%E7%94%A8/</link>
     <pubDate>Thu, 10 Mar 2022 20:11:57 &#43;0800</pubDate>
@@ -46,33 +74,5 @@
     <author>作者</author>
     <guid>https://hahaen.github.io/%E8%87%AA%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6-%E5%92%8C%E8%87%AA%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
     <description><![CDATA[++ 和 &ndash; 运算符可以放在变量之前，也可以放在变量之后 当运算符放在变量之前时(前缀)，先自增/减，再赋值 ++a 当运算符放在变量之后时(后缀)，先赋值，]]></description>
-</item><item>
-    <title>Java异常</title>
-    <link>https://hahaen.github.io/java%E5%BC%82%E5%B8%B8/</link>
-    <pubDate>Thu, 10 Mar 2022 16:58:49 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/java%E5%BC%82%E5%B8%B8/</guid>
-    <description><![CDATA[异常基本类型 异常类的基本类型是Throwable类 两大子类分别是Error和Exception Error 系统错误由Java虚拟机抛出，用Error类]]></description>
-</item><item>
-    <title>Final的作用？</title>
-    <link>https://hahaen.github.io/final%E7%9A%84%E4%BD%9C%E7%94%A8/</link>
-    <pubDate>Thu, 10 Mar 2022 16:52:18 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/final%E7%9A%84%E4%BD%9C%E7%94%A8/</guid>
-    <description><![CDATA[在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。 修饰类 当用final修饰一个类时，表明这个类不能被继承。]]></description>
-</item><item>
-    <title>什么时候用接口或抽象类？</title>
-    <link>https://hahaen.github.io/%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%88%96%E6%8A%BD%E8%B1%A1%E7%B1%BB/</link>
-    <pubDate>Thu, 10 Mar 2022 16:52:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%88%96%E6%8A%BD%E8%B1%A1%E7%B1%BB/</guid>
-    <description><![CDATA[如果预计要创建组件的多个版本，则创建抽象类。抽象类提供简单的方法来控制组件版本； 如果创建的功能将在大范围的全异对象间使用，则使用接口。如果要]]></description>
-</item><item>
-    <title>接口和抽象类有什么区别or联系？</title>
-    <link>https://hahaen.github.io/%E6%8E%A5%E5%8F%A3%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%ABor%E8%81%94%E7%B3%BB/</link>
-    <pubDate>Thu, 10 Mar 2022 16:49:45 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E6%8E%A5%E5%8F%A3%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%ABor%E8%81%94%E7%B3%BB/</guid>
-    <description><![CDATA[Interface(接口):定义功能，只能包含方法(实现),不能包含成员变量，可以被实现若干次。 Abstract class(抽象类):定义抽象的骨架实现，]]></description>
 </item></channel>
 </rss>
