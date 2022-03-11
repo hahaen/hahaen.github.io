@@ -4,7 +4,21 @@
         <link>https://hahaen.github.io/tags/%E9%9D%A2%E8%AF%95/</link>
         <description>面试 - 标签 - 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (hahaen)</managingEditor>
-            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Mar 2022 21:17:25 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/tags/%E9%9D%A2%E8%AF%95/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 11 Mar 2022 18:48:18 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/tags/%E9%9D%A2%E8%AF%95/" rel="self" type="application/rss+xml" /><item>
+    <title>数据库左连接内连接</title>
+    <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%A6%E8%BF%9E%E6%8E%A5%E5%86%85%E8%BF%9E%E6%8E%A5/</link>
+    <pubDate>Fri, 11 Mar 2022 18:48:18 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%A6%E8%BF%9E%E6%8E%A5%E5%86%85%E8%BF%9E%E6%8E%A5/</guid>
+    <description><![CDATA[left join （左连接）：返回包括左表中的所有记录和右表中连接字段相等的记录。 right join （右连接）：返回包括右表中的所有记录和左表中连接字段相等的记录。 inner j]]></description>
+</item><item>
+    <title>Java面向对象三大特性封装继承多态</title>
+    <link>https://hahaen.github.io/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%B0%81%E8%A3%85%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81/</link>
+    <pubDate>Fri, 11 Mar 2022 18:39:38 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%B0%81%E8%A3%85%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81/</guid>
+    <description><![CDATA[封装 封装把⼀个对象的属性私有化，同时提供⼀些可以被外界访问的属性的⽅法 继承 继承是使⽤已存在的类的定义作为基础建⽴新类的技术，新类的定义可以增]]></description>
+</item><item>
     <title>数据库关键字</title>
     <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%85%B3%E9%94%AE%E5%AD%97/</link>
     <pubDate>Thu, 10 Mar 2022 21:17:25 &#43;0800</pubDate>
@@ -60,19 +74,5 @@
     <author>作者</author>
     <guid>https://hahaen.github.io/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E8%B0%83%E7%94%A8%E9%9D%9E%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95/</guid>
     <description><![CDATA[静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例]]></description>
-</item><item>
-    <title>Continue、break和return的区别是什么？</title>
-    <link>https://hahaen.github.io/continuebreak%E5%92%8Creturn%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88/</link>
-    <pubDate>Thu, 10 Mar 2022 17:14:47 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/continuebreak%E5%92%8Creturn%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
-    <description><![CDATA[在循环结构中，当循环条件不满足或者循环次数达到要求时，循环会正常结束。 但是，有时候可能需要在循环的过程中，当发生了某种条件之后 ，提前终止循环]]></description>
-</item><item>
-    <title>自增运算符&#43;&#43;和自减运算符  </title>
-    <link>https://hahaen.github.io/%E8%87%AA%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6-%E5%92%8C%E8%87%AA%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
-    <pubDate>Thu, 10 Mar 2022 17:10:22 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E8%87%AA%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6-%E5%92%8C%E8%87%AA%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
-    <description><![CDATA[++ 和 &ndash; 运算符可以放在变量之前，也可以放在变量之后 当运算符放在变量之前时(前缀)，先自增/减，再赋值 ++a 当运算符放在变量之后时(后缀)，先赋值，]]></description>
 </item></channel>
 </rss>
