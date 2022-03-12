@@ -7,7 +7,7 @@
 
 因此，一般建议使用`类名.方法名`的方式来调用静态方法。
 
-```text
+```java
 public class Person {
     public void method() {
       //......

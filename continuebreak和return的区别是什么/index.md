@@ -14,7 +14,7 @@
 
 下列语句的运行结果是什么？
 
-```
+```java
  public static void main(String[] args) {
         boolean flag = false;
         for (int i = 0; i <= 3; i++) {
