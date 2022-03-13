@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>SpringMVC - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="SpringMVC" />
+<meta property="og:description" content="什么是SpringMVC? SpringMVC是一种基于 Java 的实现MVC设计模型的请求驱动类型的轻量级Web框架， 属于Spring框架的一个模块" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hahaen.github.io/springmvc/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-12T18:30:26+08:00" />
+<meta property="article:modified_time" content="2022-03-12T18:30:26+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
+
+<meta name="twitter:title" content="SpringMVC"/>
+<meta name="twitter:description" content="什么是SpringMVC? SpringMVC是一种基于 Java 的实现MVC设计模型的请求驱动类型的轻量级Web框架， 属于Spring框架的一个模块"/>
+<meta name="application-name" content="哈哈博客">
+<meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/springmvc/" /><link rel="prev" href="https://hahaen.github.io/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/" /><link rel="next" href="https://hahaen.github.io/springboot/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "SpringMVC",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/hahaen.github.io\/springmvc\/"
+        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  5775 ,
+        "url": "https:\/\/hahaen.github.io\/springmvc\/","datePublished": "2022-03-12T18:30:26+08:00","dateModified": "2022-03-12T18:30:26+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/hahaen.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "hahaen"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="哈哈博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>哈哈博客</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://github.com/hahaen" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="请输入关键词..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="哈哈博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>哈哈博客</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="请输入关键词..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://github.com/hahaen" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">SpringMVC</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/java%E7%9F%A5%E8%AF%86/"><i class="far fa-folder fa-fw"></i>java知识</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-12">2022-03-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 5775 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 12 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#什么是springmvc">什么是SpringMVC?</a></li>
+        <li><a href="#什么是mvc模式">什么是MVC模式？</a></li>
+        <li><a href="#springmvc的执行流程">SpringMVC的执行流程？</a></li>
+        <li><a href="#springmvc有哪些优点">SpringMVC有哪些优点？</a></li>
+        <li><a href="#spring-mvc的主要组件">Spring MVC的主要组件？</a></li>
+        <li><a href="#springmvc和struts2的区别有哪些">SpringMVC和Struts2的区别有哪些?</a></li>
+        <li><a href="#springmvc怎么样设定重定向和请求转发">SpringMVC怎么样设定重定向和请求转发？</a>
+          <ul>
+            <li><a href="#请求转发与重定向的区别">请求转发与重定向的区别</a></li>
+            <li><a href="#springmvc设定请求转发">SpringMVC设定请求转发</a></li>
+            <li><a href="#springmvc设定重定向">SpringMVC设定重定向</a></li>
+          </ul>
+        </li>
+        <li><a href="#springmvc的控制器是不是单例模式如果是有什么问题怎么解决">SpringMvc的控制器是不是单例模式,如果是,有什么问题,怎么解决？</a></li>
+        <li><a href="#springmvc常用的注解有哪些">SpringMVC常用的注解有哪些？</a>
+          <ul>
+            <li><a href="#controller">@Controller</a></li>
+            <li><a href="#requsestmapping">@RequsestMapping</a></li>
+            <li><a href="#responsebody">@ResponseBody</a></li>
+            <li><a href="#valid">@Valid</a></li>
+            <li><a href="#pathvariable">@PathVariable</a></li>
+            <li><a href="#requestparam">@RequestParam</a></li>
+            <li><a href="#controlleradvice">@ControllerAdvice</a></li>
+            <li><a href="#exceptionhandler">@ExceptionHandler</a></li>
+          </ul>
+        </li>
+        <li><a href="#spingmvc中的控制器的注解一般用那个有没有别的注解可以替代">SpingMvc中的控制器的注解一般用那个,有没有别的注解可以替代？</a></li>
+        <li><a href="#如果在拦截请求中想拦截get方式提交的方法怎么配置">如果在拦截请求中，想拦截get方式提交的方法,怎么配置？</a></li>
+        <li><a href="#怎样在控制器方法里面得到request或者session">怎样在控制器方法里面得到request或者session？</a></li>
+        <li><a href="#如果想在拦截的方法里面得到从前台传入的参数怎么得到">如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</a></li>
+        <li><a href="#前台传入多个参数并且这些参数都是一个对象的属性怎么进行参数绑定">前台传入多个参数,并且这些参数都是一个对象的属性,怎么进行参数绑定？</a></li>
+        <li><a href="#springmvc用什么对象从后台向前台传递数据的">SpringMVC用什么对象从后台向前台传递数据的？</a></li>
+        <li><a href="#怎么样把modelmap里面的数据放入session里面">怎么样把ModelMap里面的数据放入session里面？</a>
+          <ul>
+            <li><a href="#sessionattributes">@SessionAttributes</a></li>
+            <li><a href="#sessionattributes参数">@SessionAttributes参数</a></li>
+          </ul>
+        </li>
+        <li><a href="#springmvc中有个类把视图和数据都合并的一起的叫什么">SpringMVC中有个类把视图和数据都合并的一起的,叫什么？</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="什么是springmvc">什么是SpringMVC?</h2>
+<ol>
+<li>SpringMVC是一种基于 Java 的实现MVC设计模型的请求驱动类型的轻量级Web框架，
+属于Spring框架的一个模块。</li>
+<li>它通过一套注解，让一个简单的Java类成为处理请求的控制器，而无须实现任何接口。
+同时它还支持restful编程风格的请求。</li>
+</ol>
+<h2 id="什么是mvc模式">什么是MVC模式？</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/SpringMVC/1.png"
+        data-srcset="/img/SpringMVC/1.png, /img/SpringMVC/1.png 1.5x, /img/SpringMVC/1.png 2x"
+        data-sizes="auto"
+        alt="/img/SpringMVC/1.png"
+        title="MVC模式" /></p>
+<ul>
+<li>MVC的全名是<strong>Model View Controller</strong></li>
+<li>是<code>模型(model)</code>－<code>视图(view)</code>－<code>控制器(controller)</code>的缩写，是一种软件设计典范。</li>
+<li>它是用一种业务逻辑、数据与界面显示分离的方法来组织代码，将众多的业务逻辑聚集到一个部件里面，</li>
+<li>在需要改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑，达到减少编码的时间。
+<br>
+<br></li>
+</ul>
+<ol>
+<li><code>M</code>即<code>model模型</code>是指模型表示业务规则。
+在MVC的三个部件中，模型拥有最多的处理任务。被模型返回的数据是中立的，
+模型与数据格式无关，这样一个模型能为多个视图提供数据，由于应用于模型的代码只需写一次就可以被多个视图重用，所以减少了代码的重复性。</li>
+<li><code>V</code>即<code>View视图</code>是指用户看到并与之交互的界面。
+比如由html元素组成的网页界面，或者软件的客户端界面。
+MVC的好处之一在于它能为应用程序处理很多不同的视图。
+在视图中其实没有真正的处理发生，它只是作为一种输出数据并允许用户操纵的方式。</li>
+<li><code>C</code>即<code>controller控制器</code>是指控制器接受用户的输入并调用模型和视图去完成用户的需求，
+控制器本身不输出任何东西和做任何处理。
+它只是接收请求并决定调用哪个模型构件去处理请求，然后再确定用哪个视图来显示返回的数据。</li>
+</ol>
+<h2 id="springmvc的执行流程">SpringMVC的执行流程？</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/SpringMVC/2.png"
+        data-srcset="/img/SpringMVC/2.png, /img/SpringMVC/2.png 1.5x, /img/SpringMVC/2.png 2x"
+        data-sizes="auto"
+        alt="/img/SpringMVC/2.png"
+        title="MVC执行流程" /></p>
+<ol>
+<li>用户点击某个请求路径，发起一个request请求，此请求会被前端控制器处理。</li>
+<li>前端控制器请求处理器映射器去查找Handler。可以依据注解或者XML配置去查找。</li>
+<li>处理器映射器根据配置找到相应的Handler(可能包含若干个Interceptor拦截器)，返回给前端控制器。</li>
+<li>前端控制器请求处理器适配器去执行相应的Handler处理器（常称为Controller）。</li>
+<li>处理器适配器执行Handler处理器。</li>
+<li>Handler处理器执行完毕之后会返回给处理器适配器一个ModelAndView对象（SpringMVC底层对象，
+包括Model数据模型和View视图信息）。</li>
+<li>处理器适配器接收到Handler处理器返回的ModelAndView后，将其返回给前端控制器。</li>
+<li>前端控制器接收到ModelAndView后，会请求视图解析器（ViewResolver）对视图进行解析。</li>
+<li>视图解析器根据View信息匹配到相应的视图结果，反馈给前端控制器。</li>
+<li>前端控制器收到View具体视图后，进行视图渲染，
+将Model中的模型数据填充到View视图中的request域，生成最终的视图(View)。</li>
+<li>前端控制器向用户返回请求结果。</li>
+</ol>
+<h2 id="springmvc有哪些优点">SpringMVC有哪些优点？</h2>
+<ol>
+<li>SpringMVC本身是与Spring框架结合而成的，它同时拥有Spring的优点(例如依赖注入DI和切面编程AOP等)。</li>
+<li>SpringMVc提供强大的约定大于配置的契约式编程支持，即提供一种软件设计范式，
+减少软件开发人员做决定的次数，开发人员仅需规定应用中不符合约定的部分。</li>
+<li>支持灵活的URL到页面控制器的映射。</li>
+<li>可以方便地与其他视图技术(JSP、FreeMarker等)进行整合。
+由于SpringMVC的模型数据往往是放置在Map数据结构中的，因此其可以很方便地被其他框架引用。</li>
+<li>拥有十分简洁的异常处理机制。</li>
+<li>可以十分灵活地实现数据验证、格式化和数据绑定机制，可以使用任意对象进行数据绑定操作。</li>
+<li>支持RestFul风格。</li>
+</ol>
+<h2 id="spring-mvc的主要组件">Spring MVC的主要组件？</h2>
+<ol>
+<li>前端控制器：其作用是接收用户请求，然后给用户反馈结果。
+它的作用相当于一个转发器或中央处理器，控制整个流程的执行，
+对各个组件进行统一调度，以降低组件之间的耦合性，有利于组件之间的拓展。</li>
+<li>处理器映射器：其作用是根据请求的URL路径，通过注解或者XML配置，寻找匹配的处理器信息。</li>
+<li>处理器适配器：其作用是根据映射器处理器找到的处理器信息，按照特定规则执行相关的处理器（Handler）。</li>
+<li>处理器：其作用是执行相关的请求处理逻辑，并返回相应的数据和视图信息，将其封装至ModelAndView对象中。</li>
+<li>视图解析器：其作用是进行解析操作，
+通过ModelAndView对象中的View信息将逻辑视图名解析成真正的视图View（如通过一个JSP路径返回一个真正的JSP页面）。</li>
+<li>视图：View是一个接口，实现类支持不同的View类型（JSP、FreeMarker、Excel等）。</li>
+</ol>
+<h2 id="springmvc和struts2的区别有哪些">SpringMVC和Struts2的区别有哪些?</h2>
+<ol>
+<li>SpringMVC的入口是一个Servlet，也就是前端控制器(DispatcherServlet)，
+而Struts2的入口是一个Filter (StrutsPrepareAndExecuteFilter)。</li>
+<li>SpringMVC是基于方法开发(一个url对应一个方法)，请求参数传递到方法的形参，
+可以设计为单例或多例(建议单例)。struts2是基于类开发，请求参数传递到类的成员属性，只能设计为多例。</li>
+<li>SpringMVC通过参数解析器将request请求内容解析，并给方法形参赋值，
+将数据和视图封装成ModelAndView对象，最后又将ModelAndView中的模型数据通过reques域传输到页面。Jsp视图解析器默认使用JSTL。Struts2采用值栈存储请求和响应的数据，通过OGNL存取数据。</li>
+</ol>
+<h2 id="springmvc怎么样设定重定向和请求转发">SpringMVC怎么样设定重定向和请求转发？</h2>
+<h3 id="请求转发与重定向的区别">请求转发与重定向的区别</h3>
+<ul>
+<li>请求转发在服务器端完成的；重定向是在客户端完成的。</li>
+<li>请求转发的速度快；重定向速度慢。</li>
+<li>请求转发的是同一次请求；重定向是两次不同请求。</li>
+<li>请求转发不会执行转发后的代码；重定向会执行重定向之后的代码。</li>
+<li>请求转发地址栏没有变化；重定向地址栏有变化。</li>
+<li>请求转发必须是在同一台服务器下完成；重定向可以在不同的服务器下完成。</li>
+</ul>
+<h3 id="springmvc设定请求转发">SpringMVC设定请求转发</h3>
+<p>在返回值前面加&quot;forward:&quot;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestParam</span><span class="o">(</span><span class="s">&#34;/login&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">redirect</span><span class="o">(</span><span class="n">User</span> <span class="n">user</span><span class="o">){</span>
+    <span class="k">if</span><span class="o">{</span>
+        <span class="c1">//登录成功...
+</span><span class="c1"></span>    <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+        <span class="c1">//登录失败，转发到登录页面
+</span><span class="c1"></span>        <span class="k">return</span> <span class="s">&#34;forward:tologin&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="springmvc设定重定向">SpringMVC设定重定向</h3>
+<p>在返回值前面加&quot;redirect:&quot;。例如我们在登录的时候，登录失败会重定向到登录页面。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestParam</span><span class="o">(</span><span class="s">&#34;/login&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">redirect</span><span class="o">(</span><span class="n">User</span> <span class="n">user</span><span class="o">){</span>
+    <span class="k">if</span><span class="o">{</span>
+        <span class="c1">//登录成功...
+</span><span class="c1"></span>    <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+        <span class="c1">//登录失败，重定向到登录页面
+</span><span class="c1"></span>        <span class="k">return</span> <span class="s">&#34;redirect:tologin&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="springmvc的控制器是不是单例模式如果是有什么问题怎么解决">SpringMvc的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h2>
+<ul>
+<li>Controller是单例模式，在多线程访问的时候可能产生线程安全问题，不要使用同步，会影响程序性能。</li>
+<li>解决方案是在控制器里面不能编写成员属性。</li>
+</ul>
+<h2 id="springmvc常用的注解有哪些">SpringMVC常用的注解有哪些？</h2>
+<h3 id="controller">@Controller</h3>
+<p><code>@Controller</code>用于标记在一个类上，使用它标记的类就是一个SpringMVC Controller对象。
+处理器适配器将会扫描使用了该注解的类的方法，
+并检测该方法是否使用了<code>@RequestMapping</code>注解。
+<code>@Controller</code>只是定义了一个控制器类，
+而使用<code>@RequestMapping</code>注解的方法才是真正处理请求的处理器。</p>
+<h3 id="requsestmapping">@RequsestMapping</h3>
+<p><code>@RequestMapping</code>是一个用来处理请求地址映射的注解，可用于类或方法上。
+用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。
+返回值会通过视图解析器解析为实际的物理视图，
+对于 InternalResourceViewResolver 视图解析器，
+通过 prefix + returnValue + suffix 这样的方式得到实际的物理视图，
+然后做转发操作。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">bean</span> <span class="n">class</span><span class="o">=</span><span class="s">&#34;org.springframework.web.servlet.view.InternalResourceViewResolver&#34;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">property</span> <span class="n">name</span><span class="o">=</span><span class="s">&#34;prefix&#34;</span> <span class="n">value</span><span class="o">=</span><span class="s">&#34;/WEB-INF/jsp/&#34;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">property</span> <span class="n">name</span><span class="o">=</span><span class="s">&#34;suffix&#34;</span> <span class="n">value</span><span class="o">=</span><span class="s">&#34;.jsp&#34;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">bean</span><span class="o">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>@RequsestMapping</code>有如下6个属性</p>
+<ol>
+<li>value：指定请求的实际地址。</li>
+<li>method：指定请求的method类型， GET、POST、PUT、DELETE等。</li>
+<li>consumes：指定处理请求的提交内容类型（Content-Type），例如application/json, text/html。</li>
+<li>produces：指定返回的内容类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回；</li>
+<li>params：指定request中必须包含某些参数值是，才让该方法处理。</li>
+<li>headers：指定request中必须包含某些指定的header值，才能让该方法处理请求。</li>
+</ol>
+<h3 id="responsebody">@ResponseBody</h3>
+<p><code>@ResponseBody</code>把Java对象转化为json对象，这种方式用于Ajax异步请求，
+返回的不是一个页面而是JSON格式的数据。</p>
+<h3 id="valid">@Valid</h3>
+<p>标志参数被<code>Hibernate-Validator校验框架</code>校验。</p>
+<h3 id="pathvariable">@PathVariable</h3>
+<ol>
+<li>@PathVariable用于接收uri地址传过来的参数，Url中可以通过一个或多个{Xxx}占位符映射，
+通过@PathVariable可以绑定占位符参数到方法参数中，在RestFul接口风格中经常使用。</li>
+<li>例如：请求URL：http://localhost/user/21/张三/query
+(Long类型可以根据需求改变为String或int，SpringMVC会自动做转换)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/user/{userId}/{userName}/query&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">User</span> <span class="nf">query</span><span class="o">(</span><span class="nd">@PathVariable</span><span class="o">(</span><span class="s">&#34;userId&#34;</span><span class="o">)</span> <span class="n">Long</span> <span class="n">userId</span><span class="o">,</span> <span class="nd">@PathVariable</span><span class="o">(</span><span class="s">&#34;userName&#34;</span><span class="o">)</span> <span class="n">String</span> <span class="n">userName</span><span class="o">){</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="requestparam">@RequestParam</h3>
+<p><code>@RequestParam</code>用于将请求参数映射到控制器方法的形参上，有如下三个属性</p>
+<ul>
+<li>value：参数名。</li>
+<li>required：是否必需，默认为true，表示请求参数中必须包含该参数，如果不包含抛出异常。</li>
+<li>defaultValue：默认参数值，如果设置了该值自动将required设置为false，
+如果参数中没有包含该参数则使用默认值。</li>
+<li>示例：@RequestParam(value = &ldquo;pageNum&rdquo;, required = false, defaultValue = &ldquo;1&rdquo;)</li>
+</ul>
+<h3 id="controlleradvice">@ControllerAdvice</h3>
+<p><code>@ControllerAdvice</code>标识一个类是全局异常处理类。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@ControllerAdvice</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ControllerTest</span> <span class="o">{</span>
+    <span class="c1">//全局异常处理类
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="exceptionhandler">@ExceptionHandler</h3>
+<p><code>@ExceptionHandler</code>标识一个方法为全局异常处理的方法。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@ExceptionHandler</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">ExceptionHandler</span><span class="o">(){</span>
+    <span class="c1">//全局异常处理逻辑...
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="spingmvc中的控制器的注解一般用那个有没有别的注解可以替代">SpingMvc中的控制器的注解一般用那个,有没有别的注解可以替代？</h2>
+<ul>
+<li>一般使用@Controller注解标识控制器。</li>
+<li>也可以使用@RestController注解替代@Controller注解，
+@RestController相当于@ResponseBody＋@Controller，
+表示控制器中所有的方法都返回JSON格式数据，一般不使用其他注解标识控制器。</li>
+</ul>
+<h2 id="如果在拦截请求中想拦截get方式提交的方法怎么配置">如果在拦截请求中，想拦截get方式提交的方法,怎么配置？</h2>
+<ol>
+<li>可以在@RequestMapping注解里面加上method=RequestMethod.GET。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="n">value</span><span class="o">=</span><span class="s">&#34;/toLogin&#34;</span><span class="o">,</span><span class="n">method</span> <span class="o">=</span> <span class="n">RequestMethod</span><span class="o">.</span><span class="na">GET</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">ModelAndView</span> <span class="nf">toLogin</span><span class="o">(){}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>可以使用@GetMapping注解。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@GetMapping</span><span class="o">(</span><span class="n">value</span><span class="o">=</span><span class="s">&#34;/toLogin&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">ModelAndView</span> <span class="nf">toLogin</span><span class="o">(){}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="怎样在控制器方法里面得到request或者session">怎样在控制器方法里面得到request或者session？</h2>
+<p>直接在控制器方法的形参中声明request，session，SpringMvc就会自动把它们注入。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/login&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">ModelAndView</span> <span class="nf">login</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="n">HttpSession</span> <span class="n">session</span><span class="o">){</span>
+    
+        <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="如果想在拦截的方法里面得到从前台传入的参数怎么得到">如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h2>
+<p>直接在控制器方法的形参里面声明这个参数就可以，但名字必须和传过来的参数名称一样，否则参数映射失败。</p>
+<p>下面方法形参中的userId，就会接收从前端传来参数名称为userId的值。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/deleteUser&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">deleteUser</span><span class="o">(</span><span class="n">Long</span> <span class="n">userId</span><span class="o">){</span>
+    <span class="c1">//删除用户操作...
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="前台传入多个参数并且这些参数都是一个对象的属性怎么进行参数绑定">前台传入多个参数,并且这些参数都是一个对象的属性,怎么进行参数绑定？</h2>
+<p>直接在控制器方法的形参里面声明这个参数就可以，SpringMvc就会自动会请求参数赋值到这个对象的属性中。</p>
+<p>下面方法形参中的user用来接收从前端传来的多个参数，参数名称需要和User实体类属性名称一致。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/saveUser&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">saveUser</span><span class="o">(</span><span class="n">User</span> <span class="n">user</span><span class="o">){</span>
+    <span class="c1">//保存用户操作...
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Data</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">User</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">Long</span> <span class="n">userId</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">username</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">password</span><span class="o">;</span>
+    <span class="c1">//...
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="springmvc用什么对象从后台向前台传递数据的">SpringMVC用什么对象从后台向前台传递数据的？</h2>
+<ol>
+<li>使用Map、Model和ModelMap的方式，这种方式存储的数据是在request域中</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/getUser&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">getUser</span><span class="o">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">map</span><span class="o">,</span><span class="n">Model</span> <span class="n">model</span><span class="o">,</span><span class="n">ModelMap</span> <span class="n">modelMap</span><span class="o">){</span>
+    <span class="c1">//1.放在map里  
+</span><span class="c1"></span>    <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;xq&#34;</span><span class="o">);</span>
+    <span class="c1">//2.放在model里，一般是使用这个
+</span><span class="c1"></span>    <span class="n">model</span><span class="o">.</span><span class="na">addAttribute</span><span class="o">(</span><span class="s">&#34;habbit&#34;</span><span class="o">,</span> <span class="s">&#34;Play&#34;</span><span class="o">);</span>
+    <span class="c1">//3.放在modelMap中 
+</span><span class="c1"></span>    <span class="n">modelMap</span><span class="o">.</span><span class="na">addAttribute</span><span class="o">(</span><span class="s">&#34;city&#34;</span><span class="o">,</span> <span class="s">&#34;gd&#34;</span><span class="o">);</span>
+    <span class="n">modelMap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;gender&#34;</span><span class="o">,</span> <span class="s">&#34;male&#34;</span><span class="o">);</span>
+    <span class="k">return</span> <span class="s">&#34;userDetail&#34;</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>使用request的方式</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/getUser&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">getUser</span><span class="o">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">map</span><span class="o">,</span><span class="n">Model</span> <span class="n">model</span><span class="o">,</span><span class="n">ModelMap</span> <span class="n">modelMap</span><span class="o">,</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">){</span>
+    <span class="c1">//放在request里  
+</span><span class="c1"></span>    <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;user&#34;</span><span class="o">,</span> <span class="n">userService</span><span class="o">.</span><span class="na">getUser</span><span class="o">());</span>
+    <span class="k">return</span> <span class="s">&#34;userDetail&#34;</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>使用ModelAndView</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/getUser&#34;</span><span class="o">)</span>  
+<span class="kd">public</span> <span class="n">ModelAndView</span> <span class="nf">getUser</span><span class="o">(</span><span class="n">ModelAndView</span> <span class="n">modelAndView</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">mav</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="s">&#34;user&#34;</span><span class="o">,</span> <span class="n">userService</span><span class="o">.</span><span class="na">getUser</span><span class="o">());</span>  
+    <span class="n">mav</span><span class="o">.</span><span class="na">setViewName</span><span class="o">(</span><span class="s">&#34;userDetail&#34;</span><span class="o">);</span>  
+    <span class="k">return</span> <span class="n">modelAndView</span><span class="o">;</span>  
+<span class="o">}</span>  
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="怎么样把modelmap里面的数据放入session里面">怎么样把ModelMap里面的数据放入session里面？</h2>
+<p>在类上添加<code>@SessionAttributes</code>注解将指定的Model数据存储到session中。</p>
+<h3 id="sessionattributes">@SessionAttributes</h3>
+<ol>
+<li>默认情况下Spring MVC将模型中的数据存储到request域中。
+当一个请求结束后，数据就失效了。如果要跨页面使用。
+那么需要使用到session。而@SessionAttributes注解就可以使得模型中的数据存储一份到session域中。</li>
+<li>@SessionAttributes只能定义在Class,interface enum上，
+作用是将指定的Model中的键值对添加至session中，方便在一个会话中使用。</li>
+</ol>
+<h3 id="sessionattributes参数">@SessionAttributes参数</h3>
+<ul>
+<li>names：这是一个字符串数组。里面应写需要存储到session中数据的名称。</li>
+<li>types：根据指定参数的类型，将模型中对应类型的参数存储到session中。</li>
+<li>value：其实和上面的names是一样的。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@SessionAttributes</span><span class="o">(</span><span class="n">value</span><span class="o">={</span><span class="s">&#34;names&#34;</span><span class="o">},</span><span class="n">types</span><span class="o">={</span><span class="n">Integer</span><span class="o">.</span><span class="na">class</span><span class="o">})</span>
+<span class="nd">@Controller</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">session</span><span class="o">{</span>
+
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/session&#34;</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">session</span><span class="o">(</span><span class="n">Model</span> <span class="n">model</span><span class="o">){</span>
+        <span class="n">model</span><span class="o">.</span><span class="na">addAttributes</span><span class="o">(</span><span class="s">&#34;names&#34;</span><span class="o">,</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&#34;caoyc&#34;</span><span class="o">,</span><span class="s">&#34;zhh&#34;</span><span class="o">,</span><span class="s">&#34;cjx&#34;</span><span class="o">));</span>
+        <span class="n">model</span><span class="o">.</span><span class="na">addAttributes</span><span class="o">(</span><span class="s">&#34;age&#34;</span><span class="o">,</span> <span class="n">22</span><span class="o">);</span>
+        <span class="k">return</span> <span class="s">&#34;/session&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在类上添加<code>@SessionAttributes</code>注解，并指定将names名称的Model数据存储到session域中，
+以及将Integer类型的Model数据存储到session域中。</p>
+<h2 id="springmvc中有个类把视图和数据都合并的一起的叫什么">SpringMVC中有个类把视图和数据都合并的一起的,叫什么？</h2>
+<p>它就是ModelAndView。</p>
+<ul>
+<li>
+<p>使用ModelAndView类存储处理完后的结果数据，以及显示该数据的视图。
+从名字上看ModelAndView中的Model代表模型，View代表视图，从名字看就很好地解释了该类的作用。
+Controller处理器调用模型层处理完用户请求后，把结果数据存储在该类的model属性中，
+把要返回的视图信息存储在该类的view属性中，然后把ModelAndView返回给前端控制器。
+前端控制器通过调用配置文件中定义的视图解析器，对该对象进行解析，最后把结果数据显示在指定的页面上。</p>
+</li>
+<li>
+<p>返回指定页面:
+ModelAndView构造方法可以指定返回的页面名称。
+也可以通过setViewName()方法跳转到指定的页面 。</p>
+</li>
+<li>
+<p>返回所需数值:
+使用addObject()设置需要返回的值，
+addObject()有几个不同参数的方法，可以默认和指定返回对象的名字。</p>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-03-12</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/java/">java</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/" class="prev" rel="prev" title="二叉树遍历"><i class="fas fa-angle-left fa-fw"></i>二叉树遍历</a>
+            <a href="/springboot/" class="next" rel="next" title="SpringBoot">SpringBoot<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">hahaen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":1000},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -4,9 +4,23 @@
         <link>https://hahaen.github.io/</link>
         <description>关于 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (hahaen)</managingEditor>
-            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 12 Mar 2022 15:27:58 &#43;0800</lastBuildDate>
+            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 12 Mar 2022 19:07:56 &#43;0800</lastBuildDate>
             <atom:link href="https://hahaen.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>SpringBoot</title>
+    <link>https://hahaen.github.io/springboot/</link>
+    <pubDate>Sat, 12 Mar 2022 19:07:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/springboot/</guid>
+    <description><![CDATA[什么是 SpringBoot？ Spring Boot 是 Spring 开源组织下的子项目， 是 Spring 组件一站式解决方案，主要是简化了使用 Spring 的难度， 简省了繁重的配置，提供了各种启动器]]></description>
+</item><item>
+    <title>SpringMVC</title>
+    <link>https://hahaen.github.io/springmvc/</link>
+    <pubDate>Sat, 12 Mar 2022 18:30:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/springmvc/</guid>
+    <description><![CDATA[什么是SpringMVC? SpringMVC是一种基于 Java 的实现MVC设计模型的请求驱动类型的轻量级Web框架， 属于Spring框架的一个模块]]></description>
+</item><item>
     <title>二叉树遍历</title>
     <link>https://hahaen.github.io/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/</link>
     <pubDate>Sat, 12 Mar 2022 15:27:58 &#43;0800</pubDate>
@@ -62,19 +76,5 @@
     <author>作者</author>
     <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E9%94%AE%E5%92%8C%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
     <description><![CDATA[主键(主码) ：主键用于唯一标识一个元组，不能有重复，不允许为空。一个表只能有一个主键。 外键(外码) ：外键用来和其他表建立联系用，外键是另一表]]></description>
-</item><item>
-    <title>重写和重载的作用？</title>
-    <link>https://hahaen.github.io/%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E7%9A%84%E4%BD%9C%E7%94%A8/</link>
-    <pubDate>Thu, 10 Mar 2022 20:11:57 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E7%9A%84%E4%BD%9C%E7%94%A8/</guid>
-    <description><![CDATA[override是重写,重写是一种动态绑定的多态机制。 overload是重载，重载是一种参数多态机制，即代码通过参数的类型或个数不同而实现的]]></description>
-</item><item>
-    <title>为什么重写equals时必须重写hashCode方法？</title>
-    <link>https://hahaen.github.io/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E5%86%99equals%E6%97%B6%E5%BF%85%E9%A1%BB%E9%87%8D%E5%86%99hashcode%E6%96%B9%E6%B3%95/</link>
-    <pubDate>Thu, 10 Mar 2022 19:27:38 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E5%86%99equals%E6%97%B6%E5%BF%85%E9%A1%BB%E9%87%8D%E5%86%99hashcode%E6%96%B9%E6%B3%95/</guid>
-    <description><![CDATA[因为两个相等的对象的hashCode值必须是相等。 也就是说如果equals方法判断两个对象是相等的，那这两个对象的hashCode值也要相等]]></description>
 </item></channel>
 </rss>
