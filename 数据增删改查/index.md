@@ -1,6 +1,31 @@
 # 数据增删改查
 
 
+创建 USER表
+
+* `PRIMARY KEY` 主键
+* `AUTO_INCREMENT` AUTO_INCREMENT就可以从小到大自动生成
+* `UNIQUE` 约束唯一标识数据库表中的每条记录
+* `ENGINE = InnoDB` 存储引擎是innodb
+* `DEFAULT CHARSET = utf8mb4` 修改字符集
+* `COLLATE = utf8mb4_unicode_ci` 排序的规则
+
+```mysql
+CREATE TABLE USER
+(
+    ID         BIGINT PRIMARY KEY AUTO_INCREMENT,
+    NAME       VARCHAR(100),
+    TEL        VARCHAR(20) UNIQUE,
+    AVATAR_URL VARCHAR(1024),
+    ADDRESS    VARCHAR(1024),
+    CREATED_AT TIMESTAMP NOT NULL DEFAULT NOW(),
+    UPDATED_AT TIMESTAMP NOT NULL DEFAULT NOW()
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_unicode_ci;
+```
+
+
 **增**
 
 ```mysql
