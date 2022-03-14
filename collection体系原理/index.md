@@ -2,7 +2,7 @@
 
 ## Collection体系的常用类及其背后的数据结构
 
-### C0llection常用类
+### Collection常用类
 
 #### list
 
