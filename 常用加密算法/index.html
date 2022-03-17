@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>常用加密算法 - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="常用加密算法" />
-<meta property="og:description" content="内容" />
+<meta property="og:description" content="加密盐 加密盐也是比较常听到的一个概念，盐就是一个随机字符串用来和我们的加密串拼接后进行加密。 加盐主要是为了提供加密字符串的安全性。 假如有一个" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hahaen.github.io/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-16T22:51:59+08:00" />
@@ -16,11 +16,11 @@
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
 
 <meta name="twitter:title" content="常用加密算法"/>
-<meta name="twitter:description" content="内容"/>
+<meta name="twitter:description" content="加密盐 加密盐也是比较常听到的一个概念，盐就是一个随机字符串用来和我们的加密串拼接后进行加密。 加盐主要是为了提供加密字符串的安全性。 假如有一个"/>
 <meta name="application-name" content="哈哈博客">
 <meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/" /><link rel="prev" href="https://hahaen.github.io/shiro/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/" /><link rel="prev" href="https://hahaen.github.io/shiro/" /><link rel="next" href="https://hahaen.github.io/hashmap/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hahaen.github.io\/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95\/"
-        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  2 ,
+        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  717 ,
         "url": "https:\/\/hahaen.github.io\/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95\/","datePublished": "2022-03-16T22:51:59+08:00","dateModified": "2022-03-16T22:51:59+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hahaen.github.io\/images\/avatar.png"},"author": {
@@ -106,8 +106,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">常用加密算法</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/java%E7%9F%A5%E8%AF%86/"><i class="far fa-folder fa-fw"></i>java知识</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-16">2022-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-16">2022-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 717 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -117,12 +117,80 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#内容">内容</a></li>
+        <li><a href="#加密盐">加密盐</a>
+          <ul>
+            <li><a href="#加密过程用户注册">加密过程(用户注册)</a></li>
+            <li><a href="#校验过程用户登录">校验过程(用户登录)</a></li>
+          </ul>
+        </li>
+        <li><a href="#不可逆加密">不可逆加密</a></li>
+        <li><a href="#对称加密算法">对称加密算法</a></li>
+        <li><a href="#非对称加密算法">非对称加密算法</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="内容">内容</h2>
+            </div><div class="content" id="content"><h2 id="加密盐">加密盐</h2>
+<ul>
+<li>加密盐也是比较常听到的一个概念，盐就是一个随机字符串用来和我们的加密串拼接后进行加密。</li>
+<li>加盐主要是为了提供加密字符串的安全性。</li>
+<li>假如有一个加盐后的加密串，黑客通过一定手段这个加密串，他拿到的明文，并不是我们加密前的字符串，</li>
+<li>而是加密前的字符串和盐组合的字符串，这样相对来说又增加了字符串的安全性。</li>
+</ul>
+<h3 id="加密过程用户注册">加密过程(用户注册)</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/%e5%b8%b8%e7%94%a8%e5%8a%a0%e5%af%86%e7%ae%97%e6%b3%95/1.png"
+        data-srcset="/img/%e5%b8%b8%e7%94%a8%e5%8a%a0%e5%af%86%e7%ae%97%e6%b3%95/1.png, /img/%e5%b8%b8%e7%94%a8%e5%8a%a0%e5%af%86%e7%ae%97%e6%b3%95/1.png 1.5x, /img/%e5%b8%b8%e7%94%a8%e5%8a%a0%e5%af%86%e7%ae%97%e6%b3%95/1.png 2x"
+        data-sizes="auto"
+        alt="/img/常用加密算法/1.png"
+        title="加密过程" /></p>
+<ol>
+<li>最终的密文是以下两个内容的函数：</li>
+</ol>
+<ul>
+<li>用户输入的密码明文</li>
+<li>盐值</li>
+</ul>
+<ol start="2">
+<li>最后要将以下内容存入数据库：</li>
+</ol>
+<ul>
+<li>用户的用户名</li>
+<li>最终的密文</li>
+<li>加密所用的盐值</li>
+</ul>
+<h3 id="校验过程用户登录">校验过程(用户登录)</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/%e5%b8%b8%e7%94%a8%e5%8a%a0%e5%af%86%e7%ae%97%e6%b3%95/2.png"
+        data-srcset="/img/%e5%b8%b8%e7%94%a8%e5%8a%a0%e5%af%86%e7%ae%97%e6%b3%95/2.png, /img/%e5%b8%b8%e7%94%a8%e5%8a%a0%e5%af%86%e7%ae%97%e6%b3%95/2.png 1.5x, /img/%e5%b8%b8%e7%94%a8%e5%8a%a0%e5%af%86%e7%ae%97%e6%b3%95/2.png 2x"
+        data-sizes="auto"
+        alt="/img/常用加密算法/2.png"
+        title="校验过程" /></p>
+<h2 id="不可逆加密">不可逆加密</h2>
+<ul>
+<li>常见的不可逆加密算法有MD5，HMAC，SHA1、SHA-224、SHA-256、SHA-384，和SHA-512</li>
+<li>其中SHA-224、SHA-256、SHA-384，和SHA-512我们可以统称为SHA2加密算法</li>
+<li>SHA加密算法的安全性要比MD5更高，而SHA2加密算法比SHA1的要高。</li>
+<li>其中SHA后面的数字表示的是加密后的字符串长度，SHA1默认会产生一个160位的信息摘要。</li>
+</ul>
+<p>不可逆加密算法最大的特点就是密钥</p>
+<h2 id="对称加密算法">对称加密算法</h2>
+<ul>
+<li>对称加密算法是应用比较早的算法，在数据加密和解密的时用的都是同一个密钥，这就造成了密钥管理困难的问题。</li>
+<li>常见的对称加密算法有DES、3DES、AES128、AES192、AES256
+(默认安装的 JDK 尚不支持 AES256，需要安装对应的 jce 补丁进行升级 jce1.7，jce1.8)。</li>
+<li>其中AES后面的数字代表的是密钥长度。对称加密算法的安全性相对较低，比较适用的场景就是内网环境中的加解密。</li>
+</ul>
+<h2 id="非对称加密算法">非对称加密算法</h2>
+<ul>
+<li>非对称加密算法有两个密钥，这两个密钥完全不同但又完全匹配。</li>
+<li>只有使用匹配的一对公钥和私钥，才能完成对明文的加密和解密过程。</li>
+<li>常见的非对称加密有RSA、SM2等。</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -146,7 +214,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/shiro/" class="prev" rel="prev" title="Shiro"><i class="fas fa-angle-left fa-fw"></i>Shiro</a></div>
+    <div class="post-nav"><a href="/shiro/" class="prev" rel="prev" title="Shiro"><i class="fas fa-angle-left fa-fw"></i>Shiro</a>
+            <a href="/hashmap/" class="next" rel="next" title="HashMap">HashMap<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
