@@ -56,6 +56,26 @@ docker run -p 2181:2181 -d zookeeper
 
 ![nginx.conf配置](/img/分布式部署/4.png)
 
+```
+events{}
+http {
+    upstream app {
+        server 172.23.0.1:8080;
+        server 172.23.0.1:8081;
+    }
+    
+    server {
+        location /api {
+            proxy_pass http://app;
+        }
+    location / {
+            root   /static;
+            autoindex on;
+        }
+    }
+}
+```
+
 改成机器上的ip
 
 ![文件](/img/分布式部署/5.png)
