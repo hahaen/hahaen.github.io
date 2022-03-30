@@ -59,6 +59,7 @@ docker run -p 2181:2181 -d zookeeper
 ```
 events{}
 http {
+    include    mime.types;
     upstream app {
         server 172.23.0.1:8080;
         server 172.23.0.1:8081;
@@ -75,6 +76,12 @@ http {
     }
 }
 ```
+
+注意：如果只有 html 是对的，css js 都写错写成了 text/plain 而不是 text/css
+
+一定要在配置加上`include    mime.types;`
+
+![误区](/img/分布式部署/6.png)
 
 改成机器上的ip
 
