@@ -101,7 +101,11 @@ docker run -d -p 5000:80 -v 文件目录/build:/static -v (/root/nginx-conf/ngin
 
 [tmux教程](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
 
-进入：tmux
-退出：Ctrl+d或者显式输入exit命令，就可以退出 Tmux 窗口
-重新接入已存在的会话：tmux attach
+* 创建0：`tmux new -s 0`
+* 创建1：`tmux new -s 1` 
+* 查看所有tmux: tmux ls
+* 重新接入已存在的会话：`tmux attach -t 0`
+* 退出（下次可进入）：`Ctrl+b 再单独按d`
+* 退出（杀死）：`Ctrl+d`
+
 

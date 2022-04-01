@@ -4,9 +4,16 @@
         <link>https://hahaen.github.io/</link>
         <description>关于 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (hahaen)</managingEditor>
-            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 31 Mar 2022 21:21:51 &#43;0800</lastBuildDate>
+            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 01 Apr 2022 20:30:57 &#43;0800</lastBuildDate>
             <atom:link href="https://hahaen.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>SpringBoot中的5种跨域</title>
+    <link>https://hahaen.github.io/springboot%E4%B8%AD%E7%9A%845%E7%A7%8D%E8%B7%A8%E5%9F%9F/</link>
+    <pubDate>Fri, 01 Apr 2022 20:30:57 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/springboot%E4%B8%AD%E7%9A%845%E7%A7%8D%E8%B7%A8%E5%9F%9F/</guid>
+    <description><![CDATA[为什么会出现跨域问题 出于浏览器的同源策略限制。 同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能， 如]]></description>
+</item><item>
     <title>Github提交指南</title>
     <link>https://hahaen.github.io/github%E6%8F%90%E4%BA%A4%E6%8C%87%E5%8D%97/</link>
     <pubDate>Thu, 31 Mar 2022 21:21:51 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://hahaen.github.io/%E5%8F%8D%E5%B0%84/</guid>
     <description><![CDATA[什么是反射？ 将类的各个组成部分封装为其他对象的过程就叫做反射， 其中 组成部分 指的是我们类的 成员变量（Field）、构造方法（Construct]]></description>
-</item><item>
-    <title>DNS的原理</title>
-    <link>https://hahaen.github.io/dns%E7%9A%84%E5%8E%9F%E7%90%86/</link>
-    <pubDate>Mon, 14 Mar 2022 15:46:42 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/dns%E7%9A%84%E5%8E%9F%E7%90%86/</guid>
-    <description><![CDATA[DNS DNS 的全称是 Domain Name System 或者 Domain Name Service， 它主要的作用就是将人们所熟悉的网址 (域名) “翻译”成电脑可以理解的 IP 地址， 这个过程叫做 DNS 域名解析。]]></description>
 </item></channel>
 </rss>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>SpringBoot中的5种跨域 - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="SpringBoot中的5种跨域" />
+<meta property="og:description" content="为什么会出现跨域问题 出于浏览器的同源策略限制。 同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能， 如" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hahaen.github.io/springboot%E4%B8%AD%E7%9A%845%E7%A7%8D%E8%B7%A8%E5%9F%9F/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-01T20:30:57+08:00" />
+<meta property="article:modified_time" content="2022-04-01T20:30:57+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
+
+<meta name="twitter:title" content="SpringBoot中的5种跨域"/>
+<meta name="twitter:description" content="为什么会出现跨域问题 出于浏览器的同源策略限制。 同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能， 如"/>
+<meta name="application-name" content="哈哈博客">
+<meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hahaen.github.io/springboot%E4%B8%AD%E7%9A%845%E7%A7%8D%E8%B7%A8%E5%9F%9F/" /><link rel="prev" href="https://hahaen.github.io/github%E6%8F%90%E4%BA%A4%E6%8C%87%E5%8D%97/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "SpringBoot中的5种跨域",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/hahaen.github.io\/springboot%E4%B8%AD%E7%9A%845%E7%A7%8D%E8%B7%A8%E5%9F%9F\/"
+        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  1039 ,
+        "url": "https:\/\/hahaen.github.io\/springboot%E4%B8%AD%E7%9A%845%E7%A7%8D%E8%B7%A8%E5%9F%9F\/","datePublished": "2022-04-01T20:30:57+08:00","dateModified": "2022-04-01T20:30:57+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/hahaen.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "hahaen"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="哈哈博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>哈哈博客</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://github.com/hahaen" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="请输入关键词..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="哈哈博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>哈哈博客</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="请输入关键词..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://github.com/hahaen" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">SpringBoot中的5种跨域</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/java%E7%9F%A5%E8%AF%86/"><i class="far fa-folder fa-fw"></i>java知识</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-01">2022-04-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1039 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#为什么会出现跨域问题">为什么会出现跨域问题</a></li>
+        <li><a href="#什么是跨域">什么是跨域</a></li>
+        <li><a href="#非同源限制">非同源限制</a></li>
+        <li><a href="#java后端实现cors跨域请求的方式">java后端实现<code>CORS</code>跨域请求的方式</a>
+          <ul>
+            <li><a href="#1返回新的corsfilter">1.返回新的CorsFilter</a></li>
+            <li><a href="#2重写-webmvcconfigurer">2.重写 WebMvcConfigurer</a></li>
+            <li><a href="#3使用注解-crossorigin">3.使用注解 @CrossOrigin</a></li>
+            <li><a href="#4手动设置响应头-httpservletresponse">4.手动设置响应头 (HttpServletResponse)</a></li>
+            <li><a href="#5自定web-filter实现跨域推荐">5.自定web filter实现跨域(推荐)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="为什么会出现跨域问题">为什么会出现跨域问题</h2>
+<ul>
+<li>出于浏览器的同源策略限制。</li>
+<li>同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能，
+如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。</li>
+<li>可以说Web是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。</li>
+<li>同源策略会阻止一个域的javascript脚本和另外一个域的内容进行交互。
+所谓同源（即指在同一个域）就是两个页面具有相同的协议（protocol），主机（host）和端口号（port）。</li>
+</ul>
+<h2 id="什么是跨域">什么是跨域</h2>
+<p>当一个请求url的协议、域名、端口三者之间任意一个与当前页面url不同即为跨域</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/SpringBoot%e4%b8%ad%e7%9a%845%e7%a7%8d%e8%b7%a8%e5%9f%9f/1.png"
+        data-srcset="/img/SpringBoot%e4%b8%ad%e7%9a%845%e7%a7%8d%e8%b7%a8%e5%9f%9f/1.png, /img/SpringBoot%e4%b8%ad%e7%9a%845%e7%a7%8d%e8%b7%a8%e5%9f%9f/1.png 1.5x, /img/SpringBoot%e4%b8%ad%e7%9a%845%e7%a7%8d%e8%b7%a8%e5%9f%9f/1.png 2x"
+        data-sizes="auto"
+        alt="/img/SpringBoot中的5种跨域/1.png"
+        title="跨域" /></p>
+<h2 id="非同源限制">非同源限制</h2>
+<ol>
+<li>无法读取非同源网页的 Cookie、LocalStorage 和 IndexedDB</li>
+<li>无法接触非同源网页的 DOM</li>
+<li>无法向非同源地址发送 AJAX 请求</li>
+</ol>
+<h2 id="java后端实现cors跨域请求的方式">java后端实现<code>CORS</code>跨域请求的方式</h2>
+<p>对于 CORS的跨域请求，主要有以下几种方式可供选择：</p>
+<ol>
+<li>返回新的CorsFilter</li>
+<li>重写 WebMvcConfigurer</li>
+<li>使用注解 @CrossOrigin</li>
+<li>手动设置响应头 (HttpServletResponse)</li>
+<li>自定web filter实现跨域(推荐)</li>
+</ol>
+<h3 id="1返回新的corsfilter">1.返回新的CorsFilter</h3>
+<p>在任意配置类，返回一个 新的 CorsFIlter Bean ，并添加映射路径和具体的CORS配置路径。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Configuration</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">GlobalCorsConfig</span> <span class="o">{</span>
+    <span class="nd">@Bean</span>
+    <span class="kd">public</span> <span class="n">CorsFilter</span> <span class="nf">corsFilter</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">//1. 添加 CORS配置信息
+</span><span class="c1"></span>        <span class="n">CorsConfiguration</span> <span class="n">config</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CorsConfiguration</span><span class="o">();</span>
+        <span class="c1">//放行哪些原始域
+</span><span class="c1"></span>        <span class="n">config</span><span class="o">.</span><span class="na">addAllowedOrigin</span><span class="o">(</span><span class="s">&#34;*&#34;</span><span class="o">);</span>
+        <span class="c1">//是否发送 Cookie
+</span><span class="c1"></span>        <span class="n">config</span><span class="o">.</span><span class="na">setAllowCredentials</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+        <span class="c1">//放行哪些请求方式
+</span><span class="c1"></span>        <span class="n">config</span><span class="o">.</span><span class="na">addAllowedMethod</span><span class="o">(</span><span class="s">&#34;*&#34;</span><span class="o">);</span>
+        <span class="c1">//放行哪些原始请求头部信息
+</span><span class="c1"></span>        <span class="n">config</span><span class="o">.</span><span class="na">addAllowedHeader</span><span class="o">(</span><span class="s">&#34;*&#34;</span><span class="o">);</span>
+        <span class="c1">//暴露哪些头部信息
+</span><span class="c1"></span>        <span class="n">config</span><span class="o">.</span><span class="na">addExposedHeader</span><span class="o">(</span><span class="s">&#34;*&#34;</span><span class="o">);</span>
+        <span class="c1">//2. 添加映射路径
+</span><span class="c1"></span>        <span class="n">UrlBasedCorsConfigurationSource</span> <span class="n">corsConfigurationSource</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UrlBasedCorsConfigurationSource</span><span class="o">();</span>
+        <span class="n">corsConfigurationSource</span><span class="o">.</span><span class="na">registerCorsConfiguration</span><span class="o">(</span><span class="s">&#34;/**&#34;</span><span class="o">,</span><span class="n">config</span><span class="o">);</span>
+        <span class="c1">//3. 返回新的CorsFilter
+</span><span class="c1"></span>        <span class="k">return</span> <span class="k">new</span> <span class="n">CorsFilter</span><span class="o">(</span><span class="n">corsConfigurationSource</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2重写-webmvcconfigurer">2.重写 WebMvcConfigurer</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Configuration</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CorsConfig</span> <span class="kd">implements</span> <span class="n">WebMvcConfigurer</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addCorsMappings</span><span class="o">(</span><span class="n">CorsRegistry</span> <span class="n">registry</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">registry</span><span class="o">.</span><span class="na">addMapping</span><span class="o">(</span><span class="s">&#34;/**&#34;</span><span class="o">)</span>
+                <span class="c1">//是否发送Cookie
+</span><span class="c1"></span>                <span class="o">.</span><span class="na">allowCredentials</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span>
+                <span class="c1">//放行哪些原始域
+</span><span class="c1"></span>                <span class="o">.</span><span class="na">allowedOrigins</span><span class="o">(</span><span class="s">&#34;*&#34;</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">allowedMethods</span><span class="o">(</span><span class="k">new</span> <span class="n">String</span><span class="o">[]{</span><span class="s">&#34;GET&#34;</span><span class="o">,</span> <span class="s">&#34;POST&#34;</span><span class="o">,</span> <span class="s">&#34;PUT&#34;</span><span class="o">,</span> <span class="s">&#34;DELETE&#34;</span><span class="o">})</span>
+                <span class="o">.</span><span class="na">allowedHeaders</span><span class="o">(</span><span class="s">&#34;*&#34;</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">exposedHeaders</span><span class="o">(</span><span class="s">&#34;*&#34;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3使用注解-crossorigin">3.使用注解 @CrossOrigin</h3>
+<p>在控制器(类上)上使用注解 @CrossOrigin，表示该类的所有方法允许跨域。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RestController</span>
+<span class="nd">@CrossOrigin</span><span class="o">(</span><span class="n">origins</span> <span class="o">=</span> <span class="s">&#34;*&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloController</span> <span class="o">{</span>
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/hello&#34;</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">hello</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">&#34;hello world&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在方法上使用注解 @CrossOrigin</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/hello&#34;</span><span class="o">)</span>
+    <span class="nd">@CrossOrigin</span><span class="o">(</span><span class="n">origins</span> <span class="o">=</span> <span class="s">&#34;*&#34;</span><span class="o">)</span>
+     <span class="c1">//@CrossOrigin(value = &#34;http://localhost:8081&#34;) //指定具体ip允许跨域
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="n">String</span> <span class="nf">hello</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">&#34;hello world&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4手动设置响应头-httpservletresponse">4.手动设置响应头 (HttpServletResponse)</h3>
+<p>使用 HttpServletResponse 对象添加响应头(Access-Control-Allow-Origin)来授权原始域，
+这里 Origin的值也可以设置为 “*”,表示全部放行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/index&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">index</span><span class="o">(</span><span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">addHeader</span><span class="o">(</span><span class="s">&#34;Access-Allow-Control-Origin&#34;</span><span class="o">,</span><span class="s">&#34;*&#34;</span><span class="o">);</span>
+    <span class="k">return</span> <span class="s">&#34;index&#34;</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5自定web-filter实现跨域推荐">5.自定web filter实现跨域(推荐)</h3>
+<p>首先编写一个过滤器，可以起名字为MyCorsFilter.java</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">com.mesnac.aop</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.Filter</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.FilterChain</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.FilterConfig</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.ServletException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.ServletRequest</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.ServletResponse</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletResponse</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.stereotype.Component</span><span class="o">;</span>
+
+<span class="nd">@Component</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyCorsFilter</span> <span class="kd">implements</span> <span class="n">Filter</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doFilter</span><span class="o">(</span><span class="n">ServletRequest</span> <span class="n">req</span><span class="o">,</span> <span class="n">ServletResponse</span> <span class="n">res</span><span class="o">,</span> <span class="n">FilterChain</span> <span class="n">chain</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span><span class="o">,</span> <span class="n">ServletException</span> <span class="o">{</span>
+    <span class="n">HttpServletResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="o">(</span><span class="n">HttpServletResponse</span><span class="o">)</span> <span class="n">res</span><span class="o">;</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&#34;Access-Control-Allow-Origin&#34;</span><span class="o">,</span> <span class="s">&#34;*&#34;</span><span class="o">);</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&#34;Access-Control-Allow-Methods&#34;</span><span class="o">,</span> <span class="s">&#34;POST, GET, OPTIONS, DELETE&#34;</span><span class="o">);</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&#34;Access-Control-Max-Age&#34;</span><span class="o">,</span> <span class="s">&#34;3600&#34;</span><span class="o">);</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&#34;Access-Control-Allow-Headers&#34;</span><span class="o">,</span> <span class="s">&#34;x-requested-with,content-type&#34;</span><span class="o">);</span>
+    <span class="n">chain</span><span class="o">.</span><span class="na">doFilter</span><span class="o">(</span><span class="n">req</span><span class="o">,</span> <span class="n">res</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">init</span><span class="o">(</span><span class="n">FilterConfig</span> <span class="n">filterConfig</span><span class="o">)</span> <span class="o">{}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">destroy</span><span class="o">()</span> <span class="o">{}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-04-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/java/">java</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/github%E6%8F%90%E4%BA%A4%E6%8C%87%E5%8D%97/" class="prev" rel="prev" title="Github提交指南"><i class="fas fa-angle-left fa-fw"></i>Github提交指南</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">hahaen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":1000},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
