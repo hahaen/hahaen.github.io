@@ -40,7 +40,7 @@
     <pubDate>Tue, 05 Apr 2022 23:37:18 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://hahaen.github.io/java%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/</guid>
-    <description><![CDATA[内容]]></description>
+    <description><![CDATA[tcp和udp的区别 TCP：是面向连接的流传输控制协议，具有高可靠性，确保传输数据的正确性，有验证重发机制，因此不会出现丢失或乱序。 UDP：]]></description>
 </item><item>
     <title>AOP</title>
     <link>https://hahaen.github.io/aop/</link>
