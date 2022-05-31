@@ -9,3 +9,8 @@
 
 * 如果没有额外声明，所有类的默认都是线程不安全的
 
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/stringbufferstringbuilder%E5%8C%BA%E5%88%AB/

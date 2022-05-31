@@ -15,3 +15,8 @@
 * equals()：没有==运行速度快。
 * ==：运行速度比equals()快，因为==只是比较引用。
 
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/equals%E5%8C%BA%E5%88%AB/

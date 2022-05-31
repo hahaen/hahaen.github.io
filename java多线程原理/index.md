@@ -175,3 +175,8 @@
 * workQueue: 线程池所使用的缓冲队列 
 * handler: 线程池对拒绝任务的处理策略
 
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%8E%9F%E7%90%86/

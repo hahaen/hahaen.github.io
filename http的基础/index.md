@@ -34,3 +34,8 @@ content-type: text/html; charset=utf-8
 * Set-Cookie  //登录后服务器自动设置的cookie
 
 http是无状态的
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/http%E7%9A%84%E5%9F%BA%E7%A1%80/

@@ -21,3 +21,8 @@ SELECT * FROM admin WHERE Username='1' OR 1=1 OR '1'='1' AND Password='EDFKGMZDF
 3. 1=1返回真(此处是真)
 
 以上的结果是: 假 or 真 or 假 返回真。验证通过。
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/sql%E6%B3%A8%E5%85%A5/

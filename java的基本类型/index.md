@@ -11,3 +11,8 @@
 String是基本数据类型吗？答：**不是**
 
 ![基本类型](/img/Java的基本类型/1.png)
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/java%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/

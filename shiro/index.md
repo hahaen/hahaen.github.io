@@ -57,3 +57,8 @@
 7. 配置AOP 式方法级权限检查； 
 8. 配置 Shiro Filter。
 9. 
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/shiro/

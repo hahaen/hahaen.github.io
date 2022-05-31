@@ -35,3 +35,8 @@ docker run --name=mediawiki_mysql \
 
 docker exec -it [容器名或容器ID] bash
 
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/docker-run-mysql%E6%98%A0%E5%B0%84/

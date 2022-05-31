@@ -123,3 +123,8 @@ www.xiedaimala.com和xiedaimala.com 不是同一域名
 - 所以www.xiedaimala.com和xiedaimala. com可以不是同一家公司,也可以是
 - www是多余的,非常多余。
 
+
+---
+
+> 作者: hahaen  
+> https://hahaen.github.io/%E6%B5%85%E6%9E%90url/
