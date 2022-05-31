@@ -1,64 +1,64 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>MySQL知识 - 分类 - 哈哈博客</title>
-    <link>https://fixit.lruihao.cn/categories/mysql%E7%9F%A5%E8%AF%86/</link>
+    <link>https://hahaen.github.io/categories/mysql%E7%9F%A5%E8%AF%86/</link>
     <description>MySQL知识 - 分类 - 哈哈博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>ihahaen@163.com (hahaen)</managingEditor>
-      <webMaster>ihahaen@163.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 05 May 2022 23:02:00 &#43;0800</lastBuildDate><atom:link href="https://fixit.lruihao.cn/categories/mysql%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>ihahaen@163.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 05 May 2022 23:02:00 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/categories/mysql%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
   <title>Sql视图</title>
-  <link>https://fixit.lruihao.cn/sql%E8%A7%86%E5%9B%BE/</link>
+  <link>https://hahaen.github.io/sql%E8%A7%86%E5%9B%BE/</link>
   <pubDate>Thu, 05 May 2022 23:02:00 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/sql%E8%A7%86%E5%9B%BE/</guid>
+  <guid>https://hahaen.github.io/sql%E8%A7%86%E5%9B%BE/</guid>
   <description><![CDATA[什么是视图？ 在 SQL 中，视图是基于 SQL 语句的结果集的可视化的表。视图包含行和列，就像一个真实的表。 视图是一种不存在的虚拟表: 类似表但是不是表。 类似]]></description>
 </item><item>
   <title>SQL优化</title>
-  <link>https://fixit.lruihao.cn/sql%E4%BC%98%E5%8C%96/</link>
+  <link>https://hahaen.github.io/sql%E4%BC%98%E5%8C%96/</link>
   <pubDate>Mon, 21 Mar 2022 13:35:30 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/sql%E4%BC%98%E5%8C%96/</guid>
+  <guid>https://hahaen.github.io/sql%E4%BC%98%E5%8C%96/</guid>
   <description><![CDATA[]]></description>
 </item><item>
   <title>Sql注入</title>
-  <link>https://fixit.lruihao.cn/sql%E6%B3%A8%E5%85%A5/</link>
+  <link>https://hahaen.github.io/sql%E6%B3%A8%E5%85%A5/</link>
   <pubDate>Mon, 14 Mar 2022 15:25:04 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/sql%E6%B3%A8%E5%85%A5/</guid>
+  <guid>https://hahaen.github.io/sql%E6%B3%A8%E5%85%A5/</guid>
   <description><![CDATA[万能密码 原验证登陆语句: 1 SELECT*FROMadminWHEREUsername=&#39;&#34;.$username.&#34;&#39;ANDPassword=&#39;&#34;.md5($password).&#34;&#39; 输入 1′ or 1=1 or ‘1’=’1万能密码语句变为: 1 SELECT*FROMadminWHEREUsername=&#39;1&#39;OR1=1OR&#39;1&#39;=&#39;1&#39;ANDPassword=&#39;EDFKGMZDFSDFDSFRRQWERRFGGG&#39; 即得到优先级关系：or&lt;and&lt;not，同一优先级默]]></description>
 </item><item>
   <title>数据库左连接内连接</title>
-  <link>https://fixit.lruihao.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%A6%E8%BF%9E%E6%8E%A5%E5%86%85%E8%BF%9E%E6%8E%A5/</link>
+  <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%A6%E8%BF%9E%E6%8E%A5%E5%86%85%E8%BF%9E%E6%8E%A5/</link>
   <pubDate>Fri, 11 Mar 2022 18:48:18 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%A6%E8%BF%9E%E6%8E%A5%E5%86%85%E8%BF%9E%E6%8E%A5/</guid>
+  <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%A6%E8%BF%9E%E6%8E%A5%E5%86%85%E8%BF%9E%E6%8E%A5/</guid>
   <description><![CDATA[left join （左连接）：返回包括左表中的所有记录和右表中连接字段相等的记录。 right join （右连接）：返回包括右表中的所有记录和左表中连接字段相等的记录。 inner j]]></description>
 </item><item>
   <title>数据库关键字</title>
-  <link>https://fixit.lruihao.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+  <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%85%B3%E9%94%AE%E5%AD%97/</link>
   <pubDate>Thu, 10 Mar 2022 21:17:25 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+  <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
   <description><![CDATA[where(条件) 1 2 select*frompersonwherename=&#39;yang&#39;&amp;&amp;age=22; like(搜索查询) 搜索查询，或者说模糊匹配，表达式主要涉及到两个符号： 百分号 %：匹配任意多个字符 下划线 _：匹配固定]]></description>
 </item><item>
   <title>数据增删改查</title>
-  <link>https://fixit.lruihao.cn/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</link>
+  <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</link>
   <pubDate>Thu, 10 Mar 2022 21:05:53 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</guid>
+  <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</guid>
   <description><![CDATA[创建 USER表 PRIMARY KEY 主键 AUTO_INCREMENT AUTO_INCREMENT就可以从小到大自动生成 UNIQUE 约束唯一标识数据库表中的每条记录 ENGINE = InnoDB 存储引擎是innodb DEFAULT CHARSET]]></description>
 </item><item>
   <title>Drop、delete区别？</title>
-  <link>https://fixit.lruihao.cn/dropdelete%E5%8C%BA%E5%88%AB/</link>
+  <link>https://hahaen.github.io/dropdelete%E5%8C%BA%E5%88%AB/</link>
   <pubDate>Thu, 10 Mar 2022 20:37:52 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/dropdelete%E5%8C%BA%E5%88%AB/</guid>
+  <guid>https://hahaen.github.io/dropdelete%E5%8C%BA%E5%88%AB/</guid>
   <description><![CDATA[用法不同 drop(丢弃数据):drop table表名 ，直接将表都删除掉，在删除表的时候使用。 delete（删除数据）:delete from 表名 where 列]]></description>
 </item><item>
   <title>数据库主键和外键的区别</title>
-  <link>https://fixit.lruihao.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E9%94%AE%E5%92%8C%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+  <link>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E9%94%AE%E5%92%8C%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
   <pubDate>Thu, 10 Mar 2022 20:34:21 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E9%94%AE%E5%92%8C%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+  <guid>https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E9%94%AE%E5%92%8C%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
   <description><![CDATA[主键(主码) ：主键用于唯一标识一个元组，不能有重复，不允许为空。一个表只能有一个主键。 外键(外码) ：外键用来和其他表建立联系用，外键是另一表]]></description>
 </item></channel>
 </rss>

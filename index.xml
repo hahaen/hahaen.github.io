@@ -1,80 +1,80 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>哈哈博客</title>
-    <link>https://fixit.lruihao.cn/</link>
+    <link>https://hahaen.github.io/</link>
     <description>关于 哈哈博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>ihahaen@163.com (hahaen)</managingEditor>
       <webMaster>ihahaen@163.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 May 2022 09:15:58 &#43;0800</lastBuildDate>
-      <atom:link href="https://fixit.lruihao.cn/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://hahaen.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
   <title>Java开发手册 黄山版（笔记）</title>
-  <link>https://fixit.lruihao.cn/java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C-%E9%BB%84%E5%B1%B1%E7%89%88%E7%AC%94%E8%AE%B0/</link>
+  <link>https://hahaen.github.io/java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C-%E9%BB%84%E5%B1%B1%E7%89%88%E7%AC%94%E8%AE%B0/</link>
   <pubDate>Mon, 30 May 2022 09:15:58 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C-%E9%BB%84%E5%B1%B1%E7%89%88%E7%AC%94%E8%AE%B0/</guid>
+  <guid>https://hahaen.github.io/java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C-%E9%BB%84%E5%B1%B1%E7%89%88%E7%AC%94%E8%AE%B0/</guid>
   <description><![CDATA[内容]]></description>
 </item><item>
   <title>effective-java中文（笔记）</title>
-  <link>https://fixit.lruihao.cn/effective-java%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/</link>
+  <link>https://hahaen.github.io/effective-java%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/</link>
   <pubDate>Mon, 30 May 2022 09:15:05 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/effective-java%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/</guid>
+  <guid>https://hahaen.github.io/effective-java%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/</guid>
   <description><![CDATA[01-09 Creating and Destroying Objects （创建和销毁对象） 1. 考虑使用静态工厂方法替代构造方法 优点： 静态工厂方法的一个优点是，与构造方法不同，它们是有名字的。 静态工厂方法的]]></description>
 </item><item>
   <title>MySQL必知必会（笔记）</title>
-  <link>https://fixit.lruihao.cn/mysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</link>
+  <link>https://hahaen.github.io/mysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</link>
   <pubDate>Mon, 30 May 2022 09:12:07 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/mysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</guid>
+  <guid>https://hahaen.github.io/mysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</guid>
   <description><![CDATA[内容]]></description>
 </item><item>
   <title>Idea启动异常</title>
-  <link>https://fixit.lruihao.cn/idea%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8/</link>
+  <link>https://hahaen.github.io/idea%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8/</link>
   <pubDate>Sun, 29 May 2022 21:57:42 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/idea%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8/</guid>
+  <guid>https://hahaen.github.io/idea%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8/</guid>
   <description><![CDATA[双击bin目录下的idea.bat 报错 1 ERROR - llij.ide.plugins.PluginManager - java.net.BindException: Address already in use: bind 参考 运行两个命令成功解决。 1 2 3 net stop winnat net start winnat]]></description>
 </item><item>
   <title>Idea自用插件记录</title>
-  <link>https://fixit.lruihao.cn/idea%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6%E8%AE%B0%E5%BD%95/</link>
+  <link>https://hahaen.github.io/idea%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6%E8%AE%B0%E5%BD%95/</link>
   <pubDate>Fri, 20 May 2022 22:13:06 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/idea%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6%E8%AE%B0%E5%BD%95/</guid>
+  <guid>https://hahaen.github.io/idea%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6%E8%AE%B0%E5%BD%95/</guid>
   <description><![CDATA[内容]]></description>
 </item><item>
   <title>SpotBugs使用教程</title>
-  <link>https://fixit.lruihao.cn/spotbugs%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+  <link>https://hahaen.github.io/spotbugs%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
   <pubDate>Sun, 15 May 2022 21:56:56 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/spotbugs%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+  <guid>https://hahaen.github.io/spotbugs%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
   <description><![CDATA[内容]]></description>
 </item><item>
   <title>Apidoc使用教程</title>
-  <link>https://fixit.lruihao.cn/apidoc%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+  <link>https://hahaen.github.io/apidoc%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
   <pubDate>Sat, 14 May 2022 17:16:58 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/apidoc%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+  <guid>https://hahaen.github.io/apidoc%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
   <description><![CDATA[内容]]></description>
 </item><item>
   <title>Git快捷配置</title>
-  <link>https://fixit.lruihao.cn/git%E5%BF%AB%E6%8D%B7%E9%85%8D%E7%BD%AE/</link>
+  <link>https://hahaen.github.io/git%E5%BF%AB%E6%8D%B7%E9%85%8D%E7%BD%AE/</link>
   <pubDate>Thu, 12 May 2022 13:34:41 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/git%E5%BF%AB%E6%8D%B7%E9%85%8D%E7%BD%AE/</guid>
+  <guid>https://hahaen.github.io/git%E5%BF%AB%E6%8D%B7%E9%85%8D%E7%BD%AE/</guid>
   <description><![CDATA[查看git快捷配置 1 cat ~/.bashrc 修改git快捷配置 1 vi ~/.bashrc 例子 1 2 3 4 5 6 7 8 alias ga=&#34;git add&#34; alias gm=&#34;git commit -m&#34; alias gc=&#34;git commit -v&#34; alias gl=&#34;git pull&#34; alias gp=&#34;git push&#34; alias gco=&#34;git checkout&#34; alias gst=&#34;git status -sb&#34; alias glog=&#34;git log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --]]></description>
 </item><item>
   <title>Sql视图</title>
-  <link>https://fixit.lruihao.cn/sql%E8%A7%86%E5%9B%BE/</link>
+  <link>https://hahaen.github.io/sql%E8%A7%86%E5%9B%BE/</link>
   <pubDate>Thu, 05 May 2022 23:02:00 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/sql%E8%A7%86%E5%9B%BE/</guid>
+  <guid>https://hahaen.github.io/sql%E8%A7%86%E5%9B%BE/</guid>
   <description><![CDATA[什么是视图？ 在 SQL 中，视图是基于 SQL 语句的结果集的可视化的表。视图包含行和列，就像一个真实的表。 视图是一种不存在的虚拟表: 类似表但是不是表。 类似]]></description>
 </item><item>
   <title>Spring容器</title>
-  <link>https://fixit.lruihao.cn/spring%E5%AE%B9%E5%99%A8/</link>
+  <link>https://hahaen.github.io/spring%E5%AE%B9%E5%99%A8/</link>
   <pubDate>Fri, 29 Apr 2022 10:27:58 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/spring%E5%AE%B9%E5%99%A8/</guid>
+  <guid>https://hahaen.github.io/spring%E5%AE%B9%E5%99%A8/</guid>
   <description><![CDATA[]]></description>
 </item></channel>
 </rss>

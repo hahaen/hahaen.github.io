@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>html - 分类 - 哈哈博客</title>
-    <link>https://fixit.lruihao.cn/categories/html/</link>
+    <link>https://hahaen.github.io/categories/html/</link>
     <description>html - 分类 - 哈哈博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>ihahaen@163.com (hahaen)</managingEditor>
-      <webMaster>ihahaen@163.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Oct 2021 20:25:40 &#43;0800</lastBuildDate><atom:link href="https://fixit.lruihao.cn/categories/html/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>ihahaen@163.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Oct 2021 20:25:40 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/categories/html/" rel="self" type="application/rss+xml" /><item>
   <title>浅析URL</title>
-  <link>https://fixit.lruihao.cn/%E6%B5%85%E6%9E%90url/</link>
+  <link>https://hahaen.github.io/%E6%B5%85%E6%9E%90url/</link>
   <pubDate>Fri, 29 Oct 2021 20:25:40 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/%E6%B5%85%E6%9E%90url/</guid>
+  <guid>https://hahaen.github.io/%E6%B5%85%E6%9E%90url/</guid>
   <description><![CDATA[URL 英文：Uniform Resource Locator https://zh.wikipedia.org:443/w/index.php?title=随机页面 https，]]></description>
 </item><item>
   <title>HTML常用标签</title>
-  <link>https://fixit.lruihao.cn/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+  <link>https://hahaen.github.io/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
   <pubDate>Thu, 28 Oct 2021 23:02:29 &#43;0800</pubDate>
   <author>hahaen</author>
-  <guid>https://fixit.lruihao.cn/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+  <guid>https://hahaen.github.io/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
   <description><![CDATA[搜索技巧： 谷歌搜索 mdn + xx(标签) a 标签的用法 href 1 2 3 4 5 6 7 8 9 10 11 12 13 &lt;ul&gt; &lt;li&gt;&lt;a href=&#34;http://baidu.com&#34;]]></description>
 </item></channel>
 </rss>
