@@ -45,6 +45,6 @@
   <pubDate>Thu, 07 Apr 2022 23:55:57 &#43;0800</pubDate>
   <author>hahaen</author>
   <guid>https://hahaen.github.io/flyway%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
-  <description><![CDATA[内容]]></description>
+  <description><![CDATA[官网 引入Maven plugin 1 2 3 4 5 6 7 8 9 10 &lt;plugin&gt; &lt;groupId&gt;org.flywaydb&lt;/groupId&gt; &lt;artifactId&gt;flyway-maven-plugin&lt;/artifactId&gt; &lt;version&gt;6.2.4&lt;/version&gt; &lt;configuration&gt; &lt;user&gt;root&lt;/user&gt; &lt;password&gt;root&lt;/password&gt; &lt;url&gt;jdbc:mysql://localhost:3306/xxx&lt;/url&gt; &lt;/configuration&gt; &lt;/plugin&gt; 创建目录 在resources下创建目录db 在目录db创建目录migration 在]]></description>
 </item></channel>
 </rss>
