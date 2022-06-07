@@ -8,23 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <title>Checkstyle使用教程 - 哈哈博客</title><meta name="author" content="hahaen">
 <meta name="author-link" content="https://github.com/hahaen/">
-<meta name="description" content="内容" />
+<meta name="description" content="checkstyle.xml模板 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54" />
 <meta name="keywords" content="教程" /><meta itemprop="name" content="Checkstyle使用教程">
-<meta itemprop="description" content="内容"><meta itemprop="datePublished" content="2022-04-08T22:03:25+08:00" />
-<meta itemprop="dateModified" content="2022-06-07T13:20:41+08:00" />
-<meta itemprop="wordCount" content="2"><meta itemprop="image" content="https://hahaen.github.io/logo.png"/>
+<meta itemprop="description" content="checkstyle.xml模板 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54"><meta itemprop="datePublished" content="2022-04-08T22:03:25+08:00" />
+<meta itemprop="dateModified" content="2022-06-07T14:24:05+08:00" />
+<meta itemprop="wordCount" content="3659"><meta itemprop="image" content="https://hahaen.github.io/logo.png"/>
 <meta itemprop="keywords" content="教程," /><meta property="og:title" content="Checkstyle使用教程" />
-<meta property="og:description" content="内容" />
+<meta property="og:description" content="checkstyle.xml模板 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hahaen.github.io/checkstyle%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-08T22:03:25+08:00" />
-<meta property="article:modified_time" content="2022-06-07T13:20:41+08:00" />
+<meta property="article:modified_time" content="2022-06-07T14:24:05+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Checkstyle使用教程"/>
-<meta name="twitter:description" content="内容"/>
+<meta name="twitter:description" content="checkstyle.xml模板 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54"/>
 <meta name="application-name" content="FixIt">
 <meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#252627"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -37,8 +37,8 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/hahaen.github.io\/checkstyle%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/"
-    },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "教程","wordcount":  2 ,
-    "url": "https:\/\/hahaen.github.io\/checkstyle%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/","datePublished": "2022-04-08T22:03:25+08:00","dateModified": "2022-06-07T13:20:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "教程","wordcount":  3659 ,
+    "url": "https:\/\/hahaen.github.io\/checkstyle%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/","datePublished": "2022-04-08T22:03:25+08:00","dateModified": "2022-06-07T14:24:05+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "xxx","logo": "https:\/\/hahaen.github.io\/img\/%E7%B3%BB%E7%BB%9F%E5%9B%BE%E7%89%87\/avatar.png"},"author": {
         "@type": "Person",
@@ -170,8 +170,7 @@
 <div class="search-dropdown mobile">
   <div id="search-dropdown-mobile"></div>
 </div>
-<main class="container" page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录 <i class="toc-icon fa-solid fa-angle-down fa-fw"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
+<main class="container" page-style="normal"><aside class="toc" id="toc-auto"></aside>
 
   <aside class="aside-custom">
     
@@ -207,29 +206,703 @@
           <span class="post-category">收录于 <a href="/categories/java%E6%95%99%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw"></i>&nbsp;java教程</a></span></div>
       <div class="post-meta-line"><span title=2022-04-08&#32;22:03:25>
             <i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-08" >2022-04-08</time>
-          </span>&nbsp;<i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;约 2 字&nbsp;
-        <i class="fa-regular fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
-    </div><div class="details toc" id="toc-static" kept="false">
-        <div class="details-summary toc-title">
-          <span>目录</span>
-          <span><i class="details-icon fa-solid fa-angle-right"></i></span>
-        </div>
-        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#内容">内容</a></li>
-  </ul>
-</nav></div>
-      </div><div
+          </span>&nbsp;<i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;约 3659 字&nbsp;
+        <i class="fa-regular fa-clock fa-fw"></i>&nbsp;预计阅读 8 分钟&nbsp;</div>
+    </div><div
       class="content"
       id="content"
       
       
-    ><h2 id="内容">内容</h2>
+    ><ul>
+<li>checkstyle.xml模板</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span><span class="lnt">244
+</span><span class="lnt">245
+</span><span class="lnt">246
+</span><span class="lnt">247
+</span><span class="lnt">248
+</span><span class="lnt">249
+</span><span class="lnt">250
+</span><span class="lnt">251
+</span><span class="lnt">252
+</span><span class="lnt">253
+</span><span class="lnt">254
+</span><span class="lnt">255
+</span><span class="lnt">256
+</span><span class="lnt">257
+</span><span class="lnt">258
+</span><span class="lnt">259
+</span><span class="lnt">260
+</span><span class="lnt">261
+</span><span class="lnt">262
+</span><span class="lnt">263
+</span><span class="lnt">264
+</span><span class="lnt">265
+</span><span class="lnt">266
+</span><span class="lnt">267
+</span><span class="lnt">268
+</span><span class="lnt">269
+</span><span class="lnt">270
+</span><span class="lnt">271
+</span><span class="lnt">272
+</span><span class="lnt">273
+</span><span class="lnt">274
+</span><span class="lnt">275
+</span><span class="lnt">276
+</span><span class="lnt">277
+</span><span class="lnt">278
+</span><span class="lnt">279
+</span><span class="lnt">280
+</span><span class="lnt">281
+</span><span class="lnt">282
+</span><span class="lnt">283
+</span><span class="lnt">284
+</span><span class="lnt">285
+</span><span class="lnt">286
+</span><span class="lnt">287
+</span><span class="lnt">288
+</span><span class="lnt">289
+</span><span class="lnt">290
+</span><span class="lnt">291
+</span><span class="lnt">292
+</span><span class="lnt">293
+</span><span class="lnt">294
+</span><span class="lnt">295
+</span><span class="lnt">296
+</span><span class="lnt">297
+</span><span class="lnt">298
+</span><span class="lnt">299
+</span><span class="lnt">300
+</span><span class="lnt">301
+</span><span class="lnt">302
+</span><span class="lnt">303
+</span><span class="lnt">304
+</span><span class="lnt">305
+</span><span class="lnt">306
+</span><span class="lnt">307
+</span><span class="lnt">308
+</span><span class="lnt">309
+</span><span class="lnt">310
+</span><span class="lnt">311
+</span><span class="lnt">312
+</span><span class="lnt">313
+</span><span class="lnt">314
+</span><span class="lnt">315
+</span><span class="lnt">316
+</span><span class="lnt">317
+</span><span class="lnt">318
+</span><span class="lnt">319
+</span><span class="lnt">320
+</span><span class="lnt">321
+</span><span class="lnt">322
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+</span></span><span class="line"><span class="cl">&lt;!DOCTYPE module PUBLIC &#34;-//Puppy Crawl//DTD Check Configuration 1.3//EN&#34;
+</span></span><span class="line"><span class="cl">        &#34;http://www.puppycrawl.com/dtds/configuration_1_3.dtd&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;module name=&#34;Checker&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;!-- 官方主页：https://checkstyle.sourceforge.io --&gt;
+</span></span><span class="line"><span class="cl">    &lt;!-- 检查文件是否以一个空行结束 --&gt;
+</span></span><span class="line"><span class="cl">    &lt;module name=&#34;NewlineAtEndOfFile&#34;/&gt;
+</span></span><span class="line"><span class="cl">    &lt;!-- 文件长度不超过1500行 --&gt;
+</span></span><span class="line"><span class="cl">    &lt;module name=&#34;FileLength&#34;&gt;
+</span></span><span class="line"><span class="cl">        &lt;property name=&#34;max&#34; value=&#34;1500&#34;/&gt;
+</span></span><span class="line"><span class="cl">    &lt;/module&gt;
+</span></span><span class="line"><span class="cl">    &lt;!-- 每行不超过120个字 --&gt;
+</span></span><span class="line"><span class="cl">    &lt;module name=&#34;LineLength&#34;&gt;
+</span></span><span class="line"><span class="cl">        &lt;property name=&#34;max&#34; value=&#34;150&#34;/&gt;
+</span></span><span class="line"><span class="cl">    &lt;/module&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    &lt;module name=&#34;TreeWalker&#34;&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 想严格对文件头进行检查，请把文件头定义在一个外部文件中，如：java_header_file.txt 然后使 用&#34;headerFile&#34;属性：
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;Header&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;headerFile&#34; value=&#34;java_header_file.txt&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;ignoreLines&#34; value=&#34;1, 5&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- 忽略掉文件头的几行声明  不指定外部文件时出错，暂不使用
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;Header&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;ignoreLines&#34; value=&#34;1, 5&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">         --&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- ********************************javadoc的检查********************--&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查Javadoc --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;JavadocStyle&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;!-- 忽略句号结尾检查 --&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#39;checkFirstSentence&#39; value=&#39;false&#39;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#39;checkEmptyJavadoc&#39; value=&#39;true&#39;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查所有的interface和class的doc --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;JavadocType&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;!-- 注释里允许所有注解 --&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#39;allowUnknownTags&#39; value=&#39;true&#39;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查所有方法的javadoc 注意方法上的@param XXX后必须跟参数说明检查才能通过 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#39;MissingJavadocMethod&#39;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;allowMissingPropertyJavadoc&#34; value=&#34;true&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;allowedAnnotations&#34; value=&#34;Override,Deprecated,ApiOperation&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;ignoreMethodNamesRegex&#34; value=&#34;main&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;JavadocMethod&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 变量的javadoc --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;JavadocVariable&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;!-- 忽略检查的变量名 --&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#39;ignoreNamePattern&#39; value=&#39;.*Business|.*Service|.*Handler|.*Mapper|.*Template|.*Client|.*Util.*|LOG|LOGGER&#39;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- ********************************import方面的检查*********** --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- import中避免星号&#34;*&#34; --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;AvoidStarImport&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查是否从非法的包中导入了类 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;IllegalImport&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查是否导入了多余的包 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;RedundantImport&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!--没用的import检查，比如：1.没有被用到 2.重复的 3.import java.lang的 4.import与该类在同一个package的--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;UnusedImports&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- ********************************命名规则检查****************** --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 包名检查 ^[a-z]+(\.[a-z][a-z0-9]*)*$ --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;PackageName&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;format&#34; value=&#34;^[a-z]+(\.[a-z][a-z0-9]*)*$&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;message key=&#34;name.invalidPattern&#34; value=&#34;包名 &#39;&#39;{0}&#39;&#39; 要符合 &#39;&#39;{1}&#39;&#39;格式.&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 类型(Class或Interface)名  ^[A-Z][a-zA-Z0-9]*$--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;TypeName&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;severity&#34; value=&#34;warning&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;message key=&#34;name.invalidPattern&#34; value=&#34;名称 &#39;&#39;{0}&#39;&#39; 要符合 &#39;&#39;{1}&#39;&#39;格式.&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 方法名  ^[a-z][a-zA-Z0-9]*$--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;MethodName&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 方法的参数命名 ^[a-z][a-zA-Z0-9]*$--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ParameterName &#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 非static型变量  ^[a-z][a-zA-Z0-9]*$--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;MemberName&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 常量(static , final 字段)  ^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ConstantName&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 局部的final变量，包括catch中的参数  ^[a-z][a-zA-Z0-9]*$ --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;LocalFinalVariableName&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 局部的非final型的变量，包括catch中的参数  ^[a-z][a-zA-Z0-9]*$ --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;LocalVariableName&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 仅仅是static型的变量（不包括staticfinal型）  ^[a-z][a-zA-Z0-9]*$ --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;StaticVariableName&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- **************方法的参数个数不超过5个。 并且不对构造方法和重写方法进行检查*******--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ParameterNumber&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;tokens&#34; value=&#34;METHOD_DEF&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;ignoreOverriddenMethods&#34; value=&#34;true&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;5&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- ************************代码行数及行代码长度限制****************** --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 文件长度不超过1500行，放在TreeWalker前面 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 方法不超过300行 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;MethodLength&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;tokens&#34; value=&#34;METHOD_DEF&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;300&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 每行不超过120个字
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;LineLength&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;150&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- ****************************空格限定***************************** --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查约定方法名与左边圆括号之间不许出现空格
+</span></span><span class="line"><span class="cl">            public void wrongStyleMethod (){
+</span></span><span class="line"><span class="cl">            public void wrongStyleMethod
+</span></span><span class="line"><span class="cl">                                        (String para1, String para2){
+</span></span><span class="line"><span class="cl">            都是不能通过的，只允许方法名后紧跟左边圆括号&#34;(&#34;--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;MethodParamPad&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- 不允许左圆括号右边有空格，也不允许与右圆括号左边有空格
+</span></span><span class="line"><span class="cl">            public void wrongStyleMethod( String para1, String para2 ){
+</span></span><span class="line"><span class="cl">            public void correctStyleMethod(String para1, String para2){
+</span></span><span class="line"><span class="cl">            都不能通过--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ParenPad&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- 在类型转换时，不允许左圆括号右边有空格，也不允许与右圆括号左边有空格
+</span></span><span class="line"><span class="cl">            Object myObject = ( Object )other;
+</span></span><span class="line"><span class="cl">            不能通过--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;TypecastParenPad&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!--  代码中不允许使用&#34;tab&#34;键。(&#39;\t&#39;) 因为在不同的编辑器下有的tab占8个空格（如windows记事
+</span></span><span class="line"><span class="cl">                  本），有的占4个（如当前大多数IDE）。
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;TabCharacter&#34;/&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查在某个特定关键字之后应保留空格 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;NoWhitespaceAfter&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查在某个特定关键字之前应保留空格 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;NoWhitespaceBefore&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 操作符换行策略检查 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;OperatorWrap&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查分隔符是否在空白之后 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;WhitespaceAfter&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查分隔符周围是否有空白 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;WhitespaceAround&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- **********************关键字********************************** --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 每个关键字都有正确的出现顺序。比如 public static final XXX 是对一个常量的声明。如果使用
+</span></span><span class="line"><span class="cl">            static public final 就是错误的 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ModifierOrder&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 过滤多于的关键字--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;RedundantModifier&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- ***********************空白域************************************* --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 不能出现空白区域 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;EmptyBlock&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 所有区域都要使用大括号 if(true)System.out.println(&#34;if 嵌套浓度限定&#34;);不能通过--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;NeedBraces&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 多余的括号 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;AvoidNestedBlocks&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;allowInSwitchCase&#34; value=&#34;true&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查左大括号位置 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;LeftCurly&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查右大括号位置 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;RightCurly&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- ******************************编码方面的检查 **********************--&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查空的代码段
+</span></span><span class="line"><span class="cl">            不许出现空语句
+</span></span><span class="line"><span class="cl">            int a = 0; //正常
+</span></span><span class="line"><span class="cl">            ; // 这里就是一个空的语句
+</span></span><span class="line"><span class="cl">            int b = 0; //正常
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;EmptyStatement&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 如果某个变量一直都没变，那么它就应该是final型的
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;FinalLocalVariable&#34;/&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查在重写了equals方法后是否重写了hashCode方法 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;EqualsHashCode&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 不允许使用switch语句
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;IllegalToken&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;tokens&#34; value=&#34;LITERAL_SWITCH&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查switch语句是否有default --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;MissingSwitchDefault&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查局部变量或参数是否隐藏了类中的变量 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;HiddenField&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;tokens&#34; value=&#34;VARIABLE_DEF&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 内部赋值语句 ：String s = Integer.toString(i = 2); --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;InnerAssignment&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 绝对不能容忍魔法数 ，即数据标识常量化
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;MagicNumber&#34;/&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 循环控制变量不能被修改
+</span></span><span class="line"><span class="cl">        for (int i = 0; i &lt; 1; i++) {
+</span></span><span class="line"><span class="cl">            i++; // 这里是极可能是程序员大意写出来的。
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ModifiedControlVariable&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 多余的throw
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;RedundantThrows&#34;/&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 未被简化的条件表达式 检查过度复杂的条件表达式，
+</span></span><span class="line"><span class="cl">            比如： (b == true), b || true, !false, 难读且容易出错 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;SimplifyBooleanExpression&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 未被简化的布尔返回值
+</span></span><span class="line"><span class="cl">            if (valid()){
+</span></span><span class="line"><span class="cl">                return false;
+</span></span><span class="line"><span class="cl">            }else{
+</span></span><span class="line"><span class="cl">                return true;
+</span></span><span class="line"><span class="cl">            }
+</span></span><span class="line"><span class="cl">            就可以写成：
+</span></span><span class="line"><span class="cl">            return !valid();
+</span></span><span class="line"><span class="cl">         --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;SimplifyBooleanReturn&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- String的比较不能用!= 和 == --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;StringLiteralEquality&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 限制for循环最多嵌套2层 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;NestedForDepth&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;4&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- if最多嵌套3层 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;NestedIfDepth&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;5&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- try最多被嵌套2层 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;NestedTryDepth&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;5&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!--重载方法是否在同个地方--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;OverloadMethodsDeclarationOrder&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查并确认一个类的clone()方法调用了父类的clone() --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;SuperClone&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查并确认一个类的finalize()调用了父类的finalize() --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;SuperFinalize&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 不能catch java.lang.Exception,异常分类处理
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;IllegalCatch&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;illegalClassNames&#34; value=&#34;java.lang.Exception&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">         --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 确保一个类有package声明 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;PackageDeclaration&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 一个方法中最多有10个return --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ReturnCount&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;10&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;maxForVoid&#34; value=&#34;10&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 确保某个class 在被使用时都已经被初始化成默认值(对象是null ,
+</span></span><span class="line"><span class="cl">            数字和字符是0 , boolean 变量是false.)了 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ExplicitInitialization&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 不许有同样内容的String
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;MultipleStringLiterals&#34;/&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 同一行不能有多个声明 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;MultipleVariableDeclarations&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 不必要的圆括号 检查不必要的圆括号”(,)”。比如， if(((((true))))) --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;UnnecessaryParentheses&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 限制一个布尔表达式中的 &amp;&amp;, || 和^的个数。可以让代码看起来更清晰，容易排错和维护  --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;BooleanExpressionComplexity&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;8&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 一个类中如果使用太多其他的类，是肯定会增加系统复杂度的。使用其他的类越少，耦合度就越少 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ClassDataAbstractionCoupling&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;50&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 确保函数的分支复杂度没有超出限制
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;CyclomaticComplexity&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;20&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- NPATH 量度计算了一个函数的可执行的分支个数
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;NPathComplexity&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;max&#34; value=&#34;20&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- 类设计检查 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查只有private构造函数的类是否声明为final --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;FinalClass&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查接口是否仅定义类型
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;InterfaceIsType&#34;/&gt;
+</span></span><span class="line"><span class="cl">    	--&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查类成员的可见度 检查类成员的可见性。只有static final 成员是public的除非在本检查的protectedAllowed和packagedAllowed属性中进行了设置--&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;VisibilityModifier&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;packageAllowed&#34; value=&#34;true&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;protectedAllowed&#34; value=&#34;true&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- 禁止使用System.out.println --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;Regexp&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;format&#34; value=&#34;.printStackTrace&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;illegalPattern&#34; value=&#34;true&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;Regexp&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;format&#34; value=&#34;System.out.println&#34;/&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;illegalPattern&#34; value=&#34;true&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- ************************其他*********************************** --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查并确保所有的常量中的L都是大写的。因为小写的字母l跟数字1太象了 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;UpperEll&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查数组类型的定义是String[] args，而不是String args[] --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;ArrayTypeStyle&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 不许使用与代码同行的注释
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;TrailingComment&#34;/&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 不许存在TO DO
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;TodoComment&#34;/&gt;
+</span></span><span class="line"><span class="cl">        --&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 除了正常的程序入口之外，所有的main方法都应该被删掉或注释掉 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;UncommentedMain&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;excludedClasses&#34; value=&#34;.*[Application,Test]$&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;/module&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 检查并确保所有的常量中的L都是大写的。也就是在常量中没有使用”l”而是用的”L”，比如long型常
+</span></span><span class="line"><span class="cl">            量，都要以”L”结尾。这与Sun编码规范 3.10.1 相一致。小写的字母l 跟数字1 太象了 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;module name=&#34;UpperEll&#34;/&gt;
+</span></span><span class="line"><span class="cl">    &lt;/module&gt;
+</span></span><span class="line"><span class="cl">&lt;/module&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e6%8f%92%e4%bb%b6.png"
+    data-srcset="/img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e6%8f%92%e4%bb%b6.png, /img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e6%8f%92%e4%bb%b6.png 1.5x, /img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e6%8f%92%e4%bb%b6.png 2x"
+    data-sizes="auto"
+    alt="/img/Checkstyle使用教程/插件.png"
+    title="插件" /></p>
+<p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae1.png"
+    data-srcset="/img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae1.png, /img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae1.png 1.5x, /img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae1.png 2x"
+    data-sizes="auto"
+    alt="/img/Checkstyle使用教程/配置1.png"
+    title="配置1" /></p>
+<p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae2.png"
+    data-srcset="/img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae2.png, /img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae2.png 1.5x, /img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae2.png 2x"
+    data-sizes="auto"
+    alt="/img/Checkstyle使用教程/配置2.png"
+    title="配置2" /></p>
+<p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae3.png"
+    data-srcset="/img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae3.png, /img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae3.png 1.5x, /img/Checkstyle%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e9%85%8d%e7%bd%ae3.png 2x"
+    data-sizes="auto"
+    alt="/img/Checkstyle使用教程/配置3.png"
+    title="配置3" /></p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2022-06-07&#32;13:20:41>更新于 2022-06-07</span>
+        <span title=2022-06-07&#32;14:24:05>更新于 2022-06-07</span>
       </div>
       <div class="post-info-license "></div>
     </div>
