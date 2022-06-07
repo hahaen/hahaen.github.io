@@ -11,14 +11,14 @@
 <meta name="description" content="什么是 SpringBoot？ Spring Boot 是 Spring 开源组织下的子项目， 是 Spring 组件一站式解决方案，主要是简化了使用 Spring 的难度， 简省了繁重的配置，提供了各种启动器" />
 <meta name="keywords" content="java" /><meta itemprop="name" content="SpringBoot">
 <meta itemprop="description" content="什么是 SpringBoot？ Spring Boot 是 Spring 开源组织下的子项目， 是 Spring 组件一站式解决方案，主要是简化了使用 Spring 的难度， 简省了繁重的配置，提供了各种启动器"><meta itemprop="datePublished" content="2022-03-12T19:07:56+08:00" />
-<meta itemprop="dateModified" content="2022-05-31T09:20:17+08:00" />
+<meta itemprop="dateModified" content="2022-06-07T13:20:41+08:00" />
 <meta itemprop="wordCount" content="6167"><meta itemprop="image" content="https://hahaen.github.io/logo.png"/>
 <meta itemprop="keywords" content="java," /><meta property="og:title" content="SpringBoot" />
 <meta property="og:description" content="什么是 SpringBoot？ Spring Boot 是 Spring 开源组织下的子项目， 是 Spring 组件一站式解决方案，主要是简化了使用 Spring 的难度， 简省了繁重的配置，提供了各种启动器" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hahaen.github.io/springboot/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-12T19:07:56+08:00" />
-<meta property="article:modified_time" content="2022-05-31T09:20:17+08:00" />
+<meta property="article:modified_time" content="2022-06-07T13:20:41+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
@@ -38,7 +38,7 @@
       "@type": "WebPage",
       "@id": "https:\/\/hahaen.github.io\/springboot\/"
     },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  6167 ,
-    "url": "https:\/\/hahaen.github.io\/springboot\/","datePublished": "2022-03-12T19:07:56+08:00","dateModified": "2022-05-31T09:20:17+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    "url": "https:\/\/hahaen.github.io\/springboot\/","datePublished": "2022-03-12T19:07:56+08:00","dateModified": "2022-06-07T13:20:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "xxx","logo": "https:\/\/hahaen.github.io\/img\/%E7%B3%BB%E7%BB%9F%E5%9B%BE%E7%89%87\/avatar.png"},"author": {
         "@type": "Person",
@@ -295,8 +295,8 @@
 </ul>
 <ol>
 <li><code>@SpringBootConfiguration</code>：组合了 <code>@Configuration</code> 注解，实现配置文件的功能。</li>
-<li><code>@EnableAutoConfiguration</code>：打开自动配置的功能，也可以关闭某个自动配置的选项，
-例如：java 如关闭数据源自动配置功能：
+<li><code>@EnableAutoConfiguration</code>：打开自动配置的功能，也可以关闭某个自动配置的选项， 
+例如：java 如关闭数据源自动配置功能： 
 <code>@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })</code>。</li>
 <li><code>@ComponentScan</code>：Spring组件扫描。</li>
 </ol>
@@ -437,7 +437,7 @@ boostrap 由父 ApplicationContext 加载的，
 比 applicaton 优先加载，配置在应用程序上下文的引导阶段生效。
 一般来说我们在 Spring Cloud 配置就会使用这个文件。
 且 boostrap 里面的属性不能被覆盖；</li>
-<li>application (. yml 或者 . properties)：
+<li>application (. yml 或者 . properties)： 
 由ApplicatonContext 加载，
 用于 spring boot 项目的自动化配置。</li>
 </ol>
@@ -532,14 +532,14 @@ Spring boot 监视器可帮助您访问生产环境中正在运行的应用程�
 即使一些外部应用程序可能正在使用这些服务来向相关人员触发警报消息。
 监视器模块公开了一组可直接作为 HTTP URL 访问的REST 端点来检查状态。</p>
 <h2 id="如何使用-spring-boot-实现全局异常处理">如何使用 Spring Boot 实现全局异常处理？</h2>
-<p>Spring 提供了一种使用 ControllerAdvice 处理异常的非常有用的方法。
+<p>Spring 提供了一种使用 ControllerAdvice 处理异常的非常有用的方法。 
 我们通过实现一个 ControlerAdvice 类，来处理控制器类抛出的所有异常。</p>
 <h2 id="我们如何监视所有-spring-boot-微服务">我们如何监视所有 Spring Boot 微服务？</h2>
 <p>Spring Boot 提供监视器端点以监控各个微服务的度量。
 这些端点对于获取有关应用程序的信息（如它们是否已启动）以及它们的组件（如数据库等）是否正常运行很有帮助。
 但是，使用监视器的一个主要缺点或困难是，我们必须单独打开应用程序的知识点以了解其状态或健康状况。
 想象一下涉及 50 个应用程序的微服务，管理员将不得不击中所有 50 个应用程序的执行终端。
-为了帮助我们处理这种情况，我们将使用位于的开源项目。
+为了帮助我们处理这种情况，我们将使用位于的开源项目。 
 它建立在 Spring Boot Actuator 之上，它提供了一个 Web UI，
 使我们能够可视化多个应用程序的度量。</p>
 <h2 id="springboot性能如何优化">SpringBoot性能如何优化?</h2>
@@ -637,7 +637,7 @@ spring-boot-starter-parent 主要有如下作用：</p>
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2022-05-31&#32;09:20:17>更新于 2022-05-31</span>
+        <span title=2022-06-07&#32;13:20:41>更新于 2022-06-07</span>
       </div>
       <div class="post-info-license "></div>
     </div>

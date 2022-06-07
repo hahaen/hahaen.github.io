@@ -11,14 +11,14 @@
 <meta name="description" content="对Redis 的了解？ Redis（全称：Remote Dictionary Server 远程字典服务）是一个开源的使用 ANSI C 语言编写、 支持网络、可基于内存亦可持久化的日志型、K" />
 <meta name="keywords" content="java" /><meta itemprop="name" content="Redis">
 <meta itemprop="description" content="对Redis 的了解？ Redis（全称：Remote Dictionary Server 远程字典服务）是一个开源的使用 ANSI C 语言编写、 支持网络、可基于内存亦可持久化的日志型、K"><meta itemprop="datePublished" content="2022-03-16T22:05:18+08:00" />
-<meta itemprop="dateModified" content="2022-05-31T09:20:17+08:00" />
+<meta itemprop="dateModified" content="2022-06-07T13:20:41+08:00" />
 <meta itemprop="wordCount" content="5151"><meta itemprop="image" content="https://hahaen.github.io/logo.png"/>
 <meta itemprop="keywords" content="java," /><meta property="og:title" content="Redis" />
 <meta property="og:description" content="对Redis 的了解？ Redis（全称：Remote Dictionary Server 远程字典服务）是一个开源的使用 ANSI C 语言编写、 支持网络、可基于内存亦可持久化的日志型、K" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hahaen.github.io/redis/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-16T22:05:18+08:00" />
-<meta property="article:modified_time" content="2022-05-31T09:20:17+08:00" />
+<meta property="article:modified_time" content="2022-06-07T13:20:41+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
@@ -38,7 +38,7 @@
       "@type": "WebPage",
       "@id": "https:\/\/hahaen.github.io\/redis\/"
     },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  5151 ,
-    "url": "https:\/\/hahaen.github.io\/redis\/","datePublished": "2022-03-16T22:05:18+08:00","dateModified": "2022-05-31T09:20:17+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    "url": "https:\/\/hahaen.github.io\/redis\/","datePublished": "2022-03-16T22:05:18+08:00","dateModified": "2022-06-07T13:20:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "xxx","logo": "https:\/\/hahaen.github.io\/img\/%E7%B3%BB%E7%BB%9F%E5%9B%BE%E7%89%87\/avatar.png"},"author": {
         "@type": "Person",
@@ -475,12 +475,12 @@ RDB文件生成完毕之后，master会将这个RDB发送给slave，slave会先�
 <li>每个哨兵(Sentinel)以每秒钟一次的频率向它所知的Master，Slave以及其他 Sentinel 实例发送一个 PING 命令。</li>
 <li>如果一个实例（instance）距离最后一次有效回复 PING 命令的时间超过 down-after-milliseconds 选项所指定的值，
 则这个实例会被当前 Sentinel 标记为主观下线。</li>
-<li>如果一个Master被标记为主观下线，则正在监视这个Master的所有 Sentinel
+<li>如果一个Master被标记为主观下线，则正在监视这个Master的所有 Sentinel 
 要以每秒一次的频率确认Master的确进入了主观下线状态。</li>
 <li>当有足够数量的 Sentinel（大于等于配置文件指定的值）在指定的时间范围内确认Master的确进入了主观下线状态，
 则Master会被标记为客观下线 。</li>
-<li>当Master被 Sentinel 标记为客观下线时，Sentinel 向下线的 Master 的所有 Slave
-发送 INFO 命令的频率会从 10 秒一次改为每秒一次 （在一般情况下，
+<li>当Master被 Sentinel 标记为客观下线时，Sentinel 向下线的 Master 的所有 Slave 
+发送 INFO 命令的频率会从 10 秒一次改为每秒一次 （在一般情况下， 
 每个 Sentinel 会以每 10 秒一次的频率向它已知的所有Master，Slave发送 INFO 命令 ）。</li>
 <li>若没有足够数量的 Sentinel 同意 Master 已经下线， Master 的客观下线状态就会变成主观下线。
 若 Master 重新向 Sentinel 的 PING 命令返回有效回复， Master 的主观下线状态就会被移除。</li>
@@ -523,7 +523,7 @@ RDB文件生成完毕之后，master会将这个RDB发送给slave，slave会先�
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2022-05-31&#32;09:20:17>更新于 2022-05-31</span>
+        <span title=2022-06-07&#32;13:20:41>更新于 2022-06-07</span>
       </div>
       <div class="post-info-license "></div>
     </div>

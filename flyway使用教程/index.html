@@ -11,14 +11,14 @@
 <meta name="description" content="官网 引入Maven plugin 1 2 3 4 5 6 7 8 9 10 &lt;plugin&gt; &lt;groupId&gt;org.flywaydb&lt;/groupId&gt; &lt;artifactId&gt;flyway-maven-plugin&lt;/artifactId&gt; &lt;version&gt;6.2.4&lt;/version&gt; &lt;configuration&gt; &lt;user&gt;root&lt;/user&gt; &lt;password&gt;root&lt;/password&gt; &lt;url&gt;jdbc:mysql://localhost:3306/xxx&lt;/url&gt; &lt;/configuration&gt; &lt;/plugin&gt; 创建目录 在resources下创建目录db 在目录db创建目录migration 在" />
 <meta name="keywords" content="教程" /><meta itemprop="name" content="Flyway使用教程">
 <meta itemprop="description" content="官网 引入Maven plugin 1 2 3 4 5 6 7 8 9 10 &lt;plugin&gt; &lt;groupId&gt;org.flywaydb&lt;/groupId&gt; &lt;artifactId&gt;flyway-maven-plugin&lt;/artifactId&gt; &lt;version&gt;6.2.4&lt;/version&gt; &lt;configuration&gt; &lt;user&gt;root&lt;/user&gt; &lt;password&gt;root&lt;/password&gt; &lt;url&gt;jdbc:mysql://localhost:3306/xxx&lt;/url&gt; &lt;/configuration&gt; &lt;/plugin&gt; 创建目录 在resources下创建目录db 在目录db创建目录migration 在"><meta itemprop="datePublished" content="2022-04-07T23:55:57+08:00" />
-<meta itemprop="dateModified" content="2022-06-01T14:46:59+08:00" />
+<meta itemprop="dateModified" content="2022-06-07T13:20:41+08:00" />
 <meta itemprop="wordCount" content="142"><meta itemprop="image" content="https://hahaen.github.io/logo.png"/>
 <meta itemprop="keywords" content="教程," /><meta property="og:title" content="Flyway使用教程" />
 <meta property="og:description" content="官网 引入Maven plugin 1 2 3 4 5 6 7 8 9 10 &lt;plugin&gt; &lt;groupId&gt;org.flywaydb&lt;/groupId&gt; &lt;artifactId&gt;flyway-maven-plugin&lt;/artifactId&gt; &lt;version&gt;6.2.4&lt;/version&gt; &lt;configuration&gt; &lt;user&gt;root&lt;/user&gt; &lt;password&gt;root&lt;/password&gt; &lt;url&gt;jdbc:mysql://localhost:3306/xxx&lt;/url&gt; &lt;/configuration&gt; &lt;/plugin&gt; 创建目录 在resources下创建目录db 在目录db创建目录migration 在" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hahaen.github.io/flyway%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-07T23:55:57+08:00" />
-<meta property="article:modified_time" content="2022-06-01T14:46:59+08:00" />
+<meta property="article:modified_time" content="2022-06-07T13:20:41+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
@@ -38,7 +38,7 @@
       "@type": "WebPage",
       "@id": "https:\/\/hahaen.github.io\/flyway%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/"
     },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "教程","wordcount":  142 ,
-    "url": "https:\/\/hahaen.github.io\/flyway%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/","datePublished": "2022-04-07T23:55:57+08:00","dateModified": "2022-06-01T14:46:59+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    "url": "https:\/\/hahaen.github.io\/flyway%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/","datePublished": "2022-04-07T23:55:57+08:00","dateModified": "2022-06-07T13:20:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "xxx","logo": "https:\/\/hahaen.github.io\/img\/%E7%B3%BB%E7%BB%9F%E5%9B%BE%E7%89%87\/avatar.png"},"author": {
         "@type": "Person",
@@ -290,6 +290,14 @@
 <li>在文件<code>V1__Create_User.sql</code>下写相应sql</li>
 </ul>
 <p>如图</p>
+<p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/Flyway%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e5%88%9b%e5%bb%ba%e7%9b%ae%e5%bd%95%e5%9b%be.png"
+    data-srcset="/img/Flyway%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e5%88%9b%e5%bb%ba%e7%9b%ae%e5%bd%95%e5%9b%be.png, /img/Flyway%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e5%88%9b%e5%bb%ba%e7%9b%ae%e5%bd%95%e5%9b%be.png 1.5x, /img/Flyway%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/%e5%88%9b%e5%bb%ba%e7%9b%ae%e5%bd%95%e5%9b%be.png 2x"
+    data-sizes="auto"
+    alt="/img/Flyway使用教程/创建目录图.png"
+    title="创建目录图" /></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -310,7 +318,7 @@
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2022-06-01&#32;14:46:59>更新于 2022-06-01</span>
+        <span title=2022-06-07&#32;13:20:41>更新于 2022-06-07</span>
       </div>
       <div class="post-info-license "></div>
     </div>

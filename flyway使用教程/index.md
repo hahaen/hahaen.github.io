@@ -31,6 +31,7 @@
 
 如图
 
+![创建目录图](/img/Flyway使用教程/创建目录图.png)
 
 ```
 mvn flyway:clean
