@@ -8,23 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <title>MyBatis Generator使用教程 - 哈哈博客</title><meta name="author" content="hahaen">
 <meta name="author-link" content="https://github.com/hahaen/">
-<meta name="description" content="内容" />
+<meta name="description" content="Mybatis Generator（MBG）的作用 ：根据库中的表自动生成dao、mapper映射文件、实体类 在pom.xml添加配置 1 2 3 4 5 6 7 8 9 10 11" />
 <meta name="keywords" content="教程" /><meta itemprop="name" content="MyBatis Generator使用教程">
-<meta itemprop="description" content="内容"><meta itemprop="datePublished" content="2022-04-08T22:09:30+08:00" />
-<meta itemprop="dateModified" content="2022-06-07T13:20:41+08:00" />
-<meta itemprop="wordCount" content="2"><meta itemprop="image" content="https://hahaen.github.io/logo.png"/>
+<meta itemprop="description" content="Mybatis Generator（MBG）的作用 ：根据库中的表自动生成dao、mapper映射文件、实体类 在pom.xml添加配置 1 2 3 4 5 6 7 8 9 10 11"><meta itemprop="datePublished" content="2022-04-08T22:09:30+08:00" />
+<meta itemprop="dateModified" content="2022-06-09T10:50:31+08:00" />
+<meta itemprop="wordCount" content="768"><meta itemprop="image" content="https://hahaen.github.io/logo.png"/>
 <meta itemprop="keywords" content="教程," /><meta property="og:title" content="MyBatis Generator使用教程" />
-<meta property="og:description" content="内容" />
+<meta property="og:description" content="Mybatis Generator（MBG）的作用 ：根据库中的表自动生成dao、mapper映射文件、实体类 在pom.xml添加配置 1 2 3 4 5 6 7 8 9 10 11" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hahaen.github.io/mybatis-generator%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-08T22:09:30+08:00" />
-<meta property="article:modified_time" content="2022-06-07T13:20:41+08:00" />
+<meta property="article:modified_time" content="2022-06-09T10:50:31+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
 
 <meta name="twitter:title" content="MyBatis Generator使用教程"/>
-<meta name="twitter:description" content="内容"/>
+<meta name="twitter:description" content="Mybatis Generator（MBG）的作用 ：根据库中的表自动生成dao、mapper映射文件、实体类 在pom.xml添加配置 1 2 3 4 5 6 7 8 9 10 11"/>
 <meta name="application-name" content="FixIt">
 <meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#252627"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -37,8 +37,8 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/hahaen.github.io\/mybatis-generator%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/"
-    },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "教程","wordcount":  2 ,
-    "url": "https:\/\/hahaen.github.io\/mybatis-generator%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/","datePublished": "2022-04-08T22:09:30+08:00","dateModified": "2022-06-07T13:20:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "教程","wordcount":  768 ,
+    "url": "https:\/\/hahaen.github.io\/mybatis-generator%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/","datePublished": "2022-04-08T22:09:30+08:00","dateModified": "2022-06-09T10:50:31+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "xxx","logo": "https:\/\/hahaen.github.io\/img\/%E7%B3%BB%E7%BB%9F%E5%9B%BE%E7%89%87\/avatar.png"},"author": {
         "@type": "Person",
@@ -170,8 +170,7 @@
 <div class="search-dropdown mobile">
   <div id="search-dropdown-mobile"></div>
 </div>
-<main class="container" page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录 <i class="toc-icon fa-solid fa-angle-down fa-fw"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
+<main class="container" page-style="normal"><aside class="toc" id="toc-auto"></aside>
 
   <aside class="aside-custom">
     
@@ -207,29 +206,204 @@
           <span class="post-category">收录于 <a href="/categories/java%E6%95%99%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw"></i>&nbsp;java教程</a></span></div>
       <div class="post-meta-line"><span title=2022-04-08&#32;22:09:30>
             <i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-08" >2022-04-08</time>
-          </span>&nbsp;<i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;约 2 字&nbsp;
-        <i class="fa-regular fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
-    </div><div class="details toc" id="toc-static" kept="false">
-        <div class="details-summary toc-title">
-          <span>目录</span>
-          <span><i class="details-icon fa-solid fa-angle-right"></i></span>
-        </div>
-        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#内容">内容</a></li>
-  </ul>
-</nav></div>
-      </div><div
+          </span>&nbsp;<i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;约 768 字&nbsp;
+        <i class="fa-regular fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+    </div><div
       class="content"
       id="content"
       
       
-    ><h2 id="内容">内容</h2>
-</div><div class="post-footer" id="post-footer">
+    ><p><strong>Mybatis Generator（MBG）的作用 ：根据库中的表自动生成dao、mapper映射文件、实体类</strong></p>
+<ul>
+<li>在<code>pom.xml</code>添加配置</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;plugins&gt;
+</span></span><span class="line"><span class="cl">      &lt;plugin&gt;
+</span></span><span class="line"><span class="cl">        &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;
+</span></span><span class="line"><span class="cl">        &lt;artifactId&gt;mybatis-generator-maven-plugin&lt;/artifactId&gt;
+</span></span><span class="line"><span class="cl">        &lt;version&gt;1.3.2&lt;/version&gt;
+</span></span><span class="line"><span class="cl">        &lt;dependencies&gt;
+</span></span><span class="line"><span class="cl">          &lt;dependency&gt;
+</span></span><span class="line"><span class="cl">            &lt;groupId&gt;mysql&lt;/groupId&gt;
+</span></span><span class="line"><span class="cl">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+</span></span><span class="line"><span class="cl">            &lt;version&gt;5.1.48&lt;/version&gt;
+</span></span><span class="line"><span class="cl">          &lt;/dependency&gt;
+</span></span><span class="line"><span class="cl">        &lt;/dependencies&gt;
+</span></span><span class="line"><span class="cl">        &lt;configuration&gt;
+</span></span><span class="line"><span class="cl">          &lt;!--指定generatorConfig.xml 配置文件的路径 --&gt;
+</span></span><span class="line"><span class="cl">          &lt;configurationFile&gt;${basedir}/src/main/resources/generatorConfig.xml&lt;/configurationFile&gt;
+</span></span><span class="line"><span class="cl">          &lt;overwrite&gt;true&lt;/overwrite&gt;
+</span></span><span class="line"><span class="cl">        &lt;/configuration&gt;
+</span></span><span class="line"><span class="cl">      &lt;/plugin&gt;
+</span></span><span class="line"><span class="cl">    &lt;/plugins&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>将<code>generatorConfig.xml</code>配置文件放入<code>main/resource</code>目录下</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+</span></span><span class="line"><span class="cl">&lt;!DOCTYPE generatorConfiguration
+</span></span><span class="line"><span class="cl">  PUBLIC &#34;-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN&#34;
+</span></span><span class="line"><span class="cl">  &#34;http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;generatorConfiguration&gt;
+</span></span><span class="line"><span class="cl">    &lt;context id=&#34;test&#34; targetRuntime=&#34;MyBatis3&#34;&gt;
+</span></span><span class="line"><span class="cl">        &lt;plugin type=&#34;org.mybatis.generator.plugins.EqualsHashCodePlugin&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;plugin type=&#34;org.mybatis.generator.plugins.SerializablePlugin&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;plugin type=&#34;org.mybatis.generator.plugins.ToStringPlugin&#34;/&gt;
+</span></span><span class="line"><span class="cl">        &lt;commentGenerator&gt;
+</span></span><span class="line"><span class="cl">            &lt;!-- 这个元素用来去除指定生成的注释中是否包含生成的日期 false:表示包含 --&gt;
+</span></span><span class="line"><span class="cl">            &lt;!-- 如果生成日期，会造成即使修改一个字段，整个实体类所有属性都会发生变化，不利于版本控制，所以设置为true --&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;suppressDate&#34; value=&#34;true&#34; /&gt;
+</span></span><span class="line"><span class="cl">            &lt;!-- 是否去除自动生成的注释 true：是 ： false:否 --&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;suppressAllComments&#34; value=&#34;true&#34; /&gt;
+</span></span><span class="line"><span class="cl">        &lt;/commentGenerator&gt;
+</span></span><span class="line"><span class="cl">        &lt;!--数据库链接URL，用户名、密码 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;jdbcConnection driverClass=&#34;com.mysql.jdbc.Driver&#34;
+</span></span><span class="line"><span class="cl">            connectionURL=&#34;jdbc:mysql://localhost:3306/test&#34; userId=&#34;root&#34; password=&#34;root&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;/jdbcConnection&gt;
+</span></span><span class="line"><span class="cl">        &lt;javaTypeResolver&gt;
+</span></span><span class="line"><span class="cl">            &lt;!-- 浮点精度更高 --&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;forceBigDecimals&#34; value=&#34;false&#34; /&gt;
+</span></span><span class="line"><span class="cl">        &lt;/javaTypeResolver&gt;
+</span></span><span class="line"><span class="cl">        &lt;!-- 生成模型(entity)的包名和位置 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;javaModelGenerator targetPackage=&#34;com.bz.entity&#34;
+</span></span><span class="line"><span class="cl">            targetProject=&#34;src/main/java&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;enableSubPackages&#34; value=&#34;true&#34; /&gt;  &lt;!-- enableSubPackages：是否要合并当前两个包    合并之后的包结构是src/main/java/com.bz.entity --&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;trimStrings&#34; value=&#34;true&#34; /&gt;        &lt;!-- 是否去除生成实体类中的空格 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;/javaModelGenerator&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- 生成映射文件的包名和位置 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;sqlMapGenerator targetPackage=&#34;com.bz.mapper&#34;
+</span></span><span class="line"><span class="cl">            targetProject=&#34;src/main/resources&#34;&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;enableSubPackages&#34; value=&#34;true&#34; /&gt;
+</span></span><span class="line"><span class="cl">        &lt;/sqlMapGenerator&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        &lt;!-- 生成DAO的包名和位置 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;javaClientGenerator type=&#34;XMLMAPPER&#34;
+</span></span><span class="line"><span class="cl">            targetPackage=&#34;com.bz.dao&#34; targetProject=&#34;src/main/java&#34;&gt;    &lt;!--类型就是XMLMAPPER，不用改--&gt;
+</span></span><span class="line"><span class="cl">            &lt;property name=&#34;enableSubPackages&#34; value=&#34;true&#34; /&gt;
+</span></span><span class="line"><span class="cl">        &lt;/javaClientGenerator&gt;
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        &lt;!-- 数据库中生成哪些表 有多少表就写几个table标签
+</span></span><span class="line"><span class="cl">             tableName：数据库中表名    domainObjectName：生成的实体类名 --&gt;
+</span></span><span class="line"><span class="cl">        &lt;table tableName=&#34;files&#34; domainObjectName=&#34;Files&#34;&gt;&lt;/table&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    &lt;/context&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/generatorConfiguration&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>需要修改的有：</p>
+<ul>
+<li>
+<p>数据库链接URL，用户名、密码</p>
+</li>
+<li>
+<p>生成模型(entity)的包名</p>
+</li>
+<li>
+<p>生成映射文件的包名</p>
+</li>
+<li>
+<p>生成DAO的包名</p>
+</li>
+<li>
+<p>数据库中生成哪些表</p>
+</li>
+<li>
+<p>自动在设定位置生成dao、mapper映射文件、实体类</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mvn mybatis-generator:generate
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2022-06-07&#32;13:20:41>更新于 2022-06-07</span>
+        <span title=2022-06-09&#32;10:50:31>更新于 2022-06-09</span>
       </div>
       <div class="post-info-license "></div>
     </div>
