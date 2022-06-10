@@ -161,8 +161,3 @@ Maven 是一个项目管理工具它包含：
 
 
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/maven%E4%B8%8E%E5%8C%85/

@@ -20,8 +20,3 @@ hugo -D
 ```
 
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/hugo%E6%8C%87%E5%8D%97/

@@ -53,8 +53,3 @@ xixi
 haha
 ```
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/continuebreak%E5%92%8Creturn%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88/

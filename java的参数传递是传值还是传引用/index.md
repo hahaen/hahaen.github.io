@@ -7,8 +7,3 @@
 2. 引用类型（包括数组，对象以及接口）作为参数传递时，是把对象在内存中的地址拷贝了一份传给了参数。
 * 注意：基本数据类型的封装类Integer、Short、Float、Double、Long、Boolean、Byte、Character虽然是引用类型，但它们在作为参数传递时，也和基本数据类型一样，是值传递。
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/java%E7%9A%84%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E6%98%AF%E4%BC%A0%E5%80%BC%E8%BF%98%E6%98%AF%E4%BC%A0%E5%BC%95%E7%94%A8/

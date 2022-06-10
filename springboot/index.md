@@ -379,8 +379,3 @@ spring-boot-starter-parent 主要有如下作用：
 将 Spring Boot 项目打包成两个 jar ，一个可执行，一个可引用。
 
   
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/springboot/

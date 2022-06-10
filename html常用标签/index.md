@@ -77,8 +77,3 @@
 
 [table](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table)
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/

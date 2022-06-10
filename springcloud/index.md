@@ -443,8 +443,3 @@ Feign是一个声明性的Web服务客户端。它使编写Web服务客户端变
 不需要自己构建Http请求了，直接调用接口就行了，
 不过要注意，调用方法要和本地抽象方法的签名完全一致。
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/springcloud/

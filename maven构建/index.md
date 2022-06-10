@@ -102,8 +102,3 @@ default周期package阶段及package之前的所有阶段。
 
 ![Maven](/img/Maven构建/1.png)
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/maven%E6%9E%84%E5%BB%BA/

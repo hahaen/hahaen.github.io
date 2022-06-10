@@ -88,8 +88,3 @@ drop view v_student;
 就不能被更新了；更新视图的查询也可以是一个关联语句，
 但是被更新的列必须来自同一张表；而且所有使用临时表算法实现的视图都无法被更新。
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/sql%E8%A7%86%E5%9B%BE/

@@ -113,8 +113,3 @@ select 列名 from 表名 order by 列名1 desc，列名2 asc
 
 
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%85%B3%E9%94%AE%E5%AD%97/

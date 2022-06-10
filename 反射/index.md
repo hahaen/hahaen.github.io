@@ -123,8 +123,3 @@ public class Demo1 {
 说明通过上述三种方式获取的 Class 对象都是同一个，**同一个字节码文件（*.class）在一次运行过程中只会被加载一次**。
 
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/%E5%8F%8D%E5%B0%84/

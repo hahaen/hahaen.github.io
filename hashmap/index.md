@@ -172,8 +172,3 @@ final Node<K,V> getNode(int hash, Object key) {
 
 
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/hashmap/

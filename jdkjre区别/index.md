@@ -9,8 +9,3 @@ JDK=JRE+javac
 jdk包含jre,jre是java运行时环境，另外jdk包含开发时所需要的sdk和编译器javac和javadoc工具
 
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/jdkjre%E5%8C%BA%E5%88%AB/

@@ -50,8 +50,3 @@ public static void test()throws Exception{
     throw new Exception("方法test中的Exception");
 }  
 ```
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/java%E5%BC%82%E5%B8%B8/

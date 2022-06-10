@@ -55,10 +55,4 @@
 5. 配置 SecurityManager； 
 6. 配置保证 Shiro 内部 Bean 声明周期都得到执行的 Lifecycle Bean 后置处理器； 
 7. 配置AOP 式方法级权限检查； 
-8. 配置 Shiro Filter。
-9. 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/shiro/
+8. 配置 Shiro Filter

@@ -337,8 +337,3 @@
 
 ![配置3](/img/Checkstyle使用教程/配置3.png)
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/checkstyle%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/

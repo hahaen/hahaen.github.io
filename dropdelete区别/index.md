@@ -12,8 +12,3 @@
 * 但是`delete`只删除数据不删除表的结构(定义)
 * 执行`drop`语句，此表的结构也会删除，也就是执行`drop`之后对应的表不复存在。
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/dropdelete%E5%8C%BA%E5%88%AB/

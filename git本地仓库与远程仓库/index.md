@@ -124,8 +124,3 @@ git push -u origin master 提交本地指定分支master代码到远程仓库
 ```
 
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/git%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/

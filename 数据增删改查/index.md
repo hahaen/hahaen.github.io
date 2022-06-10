@@ -75,8 +75,3 @@ SELECT 字段列表 FROM 表名[ 其他子句]
 select * FROM person;
 ```
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/

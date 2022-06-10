@@ -290,8 +290,3 @@ slave不会过期key，只会等待master过期key。
 
 
 
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/redis/

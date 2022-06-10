@@ -13,8 +13,3 @@
 * `toUpperCase()` 将字符串转成大写字符。
 * `substring()` 截取字符串。
 * `equals()` 字符串比较。
-
----
-
-> 作者: hahaen  
-> https://hahaen.github.io/string%E4%B8%AD%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95/
