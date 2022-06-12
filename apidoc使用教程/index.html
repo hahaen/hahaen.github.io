@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Apidoc使用教程 - 哈哈博客</title><meta name="Description" content="关于 哈哈博客"><meta property="og:title" content="Apidoc使用教程" />
-<meta property="og:description" content="内容" />
+<meta property="og:description" content="官方教程 配置 安装node.js 安装apidoc 1 npm install apidoc -g 在项目根目录下新建apidoc.json文件 1 2 3 4 5 6 7 { &#34;name&#34;: &#34;wxshop&#34;, &#34;version&#34;: &#34;1.0.0&#34;, &#34;description&#34;: &#34;小微" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hahaen.github.io/apidoc%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" /><meta property="og:image" content="https://hahaen.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-05-14T17:16:58+08:00" />
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://hahaen.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Apidoc使用教程"/>
-<meta name="twitter:description" content="内容"/>
+<meta name="twitter:description" content="官方教程 配置 安装node.js 安装apidoc 1 npm install apidoc -g 在项目根目录下新建apidoc.json文件 1 2 3 4 5 6 7 { &#34;name&#34;: &#34;wxshop&#34;, &#34;version&#34;: &#34;1.0.0&#34;, &#34;description&#34;: &#34;小微"/>
 <meta name="application-name" content="哈哈博客">
 <meta name="apple-mobile-web-app-title" content="哈哈博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hahaen.github.io\/apidoc%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/"
-        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "教程","wordcount":  2 ,
+        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "教程","wordcount":  534 ,
         "url": "https:\/\/hahaen.github.io\/apidoc%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B\/","datePublished": "2022-05-14T17:16:58+08:00","dateModified": "2022-05-14T17:16:58+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hahaen.github.io\/images\/avatar.png"},"author": {
@@ -106,8 +106,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Apidoc使用教程</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/java%E6%95%99%E7%A8%8B/"><i class="far fa-folder fa-fw"></i>java教程</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-05-14">2022-05-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-05-14">2022-05-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 534 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -117,12 +117,294 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#内容">内容</a></li>
+        <li><a href="#配置">配置</a></li>
+        <li><a href="#使用样例">使用样例</a>
+          <ul>
+            <li><a href="#api">@api</a></li>
+            <li><a href="#apiversion">@apiVersion</a></li>
+            <li><a href="#apiname">@apiName</a></li>
+            <li><a href="#apigroup">@apiGroup</a></li>
+            <li><a href="#apiheader">@apiHeader</a></li>
+            <li><a href="#apiparam">@apiParam</a></li>
+            <li><a href="#apisuccess">@apiSuccess</a></li>
+            <li><a href="#apisuccessexample">@apiSuccessExample</a></li>
+            <li><a href="#apierror">@apiError</a></li>
+            <li><a href="#apierrorexample">@apiErrorExample</a></li>
+            <li><a href="#apidefine">@apiDefine</a></li>
+            <li><a href="#apiuse">@apiUse</a></li>
+          </ul>
+        </li>
+        <li><a href="#生成文档">生成文档</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="内容">内容</h2>
+            </div><div class="content" id="content"><p><a href="https://apidocjs.com/" target="_blank" rel="noopener noreffer">官方教程</a></p>
+<h2 id="配置">配置</h2>
+<ol>
+<li>安装node.js</li>
+<li>安装apidoc</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">npm install apidoc -g
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>在项目根目录下新建apidoc.json文件
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/Apidoc%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/img.png"
+        data-srcset="/img/Apidoc%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/img.png, /img/Apidoc%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/img.png 1.5x, /img/Apidoc%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/img.png 2x"
+        data-sizes="auto"
+        alt="/img/Apidoc使用教程/img.png"
+        title="apidoc.json" /></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;name&#34;: &#34;wxshop&#34;,
+</span></span><span class="line"><span class="cl">  &#34;version&#34;: &#34;1.0.0&#34;,
+</span></span><span class="line"><span class="cl">  &#34;description&#34;: &#34;小微店铺&#34;,
+</span></span><span class="line"><span class="cl">  &#34;title&#34;: &#34;小微店铺&#34;,
+</span></span><span class="line"><span class="cl">  &#34;url&#34; : &#34;https://localhost:8080/api/v1&#34;
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="使用样例">使用样例</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @api {post} /code 请求验证码
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiName GetCode
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiGroup 登录与鉴权
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiHeader {String} Accept application/json
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiHeader {String} Content-Type application/json
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiParam {String} tel 手机号码
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiParamExample {json} Request-Example:
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *          {
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *              &#34;tel&#34;: &#34;13012345678&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *          }
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiSuccessExample Success-Response:
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *     HTTP/1.1 200 OK
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiError 400 Bad Request 若用户的请求包含错误
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @apiErrorExample Error-Response:
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *     HTTP/1.1 400 Bad Request
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *     {
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *       &#34;message&#34;: &#34;Bad Request&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *     }
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param telAndCode 手机号和收到的验证码
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param response HTTP response
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@PostMapping</span><span class="o">(</span><span class="s">&#34;/code&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">code</span><span class="o">(</span><span class="nd">@RequestBody</span> <span class="n">TelAndCode</span> <span class="n">telAndCode</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                     <span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">telVerificationService</span><span class="o">.</span><span class="na">verifyTelParameter</span><span class="o">(</span><span class="n">telAndCode</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">authService</span><span class="o">.</span><span class="na">sendVerificationCode</span><span class="o">(</span><span class="n">telAndCode</span><span class="o">.</span><span class="na">getTel</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">response</span><span class="o">.</span><span class="na">setStatus</span><span class="o">(</span><span class="n">HttpStatus</span><span class="o">.</span><span class="na">BAD_REQUEST</span><span class="o">.</span><span class="na">value</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="api">@api</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@api {method} path [title]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>HTTP接口调用方法、路径及名称</p>
+<h3 id="apiversion">@apiVersion</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiVersion version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>api 版本号</p>
+<h3 id="apiname">@apiName</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiName name
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>api 名称</p>
+<h3 id="apigroup">@apiGroup</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiGroup name
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>api 分组</p>
+<h3 id="apiheader">@apiHeader</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiHeader [(group)] [{type}] [field=defaultValue] [description]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请求头参数</p>
+<h3 id="apiparam">@apiParam</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiParam [(group)] [{type}] [field=defaultValue] [description]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请求参数</p>
+<h3 id="apisuccess">@apiSuccess</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiSuccess [(group)] [{type}] field [description]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>返回数据描述</p>
+<h3 id="apisuccessexample">@apiSuccessExample</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiSuccessExample [{type}] [title]
+</span></span><span class="line"><span class="cl">                   example
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接口成功返回样例</p>
+<h3 id="apierror">@apiError</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiError [(group)] [{type}] field [description]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接口失败描述</p>
+<h3 id="apierrorexample">@apiErrorExample</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiErrorExample [{type}] [title]
+</span></span><span class="line"><span class="cl">                 example
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接口失败返回样例</p>
+<h3 id="apidefine">@apiDefine</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiDefine name [title]
+</span></span><span class="line"><span class="cl">                     [description]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>类似于宏定义，可以被引用</p>
+<h3 id="apiuse">@apiUse</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">@apiUse name
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用@apiDefine定义的描述</p>
+<h2 id="生成文档">生成文档</h2>
+<p>cd到apidoc.json所在路径（即项目根目录）执行如下命令即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">apidoc -i src/ -o apidoc/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>执行成功后会生成apidoc文件夹;</li>
+<li>点开apidoc文件夹中<code>index.html</code>会发现已经生成的漂亮的api文档。</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
