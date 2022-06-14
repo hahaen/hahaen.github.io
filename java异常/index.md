@@ -50,3 +50,26 @@ public static void test()throws Exception{
     throw new Exception("方法test中的Exception");
 }  
 ```
+
+## 常见的几种异常
+
+RuntimeExceptionjava.lang.ArithmeticException(算术异常)
+<br>
+
+* java.lang.`NullPointerException`(空指针异常)
+* java.lang.`ClassCastException`(类型转换异常)
+* java.lang.`IllegalArgumentException`(不合法的参数异常)
+* java.lang.`IndexOutOfBoundsException`(数组下标越界异常)
+
+<br>
+
+java.io.IOException(IO流异常)
+<br>
+
+* java.lang.`ClassNotFoundException`(没找到指定类异常)
+* java.lang.`NoSuchFieldException`(没找到指定字段异常)
+* java.lang.`NoSuchMetodException`(没找到指定方法异常)
+* java.lang.`IllegalAccessException`(非法访问异常)
+* java.lang.`InterruptedException`(中断异常)
+
+
