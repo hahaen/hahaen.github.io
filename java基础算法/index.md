@@ -17,13 +17,23 @@
 4. 然后对前(n-1)个记录进行第二轮比较；重复该过程直到进行比较的记录只剩下一个为止。
 
 ```java
-public class BubbleSort implements IArraySort {
+/**
+ * @className: BubbleSort
+ * @description: 冒泡排序
+ * @author: hahaen
+ **/
+public class BubbleSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        BubbleSort.bubbleSort(arr);
 
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
+    }
+
+    private static void bubbleSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             // 设定一个标记，若为true，则表示此次循环没有进行交换，也就是待排序列已经有序，排序已经完成。
             boolean flag = true;
@@ -42,7 +52,6 @@ public class BubbleSort implements IArraySort {
                 break;
             }
         }
-        return arr;
     }
 }
 ```
@@ -60,13 +69,23 @@ public class BubbleSort implements IArraySort {
 5. 重复该过程，直到进行比较的记录只有一个为止。
 
 ```java
-public class SelectionSort implements IArraySort {
+/**
+ * @className: SelectSort
+ * @description: 选择排序
+ * @author: hahaen
+ **/
+public class SelectSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        SelectSort.selectSort(arr);
 
-        // 总共要经过 N-1 轮比较
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
+    }
+
+    public static void selectSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             int min = i;
 
@@ -86,7 +105,6 @@ public class SelectionSort implements IArraySort {
             }
 
         }
-        return arr;
     }
 }
 ```
@@ -102,14 +120,23 @@ public class SelectionSort implements IArraySort {
 3. 直至最后一个记录插入到有序序列中为止。
 
 ```java
-public class InsertSort implements IArraySort {
+/**
+ * @className: InsertSort
+ * @description: 插入排序
+ * @author: hahaen
+ **/
+public class InsertSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        InsertSort.insertSort(arr);
 
-        // 从下标为1的元素开始选择合适的位置插入，因为下标为0的只有一个元素，默认是有序的
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
+    }
+
+    private static void insertSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
 
             // 记录要插入的数据
@@ -128,7 +155,6 @@ public class InsertSort implements IArraySort {
             }
 
         }
-        return arr;
     }
 }
 ```
@@ -144,18 +170,35 @@ public class InsertSort implements IArraySort {
 3. 最后再对所有元素进行一次直接插入排序。
 
 ```java
-public static void shellSort(int[] arr) {
-    int length = arr.length;
-    int temp;
-    for (int step = length / 2; step >= 1; step /= 2) {
-        for (int i = step; i < length; i++) {
-            temp = arr[i];
-            int j = i - step;
-            while (j >= 0 && arr[j] > temp) {
-                arr[j + step] = arr[j];
-                j -= step;
+/**
+ * @className: ShellSort
+ * @description: 希尔排序
+ * @author: hahaen
+ **/
+public class ShellSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
+
+        ShellSort.shellSort(arr);
+
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
+    }
+
+    private static void shellSort(int[] arr) {
+        int length = arr.length;
+        int temp;
+        for (int step = length / 2; step >= 1; step /= 2) {
+            for (int i = step; i < length; i++) {
+                temp = arr[i];
+                int j = i - step;
+                while (j >= 0 && arr[j] > temp) {
+                    arr[j + step] = arr[j];
+                    j -= step;
+                }
+                arr[j + step] = temp;
             }
-            arr[j + step] = temp;
         }
     }
 }
@@ -163,7 +206,7 @@ public static void shellSort(int[] arr) {
 
 ### 归并排序
 
-[归并排序](https://www.runoob.com/w3cnote/shell-sort.html)
+[归并排序](https://www.runoob.com/w3cnote/merge-sort.html)
 
 **基本原理：**
 
@@ -175,50 +218,66 @@ public static void shellSort(int[] arr) {
 6. 再将其两两归并，反复执行此过程，直到得到一个有序序列。
 
 ```java
-public class MergeSort implements IArraySort {
+import java.util.Arrays;
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
-
-        if (arr.length < 2) {
-            return arr;
-        }
-        int middle = (int) Math.floor(arr.length / 2);
-
-        int[] left = Arrays.copyOfRange(arr, 0, middle);
-        int[] right = Arrays.copyOfRange(arr, middle, arr.length);
-
-        return merge(sort(left), sort(right));
+/**
+ * @className: MergeSort
+ * @description: 归并排序
+ * @author: hahaen
+ **/
+public class MergeSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
+        mergeSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    protected int[] merge(int[] left, int[] right) {
-        int[] result = new int[left.length + right.length];
-        int i = 0;
-        while (left.length > 0 && right.length > 0) {
-            if (left[0] <= right[0]) {
-                result[i++] = left[0];
-                left = Arrays.copyOfRange(left, 1, left.length);
+    public static void mergeSort(int[] arr) {
+        //在排序前，先建好一个长度等于原数组长度的临时数组，避免递归中频繁开辟空间
+        int[] temp = new int[arr.length];
+        sort(arr, 0, arr.length - 1, temp);
+    }
+
+    private static void sort(int[] arr, int left, int right, int[] temp) {
+        if (left < right) {
+            //左边归并排序，使得左子序列有序
+            int mid = (left + right) / 2;
+            sort(arr, left, mid, temp);
+            //右边归并排序，使得右子序列有序
+            sort(arr, mid + 1, right, temp);
+            //将两个有序子数组合并操作
+            merge(arr, left, mid, right, temp);
+        }
+    }
+
+    private static void merge(int[] arr, int left, int mid, int right, int[] temp) {
+        //左序列指针
+        int i = left;
+        //右序列指针
+        int j = mid + 1;
+        //临时数组指针
+        int t = 0;
+        while (i <= mid && j <= right) {
+            if (arr[i] <= arr[j]) {
+                temp[t++] = arr[i++];
             } else {
-                result[i++] = right[0];
-                right = Arrays.copyOfRange(right, 1, right.length);
+                temp[t++] = arr[j++];
             }
         }
-
-        while (left.length > 0) {
-            result[i++] = left[0];
-            left = Arrays.copyOfRange(left, 1, left.length);
+        //将左边剩余元素填充进temp中
+        while (i <= mid) {
+            temp[t++] = arr[i++];
         }
-
-        while (right.length > 0) {
-            result[i++] = right[0];
-            right = Arrays.copyOfRange(right, 1, right.length);
+        //将右序列剩余元素填充进temp中
+        while (j <= right) {
+            temp[t++] = arr[j++];
         }
-
-        return result;
+        t = 0;
+        //将temp中的元素全部拷贝到原数组中
+        while (left <= right) {
+            arr[left++] = temp[t++];
+        }
     }
-
 }
 ```
 
@@ -234,26 +293,32 @@ public class MergeSort implements IArraySort {
 4. 递归该过程，直到序列中的所有记录均有序为止。
 
 ```java
-public class QuickSort implements IArraySort {
+/**
+ * @className: QuickSort
+ * @description: 快速排序
+ * @author: hahaen
+ **/
+public class QuickSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        QuickSort.quickSort(arr, 0, arr.length - 1);
 
-        return quickSort(arr, 0, arr.length - 1);
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
     }
 
-    private int[] quickSort(int[] arr, int left, int right) {
+    private static void quickSort(int[] arr, int left, int right) {
+
         if (left < right) {
             int partitionIndex = partition(arr, left, right);
             quickSort(arr, left, partitionIndex - 1);
             quickSort(arr, partitionIndex + 1, right);
         }
-        return arr;
     }
 
-    private int partition(int[] arr, int left, int right) {
+    private static int partition(int[] arr, int left, int right) {
         // 设定基准值（pivot）
         int pivot = left;
         int index = pivot + 1;
@@ -267,12 +332,11 @@ public class QuickSort implements IArraySort {
         return index - 1;
     }
 
-    private void swap(int[] arr, int i, int j) {
+    private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-
 }
 ```
 
@@ -290,14 +354,23 @@ public class QuickSort implements IArraySort {
 6. 此时可得到一个有序序列。
 
 ```java
-public class HeapSort implements IArraySort {
+/**
+ * @className: HeapSort
+ * @description: 堆排序
+ * @author: hahaen
+ **/
+public class HeapSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        HeapSort.heapSort(arr, arr.length);
 
-        int len = arr.length;
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
+    }
+
+    private static void heapSort(int[] arr, int len) {
 
         buildMaxHeap(arr, len);
 
@@ -306,16 +379,16 @@ public class HeapSort implements IArraySort {
             len--;
             heapify(arr, 0, len);
         }
-        return arr;
     }
 
-    private void buildMaxHeap(int[] arr, int len) {
+    private static void buildMaxHeap(int[] arr, int len) {
         for (int i = (int) Math.floor(len / 2); i >= 0; i--) {
             heapify(arr, i, len);
         }
     }
 
-    private void heapify(int[] arr, int i, int len) {
+
+    private static void heapify(int[] arr, int i, int len) {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
         int largest = i;
@@ -334,12 +407,11 @@ public class HeapSort implements IArraySort {
         }
     }
 
-    private void swap(int[] arr, int i, int j) {
+    private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-
 }
 ```
 
@@ -355,19 +427,28 @@ public class HeapSort implements IArraySort {
 4. 反向填充目标数组：将每个元素i放在新数组的第C(i)项，每放一个元素就将C(i)减去1
 
 ```java
-public class CountingSort implements IArraySort {
+/**
+ * @className: CountingSort
+ * @description: 计数排序
+ * @author: hahaen
+ **/
+public class CountingSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        CountingSort.countingSort(arr);
 
-        int maxValue = getMaxValue(arr);
-
-        return countingSort(arr, maxValue);
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
     }
 
-    private int[] countingSort(int[] arr, int maxValue) {
+    private static void countingSort(int[] arr) {
+        int maxValue = getMaxValue(arr);
+        countingSort(arr, maxValue);
+    }
+
+    private static int[] countingSort(int[] arr, int maxValue) {
         int bucketLen = maxValue + 1;
         int[] bucket = new int[bucketLen];
 
@@ -385,7 +466,7 @@ public class CountingSort implements IArraySort {
         return arr;
     }
 
-    private int getMaxValue(int[] arr) {
+    private static int getMaxValue(int[] arr) {
         int maxValue = arr[0];
         for (int value : arr) {
             if (maxValue < value) {
@@ -394,7 +475,6 @@ public class CountingSort implements IArraySort {
         }
         return maxValue;
     }
-
 }
 ```
 
@@ -408,22 +488,25 @@ public class CountingSort implements IArraySort {
 2. 使用的映射函数能够将输入的 N 个数据均匀的分配到 K 个桶中
 
 ```java
-public class BucketSort implements IArraySort {
+import java.util.Arrays;
 
-    private static final InsertSort insertSort = new InsertSort();
+/**
+ * @className: BucketSort
+ * @description: 桶排序
+ * @author: hahaen
+ **/
+public class BucketSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        BucketSort.bucketSort(arr, 5);
 
-        return bucketSort(arr, 5);
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
     }
 
-    private int[] bucketSort(int[] arr, int bucketSize) throws Exception {
-        if (arr.length == 0) {
-            return arr;
-        }
+    private static void bucketSort(int[] arr, int bucketSize) {
 
         int minValue = arr[0];
         int maxValue = arr[0];
@@ -450,24 +533,40 @@ public class BucketSort implements IArraySort {
                 continue;
             }
             // 对每个桶进行排序，这里使用了插入排序
-            bucket = insertSort.sort(bucket);
+            insertSort(bucket);
             for (int value : bucket) {
                 arr[arrIndex++] = value;
             }
         }
+    }
 
+    private static int[] arrAppend(int[] arr, int value) {
+        arr = Arrays.copyOf(arr, arr.length + 1);
+        arr[arr.length - 1] = value;
         return arr;
     }
 
     /**
-     * 自动扩容，并保存数据
+     * 插入排序
      *
      * @param arr
-     * @param value
+     * @return
      */
-    private int[] arrAppend(int[] arr, int value) {
-        arr = Arrays.copyOf(arr, arr.length + 1);
-        arr[arr.length - 1] = value;
+    private static int[] insertSort(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            // 记录要插入的数据
+            int tmp = arr[i];
+            // 从已经排序的序列最右边的开始比较，找到比其小的数
+            int j = i;
+            while (j > 0 && tmp < arr[j - 1]) {
+                arr[j] = arr[j - 1];
+                j--;
+            }
+            // 存在比其小的数，插入
+            if (j != i) {
+                arr[j] = tmp;
+            }
+        }
         return arr;
     }
 
@@ -484,30 +583,41 @@ public class BucketSort implements IArraySort {
 2. 由于整数也可以表达字符串（比如名字或日期）和特定格式的浮点数，所以基数排序也不是只能使用于整数。
 
 ```java
+import java.util.Arrays;
+
 /**
- * 基数排序
- * 考虑负数的情况还可以参考： https://code.i-harness.com/zh-CN/q/e98fa9
- */
-public class RadixSort implements IArraySort {
+ * @className: RadixSort
+ * @description: 基数排序
+ * @author: hahaen
+ **/
+public class RadixSort {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 0, 9, 3, 12, 7, 8, 3, 4, 65, 22};
 
-    @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        RadixSort.radixSort(arr);
 
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
+    }
+
+    private static void radixSort(int[] arr) {
         int maxDigit = getMaxDigit(arr);
-        return radixSort(arr, maxDigit);
+        radixSort(arr, maxDigit);
     }
 
     /**
      * 获取最高位数
+     *
+     * @param arr
+     * @return
      */
-    private int getMaxDigit(int[] arr) {
+    private static int getMaxDigit(int[] arr) {
         int maxValue = getMaxValue(arr);
         return getNumLenght(maxValue);
     }
 
-    private int getMaxValue(int[] arr) {
+    private static int getMaxValue(int[] arr) {
         int maxValue = arr[0];
         for (int value : arr) {
             if (maxValue < value) {
@@ -517,7 +627,7 @@ public class RadixSort implements IArraySort {
         return maxValue;
     }
 
-    protected int getNumLenght(long num) {
+    protected static int getNumLenght(long num) {
         if (num == 0) {
             return 1;
         }
@@ -528,7 +638,7 @@ public class RadixSort implements IArraySort {
         return lenght;
     }
 
-    private int[] radixSort(int[] arr, int maxDigit) {
+    private static int[] radixSort(int[] arr, int maxDigit) {
         int mod = 10;
         int dev = 1;
 
@@ -557,8 +667,9 @@ public class RadixSort implements IArraySort {
      *
      * @param arr
      * @param value
+     * @return
      */
-    private int[] arrayAppend(int[] arr, int value) {
+    private static int[] arrayAppend(int[] arr, int value) {
         arr = Arrays.copyOf(arr, arr.length + 1);
         arr[arr.length - 1] = value;
         return arr;
