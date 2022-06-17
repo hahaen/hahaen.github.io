@@ -4,7 +4,14 @@
         <link>https://hahaen.github.io/categories/java%E6%95%99%E7%A8%8B/</link>
         <description>java教程 - 分类 - 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (hahaen)</managingEditor>
-            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 15 May 2022 21:56:56 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/categories/java%E6%95%99%E7%A8%8B/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 17 Jun 2022 14:57:43 &#43;0800</lastBuildDate><atom:link href="https://hahaen.github.io/categories/java%E6%95%99%E7%A8%8B/" rel="self" type="application/rss+xml" /><item>
+    <title>Minio</title>
+    <link>https://hahaen.github.io/minio/</link>
+    <pubDate>Fri, 17 Jun 2022 14:57:43 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/minio/</guid>
+    <description><![CDATA[docker搭建minio单节点 拉取docker镜像 1 docker pull minio/minio 创建挂载文件夹 1 mkdir -p /root/minio/config /root/minio/data 启动容器 1 2 3 4 docker run -p 9000:9000 -p 1314:9001 --name minio --restart=always -e &#34;MINIO_ACCESS_KEY=xxxxxx&#34; -e &#34;MINIO_SECRET_KEY=xxxxxxxx&#34; -v /root/minio/data:/data -v /root/minio/config:/root/.minio -d minio/minio server]]></description>
+</item><item>
     <title>SpotBugs使用教程</title>
     <link>https://hahaen.github.io/spotbugs%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
     <pubDate>Sun, 15 May 2022 21:56:56 &#43;0800</pubDate>

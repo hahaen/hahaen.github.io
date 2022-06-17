@@ -4,9 +4,16 @@
         <link>https://hahaen.github.io/</link>
         <description>关于 哈哈博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>630606938@qq.com (hahaen)</managingEditor>
-            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 12 Jun 2022 10:44:44 &#43;0800</lastBuildDate>
+            <webMaster>630606938@qq.com (hahaen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 17 Jun 2022 14:57:43 &#43;0800</lastBuildDate>
             <atom:link href="https://hahaen.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Minio</title>
+    <link>https://hahaen.github.io/minio/</link>
+    <pubDate>Fri, 17 Jun 2022 14:57:43 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hahaen.github.io/minio/</guid>
+    <description><![CDATA[docker搭建minio单节点 拉取docker镜像 1 docker pull minio/minio 创建挂载文件夹 1 mkdir -p /root/minio/config /root/minio/data 启动容器 1 2 3 4 docker run -p 9000:9000 -p 1314:9001 --name minio --restart=always -e &#34;MINIO_ACCESS_KEY=xxxxxx&#34; -e &#34;MINIO_SECRET_KEY=xxxxxxxx&#34; -v /root/minio/data:/data -v /root/minio/config:/root/.minio -d minio/minio server]]></description>
+</item><item>
     <title>设计模式（Overview）</title>
     <link>https://hahaen.github.io/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Foverview/</link>
     <pubDate>Sun, 12 Jun 2022 10:44:44 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://hahaen.github.io/apidoc%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
     <description><![CDATA[官方教程 配置 安装node.js 安装apidoc 1 npm install apidoc -g 在项目根目录下新建apidoc.json文件 1 2 3 4 5 6 7 { &#34;name&#34;: &#34;wxshop&#34;, &#34;version&#34;: &#34;1.0.0&#34;, &#34;description&#34;: &#34;小微]]></description>
-</item><item>
-    <title>Git快捷配置</title>
-    <link>https://hahaen.github.io/git%E5%BF%AB%E6%8D%B7%E9%85%8D%E7%BD%AE/</link>
-    <pubDate>Thu, 12 May 2022 13:34:41 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hahaen.github.io/git%E5%BF%AB%E6%8D%B7%E9%85%8D%E7%BD%AE/</guid>
-    <description><![CDATA[查看git快捷配置 1 cat ~/.bashrc 修改git快捷配置 1 vi ~/.bashrc 例子 1 2 3 4 5 6 7 8 alias ga=&#34;git add&#34; alias gm=&#34;git commit -m&#34; alias gc=&#34;git commit -v&#34; alias gl=&#34;git pull&#34; alias gp=&#34;git push&#34; alias gco=&#34;git checkout&#34; alias gst=&#34;git status -sb&#34; alias glog=&#34;git log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --]]></description>
 </item></channel>
 </rss>
