@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hahaen.github.io\/redis\/"
-        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  5151 ,
+        },"image": ["https:\/\/hahaen.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java","wordcount":  5169 ,
         "url": "https:\/\/hahaen.github.io\/redis\/","datePublished": "2022-03-16T22:05:18+08:00","dateModified": "2022-03-16T22:05:18+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hahaen.github.io\/images\/avatar.png"},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Redis</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hahaen</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/java%E7%9F%A5%E8%AF%86/"><i class="far fa-folder fa-fw"></i>java知识</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-16">2022-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 5151 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-16">2022-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 5169 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 11 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -330,11 +330,13 @@ Redis的过期策略就是指当Redis中缓存的key过期了，Redis如何处�
 <ol>
 <li>主从架构的核心原理</li>
 </ol>
-<p>当启动一个slave node的时候，它会发送一个PSYNC命令给master node
-开始full resynchronization的时候，master会启动一个后台线程，开始生成一份RDB快照文件，
-同时还会将从客户端收到的所有写命令缓存在内存中。
-RDB文件生成完毕之后，master会将这个RDB发送给slave，slave会先写入本地磁盘，然后再从本地磁盘加载到内存中。
-然后master会将内存中缓存的写命令发送给slave，slave也会同步这些数据。</p>
+<ul>
+<li>当启动一个slave(从节点) node的时候，它会发送一个PSYNC命令给master(主节点) node,</li>
+<li>开始full resynchronization(完全重新同步)的时候，master会启动一个后台线程，开始生成一份RDB快照文件，
+同时还会将从客户端收到的所有写命令缓存在内存中。</li>
+<li>RDB文件生成完毕之后，master会将这个RDB发送给slave，slave会先写入本地磁盘，然后再从本地磁盘加载到内存中。</li>
+<li>然后master会将内存中缓存的写命令发送给slave，slave也会同步这些数据。</li>
+</ul>
 <ol start="2">
 <li>主从复制的断点续传</li>
 </ol>
@@ -342,7 +344,7 @@ RDB文件生成完毕之后，master会将这个RDB发送给slave，slave会先�
 <ol start="3">
 <li>无磁盘化复制</li>
 </ol>
-<p>master在内存中直接创建rdb，然后发送给slave，不会在自己本地落地磁盘了</p>
+<p>master在内存中直接创建RDB，然后发送给slave，不会在自己本地落地磁盘了</p>
 <ol start="4">
 <li>过期key处理</li>
 </ol>

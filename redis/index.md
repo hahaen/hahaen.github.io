@@ -196,11 +196,11 @@ Redis中，单条命令是原子性执行的，但事务不保证原子性，且
 
 1. 主从架构的核心原理
 
-当启动一个slave node的时候，它会发送一个PSYNC命令给master node
-开始full resynchronization的时候，master会启动一个后台线程，开始生成一份RDB快照文件，
+* 当启动一个slave(从节点) node的时候，它会发送一个PSYNC命令给master(主节点) node,
+* 开始full resynchronization(完全重新同步)的时候，master会启动一个后台线程，开始生成一份RDB快照文件，
 同时还会将从客户端收到的所有写命令缓存在内存中。
-RDB文件生成完毕之后，master会将这个RDB发送给slave，slave会先写入本地磁盘，然后再从本地磁盘加载到内存中。
-然后master会将内存中缓存的写命令发送给slave，slave也会同步这些数据。
+* RDB文件生成完毕之后，master会将这个RDB发送给slave，slave会先写入本地磁盘，然后再从本地磁盘加载到内存中。 
+* 然后master会将内存中缓存的写命令发送给slave，slave也会同步这些数据。
 
 2. 主从复制的断点续传
 
@@ -208,7 +208,7 @@ RDB文件生成完毕之后，master会将这个RDB发送给slave，slave会先�
 
 3. 无磁盘化复制
 
-master在内存中直接创建rdb，然后发送给slave，不会在自己本地落地磁盘了
+master在内存中直接创建RDB，然后发送给slave，不会在自己本地落地磁盘了
 
 4. 过期key处理
 
